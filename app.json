@@ -159,7 +159,7 @@
       "required": false
     },
     "PETERCORD_TEKS_KUSTOM": {
-      "description": "Kustom Pesan Alive Mu Untuk Perintah .lord (Isi Terserah)",
+      "description": "Kustom Pesan Alive Mu Untuk Perintah .petercord (Isi Terserah)",
       "required": false
     },
     "S_PACK_NAME": {
