@@ -261,8 +261,8 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**▬▬▬▬▬▬❙۩🐲۩❙▬▬▬▬▬▬**\n"
-        f"     **🐲🐲 PETERCORD 🐲 USERBOT 🐲🐲** \n\n"
+        f"**▬▬▬▬▬▬❙۩🐲🐲۩❙▬▬▬▬▬▬**\n"
+        f"  **🐲 PETERCORD-USERBOT 🐲** \n\n"
         f"❃ **PETERCORD**     \n   ➥ `{DEFAULTUSER}` \n"
         f"❃ **Username** \n   ➥ `@{user.username}` \n"
         f"❃ **Telethon** \n   ➥ `Versi {version.__version__}` \n"
@@ -270,7 +270,7 @@ async def amireallyalive(alive):
         f"❃ **Versi Bot**\n   ➥ `{BOT_VER}` \n"
         f"❃ **Modul**    \n   ➥ `{len(modules)}` \n\n"
         f"❃ **Repo Userbot:** [Petercord-Userbot](https://github.com/ilham77mansiz/-PETERCORD-)\n❃ **Grup Userbot: **[Tekan](https://t.me/petercord)\n❃ **Pemilik:** [Ilham](t.me/bismillahselaluadaa)\n"
-        f"**▬▬▬▬▬▬❙۩🐲۩❙▬▬▬▬▬▬**")
+        f"**▬▬▬▬▬▬❙۩🐲🐲۩❙▬▬▬▬▬▬**")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
