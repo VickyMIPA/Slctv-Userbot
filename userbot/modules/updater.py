@@ -53,7 +53,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari PETERCORD USERBOT.`'
+                ' untuk dapat deploy perubahan terbaru dari 🐲PETERCORD USERBOT🐲.`'
             )
             repo.__del__()
             return
@@ -63,11 +63,11 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy PETERCORD USERBOT dyno.`'
+                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy 🐲PETERCORD USERBOT🐲 dyno.`'
             )
             return repo.__del__()
         await event.edit('`[HEROKU]:'
-                         '\nDyno PETERCORD USERBOT Sedang Dalam Proses, Mohon Menunggu 7-8 Menit`'
+                         '\nDyno 🐲PETERCORD USERBOT🐲 Sedang Dalam Proses, Mohon Menunggu 7-8 Menit`'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -119,14 +119,14 @@ async def update(event, repo, ups_rem, ac_br):
     await asyncio.sleep(1)
     await event.edit('**🐲 PETERCORD USERBOT** `Di Restart....`')
     await asyncio.sleep(1)
-    await event.edit('`Mohon Menunggu Beberapa Detik PETERCORD USERBOT ツ`')
+    await event.edit('`Mohon Menunggu Beberapa Detik 🐲PETERCORD USERBOT🐲 ツ`')
     await asyncio.sleep(10)
     await event.delete()
 
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#BOT \n"
-            "**PETERCORD USERBOT Telah Di Perbarui ツ**")
+            "**🐲PETERCORD USERBOT🐲 Telah Di Perbarui ツ**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -208,7 +208,7 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond('**Perintah Untuk Update Petercord Userbot**\n >`.update now`\n >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari Petercord Userbot.__')
+        return await event.respond('**Perintah Untuk Update 🐲Petercord Userbot🐲**\n >`.update now`\n >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari Petercord Userbot.__')
 
     if force_update:
         await event.edit(
@@ -234,9 +234,9 @@ async def upstream(event):
 CMD_HELP.update({
     'update':
     ".update"
-    "\nUsage: Untuk Melihat Pembaruan Terbaru Petercord-Userbot."
+    "\nUsage: Untuk Melihat Pembaruan Terbaru 🐲Petercord-Userbot🐲."
     "\n\n.update now"
-    "\nUsage: Memperbarui Petercord-Userbot."
+    "\nUsage: Memperbarui 🐲Petercord-Userbot🐲."
     "\n\n.update deploy"
-    "\nUsage: Memperbarui Petercord-Userbot Dengan Cara Deploy Ulang."
+    "\nUsage: Memperbarui 🐲Petercord-Userbot🐲 Dengan Cara Deploy Ulang."
 })
