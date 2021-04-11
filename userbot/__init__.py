@@ -101,7 +101,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/ilham77mansiz/Petercord-Userbot/tree/Petercord-Userbot.git")
+    "https://github.com/ilham77mansiz/-PETERCORD-.git")
 UPSTREAM_REPO_BRANCH = os.environ.get(
     "UPSTREAM_REPO_BRANCH", "Petercord-Userbot")
 
@@ -390,7 +390,7 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("Petercord-Userbot, Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/ilham77mansiz/Petercord-Userbot/tree/Petercord-Userbot.git)")
+                await event.reply("Petercord-Userbot, Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/ilham77mansiz/-PETERCORD-.git)")
             else:
                 await event.reply(f"`Hai Petercord {ALIVE_NAME}\n\nApa Kabarmu?`")
 
@@ -403,7 +403,7 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
-                    text="{}\n\n**❃ Jumlah Modul Yang Tersedia:** `{}`\n               \n**❃ Daftar Modul  PETERCORD-USERBOT:** \n".format(
+                    text="{}\n\n**❃ Jumlah Modul Yang Tersedia:** `{}`\n               \n**❃ Daftar Modul  🐺PETERCORD-USERBOT🐺:** \n".format(
                         "**♛ 🦁🐯🐺⚔ PETERCORD-USERBOT ⚔ 🐺🐯🦁**",
                         len(dugmeler),
                     ),
@@ -424,7 +424,7 @@ with bot:
                         [
                             custom.Button.url(
                                 "Repo Petercord-Userbot",
-                                "https://github.com/ilham77mansiz/Petercord-Userbot/tree/Petercord-Userbot"),
+                                "https://github.com/ilham77mansiz/-PETERCORD-"),
                             custom.Button.url(
                                 "Pemilik Repo",
                                 "t.me/bismillahselaluadaa")],
