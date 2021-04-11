@@ -319,7 +319,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```『🐆🐺⚔ PETERCORD-USERBOT Telah Aktif⚔ 🐺🐆』```")
+    await bot.send_message(BOTLOG_CHATID, "```『⚔ 🐲PETERCORD-USERBOT🐲 Telah Aktif ⚔』```")
     return
 
 with bot:
@@ -403,8 +403,8 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
-                    text="{}\n\n**❃ Jumlah Modul Yang Tersedia:** `{}`\n               \n**❃ Daftar Modul  🐺PETERCORD-USERBOT🐺:** \n".format(
-                        "**🐬 🦁🐯🐺⚔ PETERCORD-USERBOT ⚔ 🐺🐯🦁**",
+                    text="{}\n\n**❃ Jumlah Modul Yang Tersedia:** `{}`\n               \n**❃ Daftar Modul  🐲PETERCORD-USERBOT🐲:** \n".format(
+                        "**⚔ 🐲PETERCORD-USERBOT🐲⚔**",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -418,8 +418,8 @@ with bot:
                     link_preview=True)
             else:
                 result = builder.article(
-                    "**PETERCORD🐺USERBOT**",
-                    text="""**Anda Bisa Membuat PETERCORD🐺USERBOT Anda Sendiri Dengan Cara:** [Tekan Disini](t.me/petercord)""",
+                    "**PETERCORD🐲USERBOT**",
+                    text="""**Anda Bisa Membuat PETERCORD🐲USERBOT Anda Sendiri Dengan Cara:** [Tekan Disini](t.me/petercord)""",
                     buttons=[
                         [
                             custom.Button.url(
