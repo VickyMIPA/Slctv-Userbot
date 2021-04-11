@@ -62,10 +62,10 @@ async def set_afk(afk_e):
     afk_start = start_1.replace(microsecond=0)
     if string:
         AFKREASON = string
-        await afk_e.edit(f"**✘ AFK!**\n**Petercord User AFK**\
+        await afk_e.edit(f"**🐺🐳🦈 Serigala" Paus Hiu AFK!**\n**Petercord User AFK**\
         \n☛ **Alasan:** `{string}`")
     else:
-        await afk_e.edit("**✘ AFK!**\n**Petercord Telah AFK**")
+        await afk_e.edit("**🐺🐳🦈 Serigala" Paus Hiu AFK!**\n**Petercord Telah AFK**")
     if user.last_name:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name + "【AFK】"))
     else:
@@ -98,7 +98,7 @@ async def type_afk_is_not_true(notafk):
     afk_end = back_alive.replace(microsecond=0)
     if ISAFK:
         ISAFK = False
-        msg = await notafk.respond("**Petercord User Telah Kembali!**")
+        msg = await notafk.respond("**Petercord Userbot Telah Kembali! Emang gada yang rindu!**")
         time.sleep(3)
         await msg.delete()
         await notafk.client(UpdateProfileRequest(first_name=user.first_name, last_name=last1))
@@ -106,7 +106,7 @@ async def type_afk_is_not_true(notafk):
             await notafk.client.send_message(
                 BOTLOG_CHATID,
                 "Anda Mendapatkan " + str(COUNT_MSG) + " Pesan Dari " +
-                str(len(USERS)) + " Obrolan Saat Anda AFK",
+                str(len(USERS)) + " Obrolan Saat Anda AFK Yah Kasian🐸",
             )
             for i in USERS:
                 name = await notafk.client.get_entity(i)
@@ -243,7 +243,7 @@ async def afk_on_pm(sender):
                 afk_since = f"`{int(seconds)} Detik`"
             if sender.sender_id not in USERS:
                 if AFKREASON:
-                    await sender.reply(f"✘ **Petercord Sedang AFK** {afk_since} **Yang Lalu**.\
+                    await sender.reply(f"🦈 **Petercord Sedang AFK** {afk_since} **Yang Lalu**.\
                         \n☛ **Alasan**: `{AFKREASON}`")
                 else:
                     await sender.reply(str(choice(AFKSTR)))
@@ -252,7 +252,7 @@ async def afk_on_pm(sender):
             elif apprv and sender.sender_id in USERS:
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await sender.reply(f"✘ **Petercord Sedang AFK** {afk_since} **Yang Lalu.**\
+                        await sender.reply(f"🦈 **Petercord Sedang AFK** {afk_since} **Yang Lalu.**\
                             \n☛ **Alasan**: `{AFKREASON}`")
                     else:
                         await sender.reply(str(choice(AFKSTR)))
