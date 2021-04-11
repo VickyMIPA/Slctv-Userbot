@@ -298,7 +298,7 @@ async def amireallyalive(alive):
     output = (
         f"**🦉 PETERCORD 🦅 USERBOT 🐿** \n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
-        f"┣|• `Petercord🐲     :`{DEFAULTUSER} \n"
+        f"┣|• `Petercord🐲:`{DEFAULTUSER} \n"
         f"┣|• `Username 🐲:`@{user.username} \n"
         f"┣|• `Telethon 🐲:`Ver {version.__version__} \n"
         f"┣|• `Python   🐲:`Ver {python_version()} \n"
