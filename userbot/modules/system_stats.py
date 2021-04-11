@@ -226,9 +226,9 @@ async def amireallyalive(alive):
         f" **┗┓PETERCORD USERBOT┏┛** \n"
         f"\n__**{PETERCORD_TEKS_KUSTOM}**__\n"
         f"**━━━━━━━━━━━━━━━━━━━━**\n"
-        f"**🐉 Petercord** \n"
+        f"**🐉 Petercord🐉** \n"
         f" ➥ `{DEFAULTUSER}` \n"
-        f"**🐉 Username** \n"
+        f"**🐉 Username🐉** \n"
         f" ➥ `@{user.username}` \n"
         f"┏━━━━━━━━━━━━━━━━━━━\n"
         f"┣[• `Telethon :`Ver {version.__version__} \n"
@@ -261,8 +261,8 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**▬▬▬▬▬▬❙۩🕸۩❙▬▬▬▬▬▬**\n"
-        f"     **🕸🏇 PETERCORD USERBOT 🏇🕸** \n\n"
+        f"**▬▬▬▬▬▬❙۩🐲۩❙▬▬▬▬▬▬**\n"
+        f"     **🐲🐲 PETERCORD 🐲 USERBOT 🐲🐲** \n\n"
         f"❃ **PETERCORD**     \n   ➥ `{DEFAULTUSER}` \n"
         f"❃ **Username** \n   ➥ `@{user.username}` \n"
         f"❃ **Telethon** \n   ➥ `Versi {version.__version__}` \n"
@@ -270,7 +270,7 @@ async def amireallyalive(alive):
         f"❃ **Versi Bot**\n   ➥ `{BOT_VER}` \n"
         f"❃ **Modul**    \n   ➥ `{len(modules)}` \n\n"
         f"❃ **Repo Userbot:** [Petercord-Userbot](https://github.com/ilham77mansiz/-PETERCORD-)\n❃ **Grup Userbot: **[Tekan](https://t.me/petercord)\n❃ **Pemilik:** [Ilham](t.me/bismillahselaluadaa)\n"
-        f"**▬▬▬▬▬▬❙۩🕸۩❙▬▬▬▬▬▬**")
+        f"**▬▬▬▬▬▬❙۩🐲۩❙▬▬▬▬▬▬**")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -296,15 +296,15 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**🕸 PETERCORD 🕷 USERBOT🕸** \n"
+        f"**🦉 PETERCORD 🦅 USERBOT 🐿** \n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
-        f"┣|• `Petercord     :`{DEFAULTUSER} \n"
-        f"┣|• `Username :`@{user.username} \n"
-        f"┣|• `Telethon :`Ver {version.__version__} \n"
-        f"┣|• `Python   :`Ver {python_version()} \n"
-        f"┣|• `Branch   :`{UPSTREAM_REPO_BRANCH} \n"
-        f"┣|• `Bot Ver  :`{BOT_VER} \n"
-        f"┣|• `Modules  :`{len(modules)} Modules \n"
+        f"┣|• `Petercord🐲     :`{DEFAULTUSER} \n"
+        f"┣|• `Username 🐲:`@{user.username} \n"
+        f"┣|• `Telethon 🐲:`Ver {version.__version__} \n"
+        f"┣|• `Python 🐲  :`Ver {python_version()} \n"
+        f"┣|• `Branch  🐲 :`{UPSTREAM_REPO_BRANCH} \n"
+        f"┣|• `Bot Ver 🐲 :`{BOT_VER} \n"
+        f"┣|• `Modules 🐲 :`{len(modules)} Modules \n"
         f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
         f"[Repo](https://github.com/ilham77mansiz/-PETERCORD-) | [Grup Support](https://t.me/petercord) | [Owner](t.me/bismillahselaluadaa)")
     if ALIVE_LOGO:
