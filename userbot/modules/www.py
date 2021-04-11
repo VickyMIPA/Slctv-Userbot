@@ -110,13 +110,13 @@ async def pingme(pong):
     await pong.edit("❇️❇️❇️❇️ \n❇️❇️❇️❇️ \n     ❇️")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**PETERCORD!! 🏇**\n**PETERPANBOT** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration))
+    await pong.edit(f"**PETERCORD!! 🕷🕸🕷**\n**🐉PETERCORD🐲** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration))
 
 
 @register(outgoing=True, pattern="^.speed$")
 async def speedtst(spd):
     """ For .speed command, use SpeedTest to check server speeds. """
-    await spd.edit("`Menjalankan Tes Kecepatan Tinggi...🚀`")
+    await spd.edit("`Menjalankan Tes Kecepatan Tinggi...🚀 Pusshhh...`")
     test = Speedtest()
 
     test.get_best_server()
@@ -126,18 +126,18 @@ async def speedtst(spd):
     result = test.results.dict()
 
     await spd.edit("**Hasil Tes:\n**"
-                   "❖ **Dimulai Pada:** "
+                   "🕸 **Dimulai Pada:** "
                    f"`{result['timestamp']}` \n"
                    f" **━━━━━━━━━━━━━━━━━**\n"
-                   "❖ **Download:** "
+                   "🕸 **Download:** "
                    f"`{speed_convert(result['download'])}` \n"
-                   "❖ **Upload:** "
+                   "🕸 **Upload:** "
                    f"`{speed_convert(result['upload'])}` \n"
-                   "❖ **Ping:** "
+                   "🕸 **Ping:** "
                    f"`{result['ping']}` \n"
-                   "❖ **ISP:** "
+                   "🕸 **ISP:** "
                    f"`{result['client']['isp']}` \n"
-                   "❖ **BOT:** `Petercord Userbot`")
+                   "🕸 **BOT:** `Petercord Userbot`")
 
 
 def speed_convert(size):
@@ -157,10 +157,10 @@ def speed_convert(size):
 async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
     start = datetime.now()
-    await pong.edit("𝗗𝘂𝗮𝗿!.....🤪")
+    await pong.edit("LABA-LABA SPIDERMAN🕷!.....🕸")
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await pong.edit("- 𝐒 𝐈 𝐍 𝐘 𝐀 𝐋 -\n`%sms`" % (duration))
+    await pong.edit("- 🕸P E T E R C O R D 🕸 -\n`%sms`" % (duration))
 
 CMD_HELP.update(
     {"ping": "`.ping` ; `.lping` ; `.xping` ; `.sping`\
