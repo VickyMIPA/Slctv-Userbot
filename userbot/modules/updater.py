@@ -91,14 +91,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("`PETERCORD USERBOT Berhasil Di Deploy!\n" "Restarting, Mohon Menunggu Petercord.....`")
+            await event.edit("`🐲PETERCORD USERBOT🐲 Berhasil Di Deploy!\n" "Restarting, Mohon Menunggu Petercord.....`")
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#BOT \n"
-                "`Petercord Userbot Berhasil Di Update`")
+                "`🐲PETERCORD USERBOT🐲 Berhasil Di Update`")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -115,9 +115,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit('**✥ PETERCORD USERBOT** `Berhasil Di Update!`')
+    await event.edit('**🐲 PETERCORD USERBOT** `Berhasil Di Update!`')
     await asyncio.sleep(1)
-    await event.edit('**✥ PETERCORD USERBOT** `Di Restart....`')
+    await event.edit('**🐲 PETERCORD USERBOT** `Di Restart....`')
     await asyncio.sleep(1)
     await event.edit('`Mohon Menunggu Beberapa Detik PETERCORD USERBOT ツ`')
     await asyncio.sleep(10)
@@ -194,7 +194,7 @@ async def upstream(event):
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f'**✣ Pembaruan Untuk PETERCORD USERBOT [{ac_br}]:\n\n✣ Pembaruan:**\n`{changelog}`'
+        changelog_str = f'**🐲 Pembaruan Untuk PETERCORD USERBOT [{ac_br}]:\n\n✣ Pembaruan:**\n`{changelog}`'
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
@@ -214,12 +214,12 @@ async def upstream(event):
         await event.edit(
             '`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`')
     else:
-        await event.edit('`✲ Proses Update Petercord-Userbot, Loading....1%`')
-        await event.edit('`✲ Proses Update Petercord-Userbot, Loading....20%`')
-        await event.edit('`✲ Proses Update Petercord-Userbot, Loading....35%`')
-        await event.edit('`✲ Proses Update Petercord-Userbot, Loading....77%`')
-        await event.edit('`✲ Proses Update Petercord-Userbot, Updating...90%`')
-        await event.edit('`✲ Proses Update Petercord-Userbot, Mohon Menunggu Petercord....100%`')
+        await event.edit('`🐲 Proses Update Petercord-Userbot, Loading....1%`')
+        await event.edit('`🐲 Proses Update Petercord-Userbot, Loading....20%`')
+        await event.edit('`🐲 Proses Update Petercord-Userbot, Loading....35%`')
+        await event.edit('`🐲 Proses Update Petercord-Userbot, Loading....77%`')
+        await event.edit('`🐲 Proses Update Petercord-Userbot, Updating...90%`')
+        await event.edit('`🐲 Proses Update Petercord-Userbot, Mohon Menunggu Petercord....100%`')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(10)
