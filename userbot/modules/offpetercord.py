@@ -63,13 +63,13 @@ async def set_afk(afk_e):
         await afk_e.edit(f"**✥ {ALIVE_NAME} Telah OFF**\
         \n➥ **Alasan:** `{string}`")
     else:
-        await afk_e.edit(f"**✥ {ALIVE_NAME} Telah OFF**")
+        await afk_e.edit(f"**🦈 {ALIVE_NAME} Telah OFF**")
     if user.last_name:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name + "【⚒OFF⚒】"))
     else:
-        await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name="【⚒OFF⚒】"))
+        await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name="【🐉⚒OFF⚒🦈】"))
     if BOTLOG:
-        await afk_e.client.send_message(BOTLOG_CHATID, "#OFF\n**Petercord Telah OFF!**")
+        await afk_e.client.send_message(BOTLOG_CHATID, "#OFF\n**Petercord Telah OFF! Aku OFF DADAH🐀**")
     ISAFK = True
     afk_time = datetime.now()  # pylint:disable=E0602
     raise StopPropagation
@@ -88,7 +88,7 @@ async def type_afk_is_not_true(notafk):
     global afk_end
     user = await bot.get_me()  # pylint:disable=E0602
     last = user.last_name
-    if last and last.endswith("【⚒OFF⚒】"):
+    if last and last.endswith("【🐉⚒OFF⚒🦈】"):
         last1 = last[:-12]
     else:
         last1 = ""
@@ -173,7 +173,7 @@ async def mention_afk(mention):
             elif mention.sender_id in USERS:
                 if USERS[mention.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await mention.reply(f"**✥ {ALIVE_NAME} Masih OFF** {afk_since} **Yang Lalu.**\
+                        await mention.reply(f"**🦈 {ALIVE_NAME} Masih OFF** {afk_since} **Yang Lalu.**\
                             \n➥ **Alasan:** `{AFKREASON}`")
                     else:
                         await mention.reply(str(choice(AFKSTR)))
