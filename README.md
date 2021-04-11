@@ -35,7 +35,7 @@ Atau Bisa Gabung Ke Grup Petercord User -> [TEKAN DISINI](https://t.me/petercord
 ## <p align="center">DEPLOY Petercord User</p>
 
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/ilham77mansiz/Petercord-Userbot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-magenta?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/ilham77mansiz/-PETERCORD-"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-magenta?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 <br>
 </p>
