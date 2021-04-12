@@ -727,15 +727,31 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 CMD_HELP.update({
-    "gabut":
+    "petercordkata-kata":
     "`.gabut` ; `.dino`\
     \nUsage: ntahlah gabut doang.\
     \n\n`.gombal`\
     \nUsage: buat bercanda\
     \n\n`.cinta`\
     \nUsage: mengirim cintamu ke seseorang.\
+    \n\n`yang`\
+    \nUsage: apa kabarmu sayang.\
     \n\n`.sayang`\
     \nUsage: untuk jadi buaya.\
     \n\n`.terkadang`\
-    \nUsage: Auk dah iseng doang."
+    \nUsage: Auk dah iseng doang.\
+    \n\n`buaya`\
+    \nUsage:contoh inisial buaya.\
+    \n\n`melamar`\
+    \nUsage:kata kata dilan.\
+    \n\n`wkwk`\
+    \nUsage:Tertawa emot.\
+    \n\n`razia`\
+    \nUsage:ada razia😂.\
+    \n\n`.sad`\
+    \nUsage:sedihnya oalah.\
+    \n\n`.galau`\
+    \nUsage:galau lah situ.\
+    \n\n`.mantan`\
+    \nUsage:teringat mantan.\
 })
