@@ -334,7 +334,7 @@ async def upload_track(track_location, message):
 
 CMD_HELP.update(
     {
-        "getmusic": ">`.song <Artist - Song Title>`"
+        "Petercordmusic": ">`.song <Artist - Song Title>`"
         "\nUsage: Download music with @WooMaiBot"
         "\n\n>`.netease now`"
         "\nUsage: Download current LastFM scrobble use `@WooMaiBot`."
