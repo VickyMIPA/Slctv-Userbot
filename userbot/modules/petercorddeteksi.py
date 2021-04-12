@@ -56,7 +56,7 @@ def user_full_name(user):
 
 # Mansiez
 CMD_HELP.update({
-    "deteksi":
+    "petercorddeteksi":
         "`.deteksi`\
           \nPenjelasan: Melihat Riwayat Grup Yang Pernah/Sedang dimasuki."
 })
