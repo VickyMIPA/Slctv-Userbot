@@ -425,7 +425,7 @@ async def _(event):
             await event.edit("`Berhasil Menambahkan Pengguna Ke Obrolan`")
 
 CMD_HELP.update({
-    "chat":
+    "chatperintah":
     "`.getid`\
 \nUsage: Dapatkan ID dari media Telegram mana pun, atau pengguna mana pun\
 \n\n`.getbot`\
