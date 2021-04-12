@@ -306,7 +306,7 @@ async def amireallyalive(alive):
         f"┣|• `Bot Ver  🐲:`{BOT_VER} \n"
         f"┣|• `Modules  🐲:`{len(modules)} Modules \n"
         f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
-        f"[🐲Repo🐲](https://github.com/ilham77mansiz/-PETERCORD-) | [🐲Grup Support🐲](https://t.me/petercord) | [🐲Owner🐲](t.me/diemmmmmmmmmm)")
+        f"[🐲Repo🐲](https://github.com/ilham77mansiz/-PETERCORD-) | [🐲Grup Support🐲](https://t.me/petercord) | [Owner](t.me/diemmmmmmmmmm)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
