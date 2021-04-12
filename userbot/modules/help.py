@@ -31,6 +31,6 @@ async def help(event):
         await event.edit("**🐳 Daftar Perintah Untuk\n🐺PETERCORD-USERBOT🐺:\n\n**"
                          f"🐳{string}🐳"
                          "\n 🐺GAUSAH MUNAFIK BUKA TOPENGMU🐺 ,HANYA UNTUK BERSENANG SENANG USERBOTNYA")
-        await event.reply(f"\n**Ketik Contoh** `.help vip` **Untuk Informasi Perintah**")
+        await event.reply(f"\n**Ketik Contoh** `.help petercordkata-kata` **Untuk Informasi Perintah**")
         await asyncio.sleep(1000)
         await event.delete()
