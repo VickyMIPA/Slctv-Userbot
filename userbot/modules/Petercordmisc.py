@@ -143,7 +143,7 @@ async def _(event):
         for i in a:
             await event.reply(i.original.action.message)
     else:
-        await event.edit("Lord Anda memerlukan izin Admin untuk melakukan perintah ini")
+        await event.edit("Petercord Anda memerlukan izin Admin untuk melakukan perintah ini")
         await asyncio.sleep(3)
         await event.delete()
 
@@ -815,7 +815,7 @@ async def mediv(medievalx):
         get = await medievalx.get_reply_message()
         args = get.text
     if not args:
-        await medievalx.edit("`Lord, Teks Apa Yang Harus Saya Medibold Kan?`")
+        await medievalx.edit("`Petercord, Teks Apa Yang Harus Saya Medibold Kan?`")
         return
     string = ''.join(args).lower()
     for normiecharacter in string:
@@ -1027,7 +1027,7 @@ async def _(event):
     await event.edit("`Berhasil Mengembalikan Akun Anda ツ`")
 
 CMD_HELP.update({
-    "lordmisc":
+    "petercorddmisc":
     "`.app`\
 \nUsage: ketik `.app namaapp` Dan Dapatkan Detail Informasi App.\
 \n\n`.undlt`\
