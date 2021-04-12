@@ -753,5 +753,5 @@ CMD_HELP.update({
     \n\n`.galau`\
     \nUsage:galau lah situ.\
     \n\n`.mantan`\
-    \nUsage:teringat mantan.\
+    \nUsage:teringat mantan."
 })
