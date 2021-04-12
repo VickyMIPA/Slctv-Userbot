@@ -67,5 +67,5 @@ async def insta(event):
 # By Petercord - Userbot
 # Alvin Gansssssss Mksh Sma Sma
 # Alvin Gans
-CMD_HELP.update({"instagram": "**Modules:** __Instagram__\n\n**Perintah:** `.ig`"
+CMD_HELP.update({"link instagram": "**Modules:** __Instagram__\n\n**Perintah:** `.ig`"
                  "\n**Penjelasan:** Download Media di Postingan Instagram, Balas ke link instagram ketik `.ig`"})
