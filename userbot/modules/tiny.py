@@ -2,7 +2,7 @@
 # frm ultroid plugs thanks
 # Port by: Koala @manusiarakitan
 
-import cv2
+import io
 import os
 from userbot.events import register
 from userbot import CMD_HELP, bot
