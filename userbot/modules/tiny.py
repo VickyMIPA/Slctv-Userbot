@@ -1,29 +1,23 @@
-# Port By ilhammansiz/mansiz For Petercord Userbot From Ultroid, Thanks
-# Based Plugins
-# Fixed By ManusiaRakitann/Koala
-# Dont Remove
+# yang hapus credit anak babi , cape lah aku port
+# frm ultroid plugs thanks
+# Port by: Koala @manusiarakitan
 
-
-# Ilham mansiz
-
-from PIL import Image
 import cv2
 import os
 from userbot.events import register
 from userbot import CMD_HELP, bot
-
-# Tentang Aku dan dia
+from PIL import Image
 
 
 @register(outgoing=True, pattern="^.tiny(?: |$)(.*)", disable_errors=True)
 async def ultiny(event):
     reply = await event.get_reply_message()
     if not (reply and (reply.media)):
-        await event.edit("`Petercord, Mohon Balas Ke Sticker`")
+        await event.edit("`Balas Ke Pesan COK`")
         return
-    xx = await event.edit("`Memproses Tiny....`")
+    xx = await event.edit("`TinyTinyLopyu ❤️...`")
     ik = await bot.download_media(reply)
-    im1 = Image.open("PetercordUserbot/petercorduserbot.png")
+    im1 = Image.open("PetercordUserblt/petercorduserbot.png")
     if ik.endswith(".tgs"):
         await event.client.download_media(reply, "ult.tgs")
         os.system("lottie_convert.py ult.tgs json.json")
@@ -87,8 +81,8 @@ async def ultiny(event):
     os.remove(file)
     os.remove(ik)
 
-# Port By Ilham mansiz
-# Petercord - Userbot
-
-CMD_HELP.update({"tiny": "`.tiny`\
-    \nPenjelasan: Untuk Memperkecil Sticker."})
+CMD_HELP.update(
+    {
+        "tiny": ".tiny\
+    \nTiny tiny lapyuuuu."
+    })
