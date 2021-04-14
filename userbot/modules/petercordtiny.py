@@ -87,8 +87,8 @@ async def ultiny(event):
     os.remove(file)
     os.remove(ik)
 
-# Port By Alvin Ganteng/liualvinas
-# Lord - Userbot
+# Port By Ilham/Dara
+# Petercord - Userbot
 
 CMD_HELP.update({"tiny": "`.tiny`\
     \nPenjelasan: Untuk Memperkecil Sticker."})
