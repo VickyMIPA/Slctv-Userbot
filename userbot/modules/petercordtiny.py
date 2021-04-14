@@ -7,7 +7,6 @@
 # Alvin Ganteng
 
 from PIL import Image
-import v2
 import os
 from userbot.events import register
 from userbot import CMD_HELP, bot
