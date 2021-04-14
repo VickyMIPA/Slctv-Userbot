@@ -1,24 +1,25 @@
-# Port By LiuAlvinas/Alvin For Lord Userbot From Ultroid, Thanks
+# Port By Ilham/Dara For Petercord Userbot From Ultroid, Thanks
 # Based Plugins
 # Fixed By ManusiaRakitann/Koala
 # Dont Remove
 
 
-# Alvin Ganteng
+# TENTANG AKU DAN DIA
 
 from PIL import Image
 import os
 from userbot.events import register
 from userbot import CMD_HELP, bot
 
-# Ngapain Kesini Ajg Hus
+# TENTANG AKU DAN DIA
+
 
 
 @register(outgoing=True, pattern="^.tiny(?: |$)(.*)", disable_errors=True)
 async def ultiny(event):
     reply = await event.get_reply_message()
     if not (reply and (reply.media)):
-        await event.edit("`Petercord, Mohon Balas Ke Sticker`")
+        await event.edit("`Petercord, Mohon Balas Ke Sticker ,Tiny,Tono,Dongo😶`")
         return
     xx = await event.edit("`Memproses Tiny....`")
     ik = await bot.download_media(reply)
