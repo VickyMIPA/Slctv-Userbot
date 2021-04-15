@@ -14,10 +14,6 @@ async def _(event):
     if event.pattern_match.group(1):
         text, username = event.pattern_match.group(1).split()
 
-    else:
-        await event.edit("`Masukan Yang Benar Ya Biar Bisa Bisa direspon!!`")
-        return
-
     async with event.client.conversation(chat) as conv:
         try:
             await conv.send_message("text")
