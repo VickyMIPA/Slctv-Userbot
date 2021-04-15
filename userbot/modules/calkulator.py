@@ -16,7 +16,7 @@ async def _(event):
 
     async with event.client.conversation(chat) as conv:
         try:
-            await conv.send_message("text")
+            await conv.send_message("")
             audio = await conv.get_response()
             await event.client.forward_messages(event.chat_id, audio)
             await event.delete()
