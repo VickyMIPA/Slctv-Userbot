@@ -274,7 +274,7 @@ async def rotate(event):
 
 CMD_HELP.update(
     {
-        "transform": ">`.ghost`"
+        "`transform`": ">`.ghost`"
         "\nUsage: Enchance your image to become a ghost!."
         "\n\n>`.ascii`"
         "\nUsage:create ascii art from media"
