@@ -131,7 +131,7 @@ async def _(hazmat):
     return os.remove(downloaded_file_name)
 
 CMD_HELP.update({
-    "`waifu`":
+    "waifu":
     "`.waifu` text\
 \nUsage: for custom stickers.\
 \n\n`.hz` or `.hz [flip, x2, rotate (degree), background (number), black]`\
