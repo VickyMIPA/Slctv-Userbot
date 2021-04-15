@@ -348,7 +348,7 @@ async def uploadas(uas_event):
 
 
 CMD_HELP.update({
-    "download":
+    "`download`":
     "`.download` <link|filename> or reply to media\
 \nUsage: Downloads file to the server.\
 \n\n`.upload` <path in server>\
