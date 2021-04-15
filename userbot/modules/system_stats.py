@@ -347,7 +347,7 @@ async def amireallyalivereset(ureset):
 
 
 CMD_HELP.update({
-    "`system`":
+    "system":
     "`.sysd`\
 \nUsage: Shows system information using neofetch.\
 \n\n`.botver`\
