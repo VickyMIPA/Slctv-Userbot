@@ -146,7 +146,7 @@ async def fetch_info(replied_user, event):
 
 
 CMD_HELP.update({
-    "whois":
+    "`whois`":
     ">`.whois <username> Atau Balas Ke Pesan Pengguna Ketik .whois`"
     "\nUsage: Mendapatkan Informasi Pengguna."
 })
