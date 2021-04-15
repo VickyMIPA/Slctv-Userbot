@@ -3,10 +3,10 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot.events import register
 from userbot import CMD_HELP
 
-chat = "@KataBersambungBot"
+chat = "@CalcuBot"
 
 
-@register(outgoing=True, pattern="^.katasambung ?(.*)")
+@register(outgoing=True, pattern="^.calkulator ?(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -14,26 +14,19 @@ async def _(event):
         text, username = event.pattern_match.group(1).split()
 
     else:
-        await event.edit("`Masukan Yang Benar Cok Biar Bisa Bisa direspon!!`")
+        await event.edit("`Masukan Yang Benar Ya Biar Bisa Bisa direspon!!`")
         return
 
     async with event.client.conversation(chat) as conv:
         try:
-            await conv.send_message("/join")
-            audio = await conv.get_response()
-            await conv.send_message(text)
-            audio = await conv.get_response()
-            await conv.send_message(text)
+            await conv.send_message("text")
             audio = await conv.get_response()
             await event.client.forward_messages(event.chat_id, audio)
             await event.delete()
+
         except YouBlockedUserError:
             await event.client(UnblockRequest("93372553"))
-            await conv.send_message("/join")
-            audio = await conv.get_response()
-            await conv.send_message(text)
-            audio = await conv.get_response()
-            await conv.send_message(text)
+            await conv.send_message("text")
             audio = await conv.get_response()
             await event.client.forward_messages(event.chat_id, audio)
             await event.delete()
@@ -41,6 +34,6 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "katasambung": ".katasambung\
-    \nUntuk Membuat Bot Dari Botfather, .katasambung  < text >."
+        "Kalkulator": ".calculator\
+    \nUntuk Membuat Bot Dari Kalkulator, .calkulator  < text >."
     })
