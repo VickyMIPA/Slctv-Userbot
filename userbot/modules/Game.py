@@ -24,6 +24,7 @@ async def _(event):
             await event.client(UnblockRequest("93372553"))
             await conv.send_message("play grafit ninja 2")
             audio = await conv.get_response()
+            audio = await conv.get_response()
             await event.client.forward_messages(event.chat_id, audio)
             await event.delete()
 
@@ -37,6 +38,7 @@ async def _(event):
     async with event.client.conversation(chat) as conv:
         try:
             await conv.send_message("Play - F1 Racer")
+            audio = await conv.get_response()
             audio = await conv.get_response()
             await event.client.forward_messages(event.chat_id, audio)
             await event.delete()
