@@ -53,6 +53,6 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "Gamepetercord": "`.ninjagame dan .racergame`\
+        "gamepetercord": "`.ninjagame dan .racergame`\
     \nNinja Game."
     })
