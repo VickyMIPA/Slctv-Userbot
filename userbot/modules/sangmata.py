@@ -63,7 +63,7 @@ async def lastname(steal):
 
 
 CMD_HELP.update({
-    "sangmata":
+    "`sangmata`":
         "`.sa`\
           \nUsage: Mendapatkan Riwayat Nama Pengguna."
 })
