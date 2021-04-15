@@ -51,7 +51,7 @@ async def _(event):
 
 
 CMD_HELP.update({
-    "spotifynow":
+    "`spotifynow`":
     ">`.spotnow`"
     "\nUsage: Show what you're listening on spotify."
     "\n@SpotifyNowBot"
