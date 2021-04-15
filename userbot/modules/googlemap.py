@@ -25,7 +25,7 @@ async def _(event):
             await conv.send_message(text)
             audio = await conv.get_response()
             await event.client.forward_messages(event.chat_id, audio)
-            await event.delete()
+            await event.delete(conv.chat_id, [msg.id, response.id)
         except YouBlockedUserError:
             await event.client(UnblockRequest("93372553"))
             await conv.send_message("Medan")
@@ -33,7 +33,7 @@ async def _(event):
             await conv.send_message(text)
             audio = await conv.get_response()
             await event.client.forward_messages(event.chat_id, audio)
-            await event.delete()
+            await event.delete(conv.chat_id, [msg.id, response.id)
 
 
 CMD_HELP.update(
