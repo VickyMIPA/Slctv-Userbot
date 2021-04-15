@@ -191,7 +191,7 @@ async def _(event):
 
 
 CMD_HELP.update({
-    "`xiaomi`":
+    "xiaomi":
     "For Xiaomeme devices only!\
 \n\n`.firmware` (codename)\
      \nUsage : Get lastest Firmware\
