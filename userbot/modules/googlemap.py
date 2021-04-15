@@ -28,7 +28,7 @@ async def _(event):
             await event.delete(conv.chat_id, [msg.id, response.id])
         except YouBlockedUserError:
             await event.client(UnblockRequest("93372553"))
-            await conv.send_message("Medan")
+            await conv.send_message("/start")
             audio = await conv.get_response()
             await conv.send_message(text)
             audio = await conv.get_response()
