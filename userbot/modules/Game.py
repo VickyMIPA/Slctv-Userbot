@@ -18,6 +18,7 @@ async def _(event):
         try:
             await conv.send_message("play grafit ninja 2")
             audio = await conv.get_response()
+            audio = await conv.get_response()
             await event.client.forward_messages(event.chat_id, audio)
             await event.delete()
         except YouBlockedUserError:
