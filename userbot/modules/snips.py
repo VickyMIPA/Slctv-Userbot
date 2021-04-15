@@ -115,7 +115,7 @@ async def on_snip_delete(event):
 
 
 CMD_HELP.update({
-    "`snips`":
+    "snips":
     "\
 $<snip_name>\
 \nUsage: Gets the specified snip, anywhere.\
