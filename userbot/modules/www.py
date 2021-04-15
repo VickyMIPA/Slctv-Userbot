@@ -163,7 +163,7 @@ async def pingme(pong):
     await pong.edit("- 🕸P E T E R C O R D 🕸 -\n`%sms`" % (duration))
 
 CMD_HELP.update(
-    {"`ping`": "`.ping` ; `.lping` ; `.xping` ; `.sping`\
+    {"ping": "`.ping` ; `.lping` ; `.xping` ; `.sping`\
     \nUsage: Untuk menunjukkan ping bot.\
     \n\n`.speed`\
     \nUsage: Untuk menunjukkan kecepatan.\
