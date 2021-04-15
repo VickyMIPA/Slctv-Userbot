@@ -55,6 +55,6 @@ CMD_HELP.update(
     {
         "GamePetercord": "`.ninjagame`\
     \nNinja Game.\
-     `.racergame`\
+     \n\`.racergame`\
     \nUsage:Racing balap."
     })
