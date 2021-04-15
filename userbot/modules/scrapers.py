@@ -1327,7 +1327,7 @@ async def capture(url):
 
 CMD_HELP.update(
     {
-        "image_search": ">`.img <search_query>`\
+        "`image_search`": ">`.img <search_query>`\
     \nUsage: Does an image search on Google and shows 15 images.",
         "currency": "`.currency` <amount> <from> <to>\
     \nUsage: Converts various currencies for you.",
