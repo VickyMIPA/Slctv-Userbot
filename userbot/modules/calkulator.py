@@ -30,3 +30,8 @@ async def _(event):
             audio = await conv.get_response()
             await event.client.forward_messages(event.chat_id, audio)
             await event.delete(conv.chat_id, [msg.id, response.id])
+CMD_HELP.update(
+    {
+        "kalkulator": ".calkulator\
+    \nUntuk Membuat Bot Dari kalkulator, .calkulator  < contoh 2+2 >."
+    })
