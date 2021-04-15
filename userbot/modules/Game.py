@@ -55,5 +55,4 @@ CMD_HELP.update(
     {
         "GamePetercord": "`.ninjagame dan .racergame`\
     \nNinja Game."
-
     })
