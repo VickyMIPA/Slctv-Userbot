@@ -1,3 +1,4 @@
+#port by ilham mansiez
 from telethon.tl.functions.contacts import UnblockRequest
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot.events import register
@@ -23,7 +24,6 @@ async def _(event):
             audio = await conv.get_response()
             await event.client.forward_messages(event.chat_id, audio)
             await event.delete()
-
         except YouBlockedUserError:
             await event.client(UnblockRequest("93372553"))
             await conv.send_message("text")
