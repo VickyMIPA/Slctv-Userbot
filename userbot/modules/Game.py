@@ -53,6 +53,8 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "GamePetercord": ".ninjagame\
-    \nUntuk Membuat Bot Dari Game, .ninjagame "
+        "GamePetercord": "`.ninjagame`\
+    \nNinja Game.\
+     "`.racergame`\
+    \nUsage:Racing balap."
     })
