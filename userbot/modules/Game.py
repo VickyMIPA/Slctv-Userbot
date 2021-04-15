@@ -20,14 +20,14 @@ async def _(event):
             audio = await conv.get_response()
             audio = await conv.get_response()
             await event.client.forward_messages(event.chat_id, audio)
-            await event.delete()
+            await event.delete(event.chat_id, audio)
         except YouBlockedUserError:
             await event.client(UnblockRequest("93372553"))
             await conv.send_message("play grafit ninja 2")
             audio = await conv.get_response()
             audio = await conv.get_response()
             await event.client.forward_messages(event.chat_id, audio)
-            await event.delete(conv.chat_id, [msg.id, response.id])
+            await event.delete(event.chat_id, audio)
 
 @register(outgoing=True, pattern="^.racergame ?(.*)")
 async def _(event):
@@ -42,13 +42,13 @@ async def _(event):
             audio = await conv.get_response()
             audio = await conv.get_response()
             await event.client.forward_messages(event.chat_id, audio)
-            await event.delete()
+            await event.delete(event.chat_id, audio)
         except YouBlockedUserError:
             await event.client(UnblockRequest("93372553"))
             await conv.send_message("Play - F1 Racer")
             audio = await conv.get_response()
             await event.client.forward_messages(event.chat_id, audio)
-            await event.delete(conv.chat_id, [msg.id, response.id])
+            await event.delete(event.chat_id, audio)
 
 
 CMD_HELP.update(
