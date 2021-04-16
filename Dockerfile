@@ -1,5 +1,5 @@
 # We're using Ubuntu 20.10
-FROM imansiez7/docker:groovy
+FROM koala21/kampangbot:buster
 
 #
 # Clone repo and prepare working directory
