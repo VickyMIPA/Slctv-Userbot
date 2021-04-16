@@ -13,7 +13,7 @@ Repo Yang Dibuat [ILham Mansiezz](https://t.me/bismillahselaluadaa) Dari Berbaga
 ### CARA MENDAPATKAN STRING SESSON /STRING DISINI
 ### Run on repl.it
 
-[![Run repl.it](https://img.shields.io/badge/run-string__session.py-blue?style=for-the-badge&logo=repl.it)](https://repl.it/@mansiezz/String-Sesson-Petercord-Userbot#main.py)
+[![Run repl.it](https://img.shields.io/badge/run-string__session.py-blue?style=for-the-badge&logo=repl.it)](https://replit.com/@ilhammansiz12/PETERCORD-USERBOT)
 Caranya Pergi Ke Grup Support Petercord User Lalu Ketik #String [TEKAN DISINI](https://t.me/petercord) Untuk Masuk Ke Grup Support
 
 ## Bagaimana Cara Deploy?
