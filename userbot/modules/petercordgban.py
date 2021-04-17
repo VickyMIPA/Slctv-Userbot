@@ -131,18 +131,18 @@ async def gben(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, view_messages=False)
                 a += 1
-                await dark.edit(f"`Global Banned Aktif ✅`")
+                await dark.edit(f"`Global Banned Aktif ✅ Ya kasian:)`")
             except BaseException:
                 b += 1
     else:
         await dark.edit(f"`Mohon Balas Ke Pesan Petercord`")
     try:
         if gmute(user.id) is False:
-            return await dark.edit(f"**Kesalahan! Pengguna Ini Sudah Kena Perintah Global Banned Petercord.**")
+            return await dark.edit(f"**Kesalahan! Pengguna Ini Sudah Kena Perintah Global Banned Petercord Kasian:).**")
     except BaseException:
         pass
     return await dark.edit(
-        f"**♛ Perintah Petercord:** `{ALIVE_NAME}`\n**✣ Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**✣ Aksi:** `Global Banned`"
+        f"**♛☠👻 Perintah Petercord:** `{ALIVE_NAME}`\n**🐲 Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**☠ Aksi:** `☠Global Banned☠`"
     )
 
 
@@ -206,7 +206,7 @@ async def gunben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"**♛ Perintah Petercord:** `{ALIVE_NAME}`\n**✣ Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**✣ Aksi:** `Membatalkan Global Banned`"
+        f"**♛☠👻 Perintah Petercord:** `{ALIVE_NAME}`\n**☠ Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**👻 Aksi:** `Membatalkan Global Banned`"
     )
 
 
