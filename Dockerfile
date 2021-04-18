@@ -1,5 +1,6 @@
 # LORD USERBOT
-FROM koala21/kampangbot:buster
+FROM liualvinas24/docker:groovy
+
 RUN git clone -b Petercord-Userbot https://github.com/ilham77mansiz/-PETERCORD- /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
