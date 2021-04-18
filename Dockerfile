@@ -1,5 +1,5 @@
 # LORD USERBOT
-FROM ximfine/xproject:buster
+FROM liualvinas24/docker:groovy
 
 #
 # LORD
