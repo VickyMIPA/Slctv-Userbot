@@ -14,8 +14,7 @@ async def _(event):
     if event.pattern_match.group(1):
         text, username = event.pattern_match.group(1).split()
     else:
-        await event.edit("`Masukan Yang Benar Cok Biar Bisa Bikin Bot!!`")
-        return
+        await event.delete()
     async with event.client.conversation(chat) as conv:
         try:
             await conv.send_message("play grafit ninja 2")
@@ -37,7 +36,8 @@ async def _(event):
         return
     if event.pattern_match.group(1):
         text, username = event.pattern_match.group(1).split()
-
+    else:
+        await event.delete()
     async with event.client.conversation(chat) as conv:
         try:
             await conv.send_message("Play - F1 Racer")
