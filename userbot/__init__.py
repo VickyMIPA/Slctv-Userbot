@@ -3,6 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 # inline credit @keselekpermen69
+# Pengguna Petercord-Userbot
 """ Userbot initialization. """
 
 import os
@@ -146,21 +147,13 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # Youtube API key
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
-# Custom Handler
-CMD_HANDLER = os.environ.get("CMD_HANDLER", ".")
-
-# untuk memberi media pada pmpermit
-PM_PIC = os.environ.get(
-    "https://telegra.ph/file/e659afa39091f773c67b2.jpg", None)
-
-# untuk perintah .koalalive
-PETERCORD_TEKS_KUSTOM = os.environ.get(
-    "KAMPANG_TEKS_KUSTOM",
-    "Join Gaes @petercord")
+# untuk perintah .petercord
+PETERCORD_TEKS_KUSTOM = os.environ.get("PETERCORD_TEKS_KUSTOM", None)
 
 # Default .alive name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
 
+# Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
 TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
 
@@ -174,10 +167,10 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "KAMPANG-BOT")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Petercord-Userbot")
 
 # Bot version
-BOT_VER = os.environ.get("BOT_VER", "Kampang 4.6")
+BOT_VER = os.environ.get("BOT_VER", "4.0")
 
 # Default .alive username
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
@@ -187,7 +180,7 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/57b5bff10eeeb5110c493.mp4"
+    "ALIVE_LOGO") or "https://telegra.ph/file/526d774b5de9cacf7113e.png"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -326,7 +319,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```🐨BOT KAMPANG🐨\nMENYALA ANJEEENG```")
+    await bot.send_message(BOTLOG_CHATID, "```『⚔ 🐲PETERCORD-USERBOT🐲 Telah Aktif ⚔』```")
     return
 
 with bot:
@@ -356,9 +349,7 @@ def paginate_help(page_number, loaded_modules, prefix):
     helpable_modules = [p for p in loaded_modules if not p.startswith("_")]
     helpable_modules = sorted(helpable_modules)
     modules = [
-        custom.Button.inline(
-            "{} {}".format(
-                "✲", x), data="ub_modul_{}".format(x))
+        custom.Button.inline("{} {} 🐳".format("🐳", x), data="ub_modul_{}".format(x))
         for x in helpable_modules
     ]
     pairs = list(zip(modules[::number_of_cols],
@@ -374,10 +365,10 @@ def paginate_help(page_number, loaded_modules, prefix):
         ] + [
             (
                 custom.Button.inline(
-                    "⌫️", data="{}_prev({})".format(prefix, modulo_page)
+                    "☚", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    "⌦️", data="{}_next({})".format(prefix, modulo_page)
+                    "☛", data="{}_next({})".format(prefix, modulo_page)
                 )
             )
         ]
@@ -399,9 +390,9 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("I'm [BOT KAMPANG](https://github.com/ManusiaRakitan/Kampang-Bot) modules helper...\nplease make your own bot, don't use mine 😋")
+                await event.reply("Petercord-Userbot, Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/ilham77mansiz/-PETERCORD-.git)")
             else:
-                await event.reply(f"`Hey there {ALIVE_NAME}\n\nI work for you :)`")
+                await event.reply(f"`Hai Petercord {ALIVE_NAME}\n\nApa Kabarmu?`")
 
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
@@ -411,9 +402,9 @@ with bot:
             if event.query.user_id == uid and query.startswith("@UserButt"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
-                    "Please Use Only With .help Command",
-                    text="{}\nTotal loaded Modules: {}\n               \n🐨 **MODULE INFO KAMPANG** 🐨\n".format(
-                        "🐨BOT KAMPANG🐨 modules helper",
+                    "Harap Gunakan .help Untuk Perintah",
+                    text="{}\n\n**❃ Jumlah Modul Yang Tersedia:** `{}`\n               \n**❃ Daftar Modul  🐲PETERCORD-USERBOT🐲:** \n".format(
+                        "**⚔ 🐲PETERCORD-USERBOT🐲⚔**",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -421,22 +412,22 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "🐨BOT KAMPANG🐨 Helper",
-                    text="List of Modules",
+                    "Bantuan PETERCORD🐺USERBOT ",
+                    text="Daftar Modul",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    "BOT KAMPANG",
-                    text="""You can convert your account to bot and use them. Remember, you can't manage someone else's bot! All installation details are explained from GitHub address below.""",
+                    "**PETERCORD🐲USERBOT**",
+                    text="""**Anda Bisa Membuat PETERCORD🐲USERBOT Anda Sendiri Dengan Cara:** [Tekan Disini](t.me/petercord)""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "GitHub Repo",
-                                "https://github.com/ManusiaRakitan/Kampang-Bot"),
+                                "Repo Petercord-Userbot",
+                                "https://github.com/ilham77mansiz/-PETERCORD-"),
                             custom.Button.url(
-                                "Support",
-                                "https://t.me/mixiologist")],
+                                "Pemilik Repo",
+                                "t.me/bismillahselaluadaa")],
                     ],
                     link_preview=False,
                 )
@@ -456,7 +447,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = "Please make for yourself, don't use my bot!"
+                reply_pop_up_alert = f"Harap Deploy Petercord Userbot Anda Sendiri, Jangan Menggunakan Milik Petercord {ALIVE_NAME} ツ"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -474,7 +465,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = "Please make for yourself, don't use my bot!"
+                reply_pop_up_alert = f"Harap Deploy Petercord Userbot Anda Sendiri, Jangan Menggunakan Milik Petercord {ALIVE_NAME} ツ"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -490,7 +481,7 @@ with bot:
                 if len(cmdhel) > 150:
                     help_string = (
                         str(CMD_HELP[modul_name]).replace('`', '')[:150] + "..."
-                        + "\n\nRead more .help "
+                        + "\n\nBaca Teks Berikutnya Ketik .help "
                         + modul_name
                         + " "
                     )
@@ -505,15 +496,14 @@ with bot:
                     )
                 )
             else:
-                reply_pop_up_alert = "Please make for yourself, don't use my bot!"
+                reply_pop_up_alert = f"Harap Deploy Petercord Userbot Anda Sendiri, Jangan Menggunakan Milik Petercord {ALIVE_NAME} ツ"
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     except BaseException:
         LOGS.info(
-            "Support for inline is disabled on your bot. "
-            "To enable it, define a bot token and enable inline mode on your bot. "
-            "If you think there is a problem other than this, contact us.")
+            "Mode Inline Bot Mu Nonaktif. "
+            "Untuk Mengaktifkan Pergi Ke @BotFather, lalu settings bot > pilih mode inline > Turn On. ")
     try:
         bot.loop.run_until_complete(check_botlog_chatid())
     except BaseException:
