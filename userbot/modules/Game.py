@@ -1,4 +1,4 @@
-#port by ilham mansiez
+# port by ilham mansiez
 from telethon.tl.functions.contacts import UnblockRequest
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot.events import register
@@ -35,6 +35,7 @@ async def _(event):
             await event.delete()
             await event.client.forward_messages(event.chat_id, audio)
             await event.delete(event.chat_id, audio)
+
 
 @register(outgoing=True, pattern="^.racergame ?(.*)")
 async def _(event):

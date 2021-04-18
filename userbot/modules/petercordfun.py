@@ -19,6 +19,7 @@ async def _(event):
 
 # ILham Mansiezz
 
+
 @register(outgoing=True, pattern=r"^\.game(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
@@ -30,6 +31,7 @@ async def _(event):
     tap = await bot.inline_query(botusername, noob)
     await tap[0].click(event.chat_id)
     await event.delete()
+
 
 @register(outgoing=True, pattern=r"^\.wp(?: |$)(.*)")
 async def _(event):
@@ -44,6 +46,7 @@ async def _(event):
     await event.delete()
 
 # ILham Mansiezz
+
 
 @register(outgoing=True, pattern=r"^\.mod(?: |$)(.*)")
 async def _(event):

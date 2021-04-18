@@ -106,7 +106,7 @@ async def pingme(pong):
     await pong.edit("❇️❇️❇️❇️ \n❇️❇️❇️❇️ \n❇️❇️❇️❇️❇️")
     await pong.edit("❇️    ❇️ \n❇️    ❇️ \n     ❇️")
     await pong.edit("❇️  ❇️❇️ \n❇️    ❇️ \n     ❇️")
-    await pong.edit("❇️    ❇️ \n❇️    ❇️ \n     ❇️")    
+    await pong.edit("❇️    ❇️ \n❇️    ❇️ \n     ❇️")
     await pong.edit("❇️❇️❇️❇️ \n❇️❇️❇️❇️ \n     ❇️")
     end = datetime.now()
     duration = (end - start).microseconds / 1000

@@ -14,7 +14,6 @@ from userbot import CMD_HELP, bot
 # TENTANG AKU DAN DIA
 
 
-
 @register(outgoing=True, pattern="^.tiny(?: |$)(.*)", disable_errors=True)
 async def ultiny(event):
     reply = await event.get_reply_message()

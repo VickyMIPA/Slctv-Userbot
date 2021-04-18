@@ -112,7 +112,7 @@ async def koc(e):
         await e.edit("🙉🙉🙉🙉")
         sleep(2)
         await e.edit("🐢  TAK PERNAH KUSADARI 🧎")
-        sleep(1)              
+        sleep(1)
         await e.edit("🐢        AKU SEGILA INI             🚶")
         sleep(2)
         await e.edit("🐢     AKU HIDUP UNTUKMU                🚶")
@@ -441,6 +441,7 @@ async def typewriter(typew):
     await typew.edit("`Tapi Bo'ong`")
 # Create by myself @localheart
 
+
 @register(outgoing=True, pattern='^.mantan(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -472,6 +473,7 @@ async def typewriter(typew):
     await typew.edit("`😂`")
 # Create by myself @localheart
 
+
 @register(outgoing=True, pattern='^.sedih(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -497,6 +499,7 @@ async def typewriter(typew):
     await typew.edit("`🥺😭🥺😭🥺😭🥺`")
 # Create by myself @localheart
 
+
 @register(outgoing=True, pattern='^.salam(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -506,6 +509,7 @@ async def typewriter(typew):
     await typew.edit("`Assalammuallaikum😊😊`")
 # Create by myself @localheart
 
+
 @register(outgoing=True, pattern='^.jawab(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -514,6 +518,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("`Walaikumsalam😊`")
 # Create by myself @localheart
+
 
 @register(outgoing=True, pattern="^.pantun$")
 async def koc(e):
@@ -568,6 +573,7 @@ async def koc(e):
         await e.edit("MUACH MUACH😍😁💞")
 # Create by myself @localheart
 
+
 @register(outgoing=True, pattern='^.galau(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -588,6 +594,7 @@ async def typewriter(typew):
     sleep(2)
     await typew.edit("`DAHLA MALES 🙂`")
 # Create by myself @localheart
+
 
 @register(outgoing=True, pattern='^.sad(?: |$)(.*)')
 async def typewriter(typew):
@@ -610,6 +617,7 @@ async def typewriter(typew):
     await typew.edit("`😭`")
 # Create by myself @localheart
 
+
 @register(outgoing=True, pattern='^razia(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -630,6 +638,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("`🚥 Yah Ketangkap`")
 # Create by myself @localheart
+
 
 @register(outgoing=True, pattern='^/wkwk(?: |$)(.*)')
 async def typewriter(typew):
@@ -652,6 +661,7 @@ async def typewriter(typew):
     await typew.edit("`😓`")
 # Create by myself @localheart
 
+
 @register(outgoing=True, pattern='^melamar(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -672,6 +682,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("`DILAN 1990`")
 # Create by myself @localheart
+
 
 @register(outgoing=True, pattern='^buaya(?: |$)(.*)')
 async def typewriter(typew):
@@ -694,6 +705,7 @@ async def typewriter(typew):
     await typew.edit("`ITULAH BUAYA BUAYA HATI HATI YA 😁`")
 # Create by myself @localheart
 
+
 @register(outgoing=True, pattern='^yang(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -715,6 +727,7 @@ async def typewriter(typew):
     await typew.edit("`Semoga engkau baik baik saja meski tak kumiliki.`")
 # Create by myself @localheart
 
+
 @register(outgoing=True, pattern='^botgambar(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -722,7 +735,7 @@ async def typewriter(typew):
     await pong.edit("❇️❇️❇️❇️ \n❇️❇️❇️❇️ \n❇️❇️❇️❇️❇️")
     await pong.edit("❇️    ❇️ \n❇️    ❇️ \n     ❇️")
     await pong.edit("❇️  ❇️❇️ \n❇️    ❇️ \n     ❇️")
-    await pong.edit("❇️    ❇️ \n❇️    ❇️ \n     ❇️")    
+    await pong.edit("❇️    ❇️ \n❇️    ❇️ \n     ❇️")
     await pong.edit("❇️❇️❇️❇️ \n❇️❇️❇️❇️ \n     ❇️")
 # Create by myself @localheart
 

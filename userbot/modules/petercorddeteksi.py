@@ -1,4 +1,4 @@
-# Ported From Cat Userbot For Petercord Userbot By Mansiez/Ilham mansiez 
+# Ported From Cat Userbot For Petercord Userbot By Mansiez/Ilham mansiez
 # Based On Plugins
 # Tentang Aku Dan Dia
 
