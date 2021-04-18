@@ -1,6 +1,4 @@
 # We're using Ubuntu 20.10
-FROM ubuntu:groovy
-LABEL maintainer "ilham77mansiz <imansiez7@gmail.com>"
 
 
 #
