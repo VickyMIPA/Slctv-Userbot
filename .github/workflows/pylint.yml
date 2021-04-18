@@ -11,7 +11,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v1
         with:
-          python-version: 3.9
+          python-version: 3.9.2
 
       - name: Install Python lint libraries
         run: |
@@ -29,6 +29,6 @@ jobs:
           commit_message: 'pylint: auto fixes'
           commit_options: '--no-verify --signoff'
           repository: .
-          commit_user_name: ManusiaRakitan
-          commit_user_email: zauharcamel@gmail.com
-          commit_author: ManusiaRakitan <zauharcamel@gmail.com>
+          commit_user_name: Zora24
+          commit_user_email: liualvinas1212@gmail.com
+          commit_author: Zora24 <liualvinas1212@gmail.com>
