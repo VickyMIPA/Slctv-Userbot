@@ -1,5 +1,7 @@
 # We're using Ubuntu 20.10
-FROM 050602/petercorduserbot:buster
+FROM ubuntu:groovy
+LABEL maintainer "ilham77mansiz <imansiez7@gmail.com>"
+
 
 #
 # Clone repo and prepare working directory
