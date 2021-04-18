@@ -1,5 +1,5 @@
-# LORD USERBOT
-FROM liualvinas24/docker:groovy
+
+FROM koala21/kampangbot:buster
 
 RUN git clone -b Petercord-Userbot https://github.com/ilham77mansiz/-PETERCORD- /root/userbot
 RUN mkdir /root/userbot/.bin
