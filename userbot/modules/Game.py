@@ -13,7 +13,7 @@ async def _(event):
         return
     if event.pattern_match.group(1):
         text, username = event.pattern_match.group(1).split()
-        else:
+    else:
         await event.edit("`Masukan Yang Benar Cok Biar Bisa Bikin Bot!!`")
         return
     async with event.client.conversation(chat) as conv:
