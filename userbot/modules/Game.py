@@ -18,15 +18,21 @@ async def _(event):
     async with event.client.conversation(chat) as conv:
         try:
             await conv.send_message("play grafit ninja 2")
+            await event.delete()
             audio = await conv.get_response()
+            await event.delete()
             audio = await conv.get_response()
+            await event.delete()
             await event.client.forward_messages(event.chat_id, audio)
             await event.delete(event.chat_id, audio)
         except YouBlockedUserError:
             await event.client(UnblockRequest("93372553"))
             await conv.send_message("play grafit ninja 2")
+            await event.delete()
             audio = await conv.get_response()
+            await event.delete()
             audio = await conv.get_response()
+            await event.delete()
             await event.client.forward_messages(event.chat_id, audio)
             await event.delete(event.chat_id, audio)
 
@@ -41,16 +47,21 @@ async def _(event):
     async with event.client.conversation(chat) as conv:
         try:
             await conv.send_message("Play - F1 Racer")
+            await event.delete()
             audio = await conv.get_response()
+            await event.delete()
             audio = await conv.get_response()
+            await event.delete()
             await event.client.forward_messages(event.chat_id, audio)
-            await event.delete(event.chat_id, audio)
+            await event.delete()
         except YouBlockedUserError:
             await event.client(UnblockRequest("93372553"))
             await conv.send_message("Play - F1 Racer")
+            await event.delete()
             audio = await conv.get_response()
+            await event.delete()
             await event.client.forward_messages(event.chat_id, audio)
-            await event.delete(event.chat_id, audio)
+            await event.delete()
 
 
 CMD_HELP.update(
