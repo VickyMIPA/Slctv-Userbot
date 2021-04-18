@@ -1,5 +1,5 @@
 # We're using Ubuntu 20.10
-FROM 050602/petercorduserbot:tagname
+FROM 050602/petercorduserbot:buster
 
 #
 # Clone repo and prepare working directory
