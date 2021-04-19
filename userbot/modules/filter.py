@@ -59,7 +59,7 @@ async def add_new_filter(new_handler):
     if msg and msg.media and not string:
         if BOTLOG_CHATID:
             await new_handler.client.send_message(
-                BOTLOG_CHATID, f"#FILTER\nID OBROLAN: {new_handler.chat_id}\nTRIGGER: {keyword}"
+                BOTLOG_CHATID, f"📢FILTER PETERCORD\nID OBROLAN: {new_handler.chat_id}\nTRIGGER: {keyword}"
                 "\n\n`Pesan Berikut Disimpan Sebagai Data Balasan Filter Untuk Obrolan, Mohon Jangan Menghapusnya Petercord`"
             )
             msg_o = await new_handler.client.forward_messages(
