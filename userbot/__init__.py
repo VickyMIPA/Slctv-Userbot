@@ -365,10 +365,10 @@ def paginate_help(page_number, loaded_modules, prefix):
         ] + [
             (
                 custom.Button.inline(
-                    "☚", data="{}_prev({})".format(prefix, modulo_page)
+                    "🗡", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    "☛", data="{}_next({})".format(prefix, modulo_page)
+                    "🗡", data="{}_next({})".format(prefix, modulo_page)
                 )
             )
         ]
@@ -403,8 +403,8 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
-                    text="{}\n\n**❃ Jumlah Modul Yang Tersedia:** `{}`\n               \n**❃ Daftar Modul  🎸PETERCORD-USERBOT🎸:** \n".format(
-                        "**⚔ 🎸PETERCORD-USERBOT🎸⚔**",
+                    text="{}\n\n**🗑 Jumlah Modul Yang Tersedia:** `{}`\n               \n**❃ Daftar Modul  🎸PETERCORD-USERBOT🎸:** \n".format(
+                        "** 🎸PETERCORD-USERBOT🎸**",
                         len(dugmeler),
                     ),
                     buttons=buttons,
