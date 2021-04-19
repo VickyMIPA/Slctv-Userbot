@@ -97,7 +97,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
 
         if BOTLOG:
             await event.client.send_message(
-                BOTLOG_CHATID, "#BOT \n"
+                BOTLOG_CHATID, "📢PETERCORD \n"
                 "`🎸PETERCORD USERBOT🎸 Berhasil Di Update`")
 
     else:
@@ -215,11 +215,11 @@ async def upstream(event):
             '`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`')
     else:
         await event.edit('`🎸 Proses Update Petercord-Userbot, Loading....1%`')
-        await event.edit('`🎸 Proses Update Petercord-Userbot, Loading....20%`')
+        await event.edit('`🎻 Proses Update Petercord-Userbot, Loading....20%`')
         await event.edit('`🎸 Proses Update Petercord-Userbot, Loading....35%`')
-        await event.edit('`🎸 Proses Update Petercord-Userbot, Loading....77%`')
+        await event.edit('`🥁 Proses Update Petercord-Userbot, Loading....77%`')
         await event.edit('`🎸 Proses Update Petercord-Userbot, Updating...90%`')
-        await event.edit('`🎸 Proses Update Petercord-Userbot, Mohon Menunggu Petercord....100%`')
+        await event.edit('`🎹 Proses Update Petercord-Userbot, Mohon Menunggu Petercord....100%`')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(10)
