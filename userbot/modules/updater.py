@@ -234,7 +234,7 @@ async def upstream(event):
 CMD_HELP.update({
     'update':
     ".update"
-    "\nUsage: Untuk Melihat Pembaruan Terbaru 🎸Petercord-Userbot🐲."
+    "\nUsage: Untuk Melihat Pembaruan Terbaru 🎸Petercord-Userbot🎸."
     "\n\n.update now"
     "\nUsage: Memperbarui 🎸Petercord-Userbot🎸."
     "\n\n.update deploy"
