@@ -113,9 +113,9 @@ async def save_welcome(event):
     if msg and msg.media and not string:
         if BOTLOG_CHATID:
             await event.client.send_message(
-                BOTLOG_CHATID, f"#WELCOME🐲 \nID GRUP: {event.chat_id}"
+                BOTLOG_CHATID, f"📢WELCOME PETERCORD📢 \nID GRUP: {event.chat_id}"
                 "\nPetercord Memasang Pesan Perintah Welcome Digrup, Ini Adalah Catatan Pesan Welcome "
-                "Mohon Jangan Dihapus 🐲Petercord!🐲"
+                "Mohon Jangan Dihapus 🎸Petercord!🎸"
             )
             msg_o = await event.client.forward_messages(
                 entity=BOTLOG_CHATID,
