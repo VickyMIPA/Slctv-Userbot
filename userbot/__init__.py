@@ -319,7 +319,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```🎸PETERCORD-USERBOT🎸\nREADY\n🇮🇩🇹🇷```")
+    await bot.send_message(BOTLOG_CHATID, "```🎸PETERCORD-USERBOT🎸\nMENYALA```")
     return
 
 with bot:
@@ -403,7 +403,7 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
-                    text="{}\n\n**🗑 Jumlah Modul Yang Tersedia:** `{}`\n               \n**❃ Daftar Modul  🎸PETERCORD-USERBOT🎸:** \n".format(
+                    text="{}\n\n**🔰 Jumlah Modul Yang Tersedia:** `{}`\n               \n**🔰 Daftar Modul  🎸PETERCORD-USERBOT🎸:** \n".format(
                         "** 🎸PETERCORD-USERBOT🎸**",
                         len(dugmeler),
                     ),
