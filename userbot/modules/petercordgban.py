@@ -112,7 +112,7 @@ async def gben(userbot):
     if user:
         if user.id == 1593802955:
             return await dark.edit(
-                f"`Anda Tidak Bisa Melakukan Global Banned Ke Petercord ILham, Dia Adalah Pembuat Saya ヅ`"
+                f"`Anda Tidak Bisa Melakukan Global Banned Ke Petercord, 😎ILham Mansiez. Dia Adalah Pembuat Saya Aku Kebal Bot ini jinak😂`"
             )
         try:
             from userbot.modules.sql_helper.gmute_sql import gmute
