@@ -1,7 +1,7 @@
 #Ilham Mansiez
 #Petercord Userbot
 #Tentang AKU DAN DIA
-FROM ilhammansiz17/petercorduserbot:latest
+FROM 050602/ilhammansiz:buster
 
 RUN git clone -b Petercord-Userbot https://github.com/ilham77mansiz/-PETERCORD- /root/userbot
 RUN mkdir /root/userbot/.bin
