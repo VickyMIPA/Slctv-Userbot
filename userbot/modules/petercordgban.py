@@ -1,4 +1,4 @@
-# by:koala @bismillahselaluadaa
+# by:ilham @bismillahselaluadaa
 # Petercord Userbot
 
 from telethon.events import ChatAction
@@ -110,7 +110,7 @@ async def gben(userbot):
     except BaseException:
         return await dark.edit(f"`Terjadi Kesalahan ヅ`")
     if user:
-        if user.id == 1353102497:
+        if user.id == 1593802955:
             return await dark.edit(
                 f"`Anda Tidak Bisa Melakukan Global Banned Ke Petercord ILham, Dia Adalah Pembuat Saya ヅ`"
             )
@@ -135,14 +135,14 @@ async def gben(userbot):
             except BaseException:
                 b += 1
     else:
-        await dark.edit(f"`Mohon Balas Ke Pesan Petercord`")
+        await dark.edit(f"`Mohon Balas Ke Pesan Petercord Biar Kena Banned Dia haha:)`")
     try:
         if gmute(user.id) is False:
             return await dark.edit(f"**Kesalahan! Pengguna Ini Sudah Kena Perintah Global Banned Petercord Kasian:).**")
     except BaseException:
         pass
     return await dark.edit(
-        f"**♛☠👻 Perintah Petercord:** `{ALIVE_NAME}`\n**🐲 Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**☠ Aksi:** `☠Global Banned☠`"
+        f"**📢 Perintah Petercord:** `{ALIVE_NAME}`\n**🎎 Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**☠ Aksi:** `☠Global Banned☠`"
     )
 
 
@@ -176,7 +176,7 @@ async def gunben(userbot):
     except BaseException:
         return await dark.edit("`Terjadi Kesalahan ヅ`")
     if user:
-        if user.id == 1353102497:
+        if user.id == 1593802955:
             return await dark.edit("**Petercord Pengguna Tidak Bisa Terkena Perintah Ini, Karna Dia Pembuatku ヅ**")
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute
@@ -206,7 +206,7 @@ async def gunben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"**♛☠👻 Perintah Petercord:** `{ALIVE_NAME}`\n**☠ Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**👻 Aksi:** `Membatalkan Global Banned`"
+        f"**📢 Perintah Petercord:** `{ALIVE_NAME}`\n**🎎 Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**🥊 Aksi:** `Membatalkan Global Banned Baik Aku Kan:)`"
     )
 
 
