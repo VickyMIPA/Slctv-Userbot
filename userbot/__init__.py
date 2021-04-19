@@ -419,15 +419,15 @@ with bot:
             else:
                 result = builder.article(
                     "**PETERCORD🎸USERBOT**",
-                    text="""**Anda Bisa Membuat PETERCORD🎸USERBOT Anda Sendiri Dengan Cara:** [Tekan Disini](t.me/petercord)""",
+                    text="""**Anda Bisa Membuat PETERCORD🎸USERBOT Anda Sendiri Dengan Cara:** [Tekan Disini🏹](t.me/petercord)""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "Repo Petercord-Userbot",
+                                "Repo Petercord-Userbot🏹",
                                 "https://github.com/ilham77mansiz/-PETERCORD-"),
                             custom.Button.url(
-                                "Pemilik Repo",
-                                "t.me/bismillahselaluadaa")],
+                                "Pemilik Repo🏹",
+                                "t.me/diemmmmmmmmmm")],
                     ],
                     link_preview=False,
                 )
