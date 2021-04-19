@@ -319,7 +319,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```『⚔ 🐲PETERCORD-USERBOT🐲 Telah Aktif ⚔』```")
+    await bot.send_message(BOTLOG_CHATID, "```🐲PETERCORD-USERBOT🐲 MENYALA```")
     return
 
 with bot:
@@ -349,7 +349,7 @@ def paginate_help(page_number, loaded_modules, prefix):
     helpable_modules = [p for p in loaded_modules if not p.startswith("_")]
     helpable_modules = sorted(helpable_modules)
     modules = [
-        custom.Button.inline("{} {} 🐳".format("🐳", x), data="ub_modul_{}".format(x))
+        custom.Button.inline("{} {} 🎸".format("🎸", x), data="ub_modul_{}".format(x))
         for x in helpable_modules
     ]
     pairs = list(zip(modules[::number_of_cols],
@@ -403,8 +403,8 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
-                    text="{}\n\n**❃ Jumlah Modul Yang Tersedia:** `{}`\n               \n**❃ Daftar Modul  🐲PETERCORD-USERBOT🐲:** \n".format(
-                        "**⚔ 🐲PETERCORD-USERBOT🐲⚔**",
+                    text="{}\n\n**❃ Jumlah Modul Yang Tersedia:** `{}`\n               \n**❃ Daftar Modul  🎸PETERCORD-USERBOT🎸:** \n".format(
+                        "**⚔ 🎸PETERCORD-USERBOT🎸⚔**",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -412,14 +412,14 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan PETERCORD🐺USERBOT ",
+                    "Bantuan PETERCORD🎸USERBOT ",
                     text="Daftar Modul",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    "**PETERCORD🐲USERBOT**",
-                    text="""**Anda Bisa Membuat PETERCORD🐲USERBOT Anda Sendiri Dengan Cara:** [Tekan Disini](t.me/petercord)""",
+                    "**PETERCORD🎸USERBOT**",
+                    text="""**Anda Bisa Membuat PETERCORD🎸USERBOT Anda Sendiri Dengan Cara:** [Tekan Disini](t.me/petercord)""",
                     buttons=[
                         [
                             custom.Button.url(
