@@ -1,5 +1,4 @@
-<a href="https://cooltext.com"><img src="https://images.cooltext.com/5515051.png" width="454" height="103" alt="PETERCORD" /></a>
-</p>  
+[Logo](https://telegra.ph/file/3bfbaa5461dcba6a8bdb1.jpg)
 
 
 
