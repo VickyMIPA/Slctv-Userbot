@@ -10,8 +10,8 @@
     "productivity"
   ],
   "repository": "https://github.com/ilham77mansiz/-PETERCORD-",
-  "telegram": "https://t.me/bismillahselaluadaa",
-  "success_url": "https://t.me/bismillahselaluadaa",
+  "telegram": "https://t.me/diemmmmmmmmmm",
+  "success_url": "https://t.me/diemmmmmmmmmm",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -23,7 +23,7 @@
       "required": true
     },
      "STRING_SESSION": {
-      "description": "Dapatkan String Session di termux caranya ada di repo, jika tidak tau reponya tanya @bismillahselaluadaa di telegram",
+      "description": "Dapatkan String Session di termux caranya ada di repo, jika tidak tau reponya tanya @diemmmmmmmmmm di telegram",
       "required": true
     },
     "HEROKU_APP_NAME": {
