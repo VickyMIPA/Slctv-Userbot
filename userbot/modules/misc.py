@@ -120,7 +120,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "🐲 **Watshapp Userbot:** [Watshapp-Userbot](https://github.com/ilham77mansiz/bot-wa)\n🐲 **Pemilik:** [🐲ILham Mansiezz🐲](t.me/diemmmmmmmmmm)"
+        "✅ **Watshapp Userbot:** [Watshapp-Userbot](https://github.com/BOT-PROJECT-MANSIEZ/Watsahapa-AsenaMansiez)\n🐲 **Pemilik:** [🎸ILham Mansiezz🎸](t.me/diemmmmmmmmmm)"
     )
 
 
@@ -128,7 +128,7 @@ async def repo_is_here(wannasee):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "🐲 **Repo Userbot:** [Petercord-Userbot](https://github.com/ilham77mansiz/-PETERCORD-)\n🐲 **Pemilik:** [🐲ILham Mansiezz🐲](t.me/diemmmmmmmmmm)"
+        "🔰 **Repo Userbot:** [Petercord-Userbot](https://github.com/ilham77mansiz/-PETERCORD-)\n🐲 **Pemilik:** [🎸ILham Mansiezz🎸](t.me/diemmmmmmmmmm)"
     )
 
 
