@@ -1,7 +1,7 @@
 {
   "name": "Petercord User",
   "description": "[Petercord User] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
-  "logo": "https://telegra.ph/file/4b7abfa73c23836a372b1.jpg",
+  "logo": "https://telegra.ph/file/3bfbaa5461dcba6a8bdb1.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/ilham77mansiz/Petercord-Userbot",
+  "repository": "https://github.com/ilham77mansiz/-PETERCORD-",
   "telegram": "https://t.me/bismillahselaluadaa",
   "success_url": "https://t.me/bismillahselaluadaa",
   "stack": "container",
