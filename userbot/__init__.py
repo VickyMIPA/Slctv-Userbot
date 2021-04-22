@@ -349,9 +349,7 @@ def paginate_help(page_number, loaded_modules, prefix):
     helpable_modules = [p for p in loaded_modules if not p.startswith("_")]
     helpable_modules = sorted(helpable_modules)
     modules = [
-        custom.Button.inline(
-    "{} {} 🎸".format(
-        "🎸", x), data="ub_modul_{}".format(x))
+        custom.Button.inline("{} {} 🎸".format("🎸", x), data="ub_modul_{}".format(x))
         for x in helpable_modules
     ]
     pairs = list(zip(modules[::number_of_cols],
@@ -370,7 +368,7 @@ def paginate_help(page_number, loaded_modules, prefix):
                     "🗡", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    '❎', b'close'
+                    "❎", data="{}_close({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
                     "🗡", data="{}_next({})".format(prefix, modulo_page)
@@ -395,17 +393,10 @@ with bot:
 
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
-              await event.reply(f"Hai {sender.first_name}\nSaya adalah bot assisten {ALIVE_NAME}\n\nSaya adalah [PETERCORD-USERBOT](https://github.com/ilham77mansiz/-PETERCORD-) modules helper...\nplease make your own bot, don't use mine")
-            await tgbot.send_file(event.chat_id, logo, caption=text,
-                                  buttons=[
-                                      [
-                                          Button.url(
-                                              text="🔰 OFFICIAL GRUP 🔰",
-                                              url="https://t.me/petercord"
-                                          )
-                                      ]
-                                  ]
-                                  )
+            if event.message.from_id != uid:
+                await event.reply("Petercord-Userbot, Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/ilham77mansiz/-PETERCORD-.git)")
+            else:
+                await event.reply(f"`Hai Petercord {ALIVE_NAME}\n\nApa Kabarmu?`")
 
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
