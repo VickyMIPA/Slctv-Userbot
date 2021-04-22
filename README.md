@@ -36,10 +36,9 @@ Atau Bisa Gabung Ke Grup Petercord User -> [TEKAN DISINI](https://t.me/petercord
 ## <p align="center">DEPLOY Petercord User</p>
 
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/ilham77mansiz/-PETERCORD-"> <![DEPLOY](https://telegra.ph/file/22169cfd534de4a3755ea.jpg)
-
-<br>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/ilham77mansiz/-PETERCORD-"> <<img src="https://telegra.ph/file/22169cfd534de4a3755ea.jpg" alt="Press to Takeoff" width="490px"></a>
 </p>
+<br>)
 
 ## TERIMAKASIH
 TERIMAKASIH UNTUK
