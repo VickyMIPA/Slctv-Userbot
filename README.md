@@ -1,9 +1,6 @@
 # PETERCORD USERBOT
 ![Petercord Userbot Logo](https://telegra.ph/file/3bfbaa5461dcba6a8bdb1.jpg)
 
-![AKUN TERHAPUS](https://telegra.ph/file/8150a75631a2e81f51a51.jpg)
-
-
 <h3 align="center">Userbot Yang Digunakan Untuk Bersenang-Senang Di Telegram</h3>
 <p align="center">&nbsp;</p>
 
@@ -32,7 +29,7 @@ Caranya Pergi Ke Grup Support Petercord User Lalu Ketik #String [TEKAN DISINI](h
 
   > Terakhir Hidupkan Dyno Lalu Check Logs (settings -> view logs) Jika Berhasil Enjoy :)
 ```
-Atau Bisa Gabung Ke Grup Petercord User ->
+Atau Bisa Gabung Ke Grup Petercord User 
 <p align="center"><a href="https://heroku.com/deploy?template=https://t.me/petercord"> <img src="https://telegra.ph/file/5c23fb9e762cebd1c20de.jpg" alt="Press to Takeoff" width="490px"></a>
 </p>
 <br>
