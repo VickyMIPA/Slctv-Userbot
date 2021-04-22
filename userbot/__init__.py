@@ -393,9 +393,7 @@ with bot:
 
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
-            sender = await event.message.get_sender()
-            text = (
-                f"Hai {sender.first_name}\nSaya adalah bot assisten {ALIVE_NAME}\n\nSaya adalah [PETERCORD-USERBOT](https://github.com/ilham77mansiz/-PETERCORD-) modules helper...\nplease make your own bot, don't use mine")
+              await event.reply(f"Hai {sender.first_name}\nSaya adalah bot assisten {ALIVE_NAME}\n\nSaya adalah [PETERCORD-USERBOT](https://github.com/ilham77mansiz/-PETERCORD-) modules helper...\nplease make your own bot, don't use mine")
             await tgbot.send_file(event.chat_id, logo, caption=text,
                                   buttons=[
                                       [
