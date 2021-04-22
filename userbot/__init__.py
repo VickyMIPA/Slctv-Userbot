@@ -503,7 +503,7 @@ with bot:
             "BOTLOG_CHATID environment variable isn't a "
             "valid entity. Check your environment variables/config.env file."
         )
-        sys.exit(1)
+        quit(1)
 
 # Global Variables
 COUNT_MSG = 0
