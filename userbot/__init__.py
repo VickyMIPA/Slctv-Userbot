@@ -376,25 +376,35 @@ with bot:
         dugmeler = CMD_HELP
         me = bot.get_me()
         uid = me.id
+        logo = "https://telegra.ph/file/099b2bf1c3256847946bf.mp4"
 
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
-            if event.message.from_id != uid:
-                await event.reply("Petercord-Userbot, Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/ilham77mansiz/-PETERCORD-.git)")
-            else:
-                await event.reply(f"`Hai Petercord {ALIVE_NAME}\n\nApa Kabarmu?`")
+            sender = await event.message.get_sender()
+            text = (
+                f"Hai {sender.first_name}\nSaya adalah bot assisten {ALIVE_NAME}\n\nSaya adalah [XBØT-REMIX](https://github.com/ximfine/XBot-Remix) modules helper...\nplease make your own bot, don't use mine")
+            await tgbot.send_file(event.chat_id, logo, caption=text,
+                                  buttons=[
+                                      [
+                                          Button.url(
+                                              text="🔱 OFFICIAL CHANNELS 🔱",
+                                              url="https://t.me/X_Projectss"
+                                          )
+                                      ]
+                                  ]
+                                  )
 
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@UserButt"):
+            if event.query.user_id == uid and query.startswith(""):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
-                    "Harap Gunakan .help Untuk Perintah",
-                    text="{}\n\n**🔰 Jumlah Modul Yang Tersedia:** `{}`\n               \n**🔰 Daftar Modul  🎸PETERCORD-USERBOT🎸:** \n".format(
-                        "** 🎸PETERCORD-USERBOT🎸**",
+                    "Please Use Only With .help Command",
+                    text="{}\nTotal loaded modules: {}".format(
+                        "[XBOT-REMIX](https://github.com/ximfine/XBot-Remix) modules helper.\n",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -402,22 +412,25 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan PETERCORD🎸USERBOT ",
-                    text="Daftar Modul",
+                    "xbot Helper",
+                    text="List of Modules",
                     buttons=[],
-                    link_preview=True)
+                    link_preview=True,
+                )
             else:
                 result = builder.article(
-                    "**PETERCORD🎸USERBOT**",
-                    text="""**Anda Bisa Membuat PETERCORD🎸USERBOT Anda Sendiri Dengan Cara:** [Tekan Disini🏹](t.me/petercord)""",
+                    "xbot",
+                    text="""You can convert your account to bot and use them. Remember, you can't manage someone else's bot! All installation details are explained from GitHub address below.""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "Repo Petercord-Userbot🏹",
-                                "https://github.com/ilham77mansiz/-PETERCORD-"),
+                                "GitHub Repo",
+                                "https://github.com/ximfine/XBot-Remix",
+                            ),
                             custom.Button.url(
-                                "Pemilik Repo🏹",
-                                "t.me/diemmmmmmmmmm")],
+                                "Support",
+                                "https://t.me/X_Projectss"),
+                        ],
                     ],
                     link_preview=False,
                 )
@@ -437,8 +450,12 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"Harap Deploy Petercord Userbot Anda Sendiri, Jangan Menggunakan Milik Petercord {ALIVE_NAME} ツ"
+                reply_pop_up_alert = "Please make for yourself, don't use my bot!"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
+
+        @tgbot.on(events.CallbackQuery(data=b'close'))
+        async def close(event):
+            await event.edit("Button closed!", buttons=Button.clear())
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
@@ -455,7 +472,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"Harap Deploy Petercord Userbot Anda Sendiri, Jangan Menggunakan Milik Petercord {ALIVE_NAME} ツ"
+                reply_pop_up_alert = "Please make for yourself, don't use my bot!"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -503,7 +520,7 @@ with bot:
             "BOTLOG_CHATID environment variable isn't a "
             "valid entity. Check your environment variables/config.env file."
         )
-        quit(1)
+        sys.exit(1)
 
 # Global Variables
 COUNT_MSG = 0
