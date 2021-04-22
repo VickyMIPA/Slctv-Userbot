@@ -29,7 +29,7 @@ Caranya Pergi Ke Grup Support Petercord User Lalu Ketik #String [TEKAN DISINI](h
 
   > Terakhir Hidupkan Dyno Lalu Check Logs (settings -> view logs) Jika Berhasil Enjoy :)
 ```
-Atau Bisa Gabung Ke Grup Petercord User 
+Atau Bisa Gabung Ke Grup Petercord User KILIK GAMBARNYA👇🏻
 <p align="center"><a href="https://t.me/petercord"> <img src="https://telegra.ph/file/5c23fb9e762cebd1c20de.jpg" alt="Press to Takeoff" width="490px"></a>
 </p>
 <br>
