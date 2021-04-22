@@ -1,7 +1,7 @@
 # PETERCORD USERBOT
 ![Petercord Userbot Logo](https://telegra.ph/file/3bfbaa5461dcba6a8bdb1.jpg)
 
-
+![AKUN TERHAPUS](https://telegra.ph/file/8150a75631a2e81f51a51.jpg)
 
 
 <h3 align="center">Userbot Yang Digunakan Untuk Bersenang-Senang Di Telegram</h3>
