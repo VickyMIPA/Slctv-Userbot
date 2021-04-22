@@ -331,17 +331,6 @@ with bot:
             "valid entity. Check your environment variables/config.env file.")
         quit(1)
 
-# Global Variables
-COUNT_MSG = 0
-USERS = {}
-COUNT_PM = {}
-ENABLE_KILLME = True
-LASTMSG = {}
-CMD_HELP = {}
-ISAFK = False
-AFKREASON = None
-ZALG_LIST = {}
-
 
 def paginate_help(page_number, loaded_modules, prefix):
     number_of_rows = 5
@@ -512,4 +501,15 @@ with bot:
             "BOTLOG_CHATID environment variable isn't a "
             "valid entity. Check your environment variables/config.env file."
         )
-        quit(1)
+        sys.exit(1)
+
+# Global Variables
+COUNT_MSG = 0
+USERS = {}
+COUNT_PM = {}
+ENABLE_KILLME = True
+LASTMSG = {}
+CMD_HELP = {}
+ISAFK = False
+AFKREASON = None
+ZALG_LIST = {}
