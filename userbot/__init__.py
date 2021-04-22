@@ -367,7 +367,9 @@ def paginate_help(page_number, loaded_modules, prefix):
                 custom.Button.inline(
                     "🗡", data="{}_prev({})".format(prefix, modulo_page)
                 ),
-                custom.Button.inline("Close", data="close")
+                custom.Button.inline(
+                    '❎', b'close'
+                ),
                 custom.Button.inline(
                     "🗡", data="{}_next({})".format(prefix, modulo_page)
                 )
@@ -387,7 +389,6 @@ with bot:
         dugmeler = CMD_HELP
         me = bot.get_me()
         uid = me.id
-        logo = "https://telegra.ph/file/8e545871b0128ca27151e.jpg"
 
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
