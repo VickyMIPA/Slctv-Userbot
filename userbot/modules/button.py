@@ -4,7 +4,7 @@ import re
 
 from telethon import Button
 
-from . import BOT_USERNAME
+
 
 # regex obtained from:
 # https://github.com/PaulSonOfLars/tgbot/blob/master/tg_bot/modules/helper_funcs/string_handling.py#L23
