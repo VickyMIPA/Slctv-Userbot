@@ -453,7 +453,7 @@ with bot:
 
         @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
         async def close(event):
-            await event.edit("MENU CLOSED PETERCORD #Tentang Aku dan Dia")
+            await event.edit("MENU CLOSED PETERCORD by.Tentang Aku dan Dia")
             await event.delete()
 
         @tgbot.on(
