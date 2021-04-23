@@ -164,20 +164,22 @@ async def _(event):
 
 
 CMD_HELP.update({
-    "petercordphreaker": n╭━━━━━━━━━━━━━━━━━━━╮
-    \n  `.gen < bin >`
-    \n   Usage: untuk menghasilkan cc dengan bin.
-    \n\n  `.chk < cc >`
-    \n   Usage: untuk memeriksa cc tanggapan.
-    \n\n  `.bin < bin number >`
-    \n   Usage: untuk cek informasi bin.
-    \n\n  `.skey < SK - KEY >`
-    \n   Usage: untuk memeriksa respon skkey.
-    \n\n  `.nmap < domain hosts >`
-    \n   Usage: untuk mendapatkan info bug / host.
-    \n\n  `.subd < domain hosts >`
-    \n   Usage: untuk mendapatkan bug / host subdomain.
-    \n\n  `.cekhttp < domain hosts >`
-    \n   Usage: untuk cek respons bug / host.
-    \n╰━━━━━━━━━━━━━━━━━━━╯"
+    "petercordphreaker":
+    "**HELP FOR XPHREAKER**\
+\n╭━━━━━━━━━━━━━━━━━━━╮\
+\n  `.gen <bin>`\
+\n   Usage: to generate cc with bin.\
+\n\n  `.chk <cc>`\
+\n   Usage: to check respond cc.\
+\n\n  `.bin <bin number>`\
+\n   Usage: to cek bin information.\
+\n\n  `.skey <SK-KEY>`\
+\n   Usage: to check skkey respond.\
+\n\n  `.nmap <domain hosts>`\
+\n   Usage: to get info bug/host.\
+\n\n  `.subd <domain hosts>`\
+\n   Usage: to get subdomain bug/host.\
+\n\n  `.cekhttp <domain hosts>`\
+\n   Usage: to cek respons bug/host.\
+\n╰━━━━━━━━━━━━━━━━━━━╯"
 })
