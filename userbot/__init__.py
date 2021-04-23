@@ -363,13 +363,13 @@ def paginate_help(page_number, loaded_modules, prefix):
         ] + [
             (
                 custom.Button.inline(
-                    "⬅️", data="{}_prev({})".format(prefix, modulo_page)
+                    "🗡", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    '❎', b'close'
+                    '❌', b'close'
                 ),
                 custom.Button.inline(
-                    "➡️", data="{}_next({})".format(prefix, modulo_page)
+                    "🗡", data="{}_next({})".format(prefix, modulo_page)
                 ),
             )
         ]
@@ -453,7 +453,7 @@ with bot:
 
         @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
         async def close(event):
-            await event.edit("menu closed petercord")
+            await event.edit("MENU CLOSED PETERCORD #Tentang Aku dan Dia")
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
