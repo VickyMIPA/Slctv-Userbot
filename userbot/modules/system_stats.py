@@ -1,10 +1,4 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
-#
-# Licensed under the Raphielscape Public License, Version 1.d (the "License");
-# you may not use this file except in compliance with the License.
-#
-""" Userbot module for getting information about the server. """
-
+# System Stats Petercord-Userbot
 
 import asyncio
 from asyncio import create_subprocess_exec as asyncrunapp
@@ -20,7 +14,7 @@ import time
 from datetime import datetime
 import psutil
 
-from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, StartTime, UPSTREAM_REPO_BRANCH, bot
+from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, PETERCORD_TEKS_KUSTOM, CMD_HELP, StartTime, UPSTREAM_REPO_BRANCH, bot
 from userbot.events import register
 
 
@@ -36,7 +30,7 @@ async def get_readable_time(seconds: int) -> str:
     count = 0
     up_time = ""
     time_list = []
-    time_suffix_list = ["s", "m", "h", "days"]
+    time_suffix_list = ["Dtk", "Mnt", "Jam", "Hari"]
 
     while count < 4:
         count += 1
@@ -62,17 +56,17 @@ async def get_readable_time(seconds: int) -> str:
 @register(outgoing=True, pattern=r"^\.spc")
 async def psu(event):
     uname = platform.uname()
-    softw = "**System Information**\n"
-    softw += f"`System   : {uname.system}`\n"
-    softw += f"`Release  : {uname.release}`\n"
-    softw += f"`Version  : {uname.version}`\n"
-    softw += f"`Machine  : {uname.machine}`\n"
+    softw = "**Informasi Sistem**\n"
+    softw += f"`Sistem   : {uname.system}`\n"
+    softw += f"`Rilis    : {uname.release}`\n"
+    softw += f"`Versi    : {uname.version}`\n"
+    softw += f"`Mesin    : {uname.machine}`\n"
     # Boot Time
     boot_time_timestamp = psutil.boot_time()
     bt = datetime.fromtimestamp(boot_time_timestamp)
-    softw += f"`Boot Time: {bt.day}/{bt.month}/{bt.year}  {bt.hour}:{bt.minute}:{bt.second}`\n"
+    softw += f"`Waktu Hidup: {bt.day}/{bt.month}/{bt.year}  {bt.hour}:{bt.minute}:{bt.second}`\n"
     # CPU Cores
-    cpuu = "**CPU Info**\n"
+    cpuu = "**Informasi CPU**\n"
     cpuu += "`Physical cores   : " + \
         str(psutil.cpu_count(logical=False)) + "`\n"
     cpuu += "`Total cores      : " + \
@@ -87,23 +81,23 @@ async def psu(event):
     for i, percentage in enumerate(psutil.cpu_percent(percpu=True)):
         cpuu += f"`Core {i}  : {percentage}%`\n"
     cpuu += "**Total CPU Usage**\n"
-    cpuu += f"`All Core: {psutil.cpu_percent()}%`\n"
+    cpuu += f"`Semua Core: {psutil.cpu_percent()}%`\n"
     # RAM Usage
     svmem = psutil.virtual_memory()
-    memm = "**Memory Usage**\n"
+    memm = "**Memori Digunakan**\n"
     memm += f"`Total     : {get_size(svmem.total)}`\n"
     memm += f"`Available : {get_size(svmem.available)}`\n"
     memm += f"`Used      : {get_size(svmem.used)}`\n"
     memm += f"`Percentage: {svmem.percent}%`\n"
     # Bandwidth Usage
-    bw = "**Bandwith Usage**\n"
-    bw += f"`Upload  : {get_size(psutil.net_io_counters().bytes_sent)}`\n"
+    bw = "**Bandwith Digunakan**\n"
+    bw += f"`Unggah  : {get_size(psutil.net_io_counters().bytes_sent)}`\n"
     bw += f"`Download: {get_size(psutil.net_io_counters().bytes_recv)}`\n"
     help_string = f"{str(softw)}\n"
     help_string += f"{str(cpuu)}\n"
     help_string += f"{str(memm)}\n"
     help_string += f"{str(bw)}\n"
-    help_string += "**Engine Info**\n"
+    help_string += "**Informasi Mesin**\n"
     help_string += f"`Python {sys.version}`\n"
     help_string += f"`Telethon {__version__}`"
     await event.edit(help_string)
@@ -165,17 +159,14 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "`╭━━━━━━━━━━━━━━━━━━━━╮\n "
-            "` Userbot Version: \n "
+            "**☛**Petercord-Userbot Versi:** \n "
             f"{verout}"
-            "` \n"
-            "   Revision: "
-            f"{revout}🇲🇨\n"
-            "╰━━━━━━━━━━━━━━━━━━━━╯ "
+            "\n**☛**Revisi:**\n "
+            f"{revout}"
         )
     else:
         await event.edit(
-            "Shame that you don't have git, you're running - 'v1.beta.4' anyway!"
+            "Sayang sekali anda tidak memiliki git, Anda Menjalankan Bot - 'v1.beta.4'!"
         )
 
 
@@ -185,7 +176,7 @@ async def pipcheck(pip):
         return
     pipmodule = pip.pattern_match.group(1)
     if pipmodule:
-        await pip.edit("`Searching . . .`")
+        await pip.edit("`Mencari...`")
         pipc = await asyncrunapp(
             "pip3",
             "search",
@@ -199,7 +190,7 @@ async def pipcheck(pip):
 
         if pipout:
             if len(pipout) > 4096:
-                await pip.edit("`Output too large, sending as file`")
+                await pip.edit("`Output Terlalu Besar, Dikirim Sebagai File`")
                 file = open("output.txt", "w+")
                 file.write(pipout)
                 file.close()
@@ -224,39 +215,109 @@ async def pipcheck(pip):
                 "`\n**Result: **\n`No Result Returned/False`"
             )
     else:
-        await pip.edit("`Use .help pip to see an example`")
+        await pip.edit("Gunakan `.help pip` Untuk Melihat Contoh")
 
 
-@register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:petercord|petercordon)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
-    uptime = await get_readable_time((time.time() - StartTime))
+    await get_readable_time((time.time() - StartTime))
     output = (
-        f"۝⩵꙰ཱི►**XBOT-REMIX**◄⩵꙰ཱི۝\n running on 🤖 `{UPSTREAM_REPO_BRANCH}` 🤖\n"
-        f"╭━━━━━━━━━━━━━━━━━━━━━╮\n"
-        f"┣[•👤 **USER     :**{DEFAULTUSER}\n"
-        f"┣[•👁‍🗨 **Username :**@{user.username}\n"
-        "`┣▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱`\n"
-        f"┣[•⚙️ **Telethon :**v {version.__version__} 🔥\n"
-        f"┣[•🐍 **Python   :**v {python_version()} 🔥\n"
-        f"┣[•💻 **Base on  :**{UPSTREAM_REPO_BRANCH}🔥\n"
-        f"┣[•🛠 **Version  :**{BOT_VER} 🔥\n"
-        f"┣[•🗃 **Modules  :**{len(modules)} Loaded🔥\n"
-        f"┣[•🕒 **Uptime   :**{uptime} 🔥\n"
-        f"╰━━━━━━━━━━━━━━━━━━━━━╯\n"
-        f" •MOD BY : `{DEFAULTUSER}`\n")
-
+        f" **┗┓PETERCORD USERBOT┏┛** \n"
+        f"\n__**{PETERCORD_TEKS_KUSTOM}**__\n"
+        f"**━━━━━━━━━━━━━━━━━━━━**\n"
+        f"**🐉 Petercord🐉** \n"
+        f" ➥ `{DEFAULTUSER}` \n"
+        f"**🐉 Username🐉** \n"
+        f" ➥ `@{user.username}` \n"
+        f"┏━━━━━━━━━━━━━━━━━━━\n"
+        f"┣[• `Telethon :`Ver {version.__version__} \n"
+        f"┣[• `Python   :`Ver {python_version()} \n"
+        f"┣[• `Bot Ver  :`{BOT_VER} \n"
+        f"┣[• `Modules  :`{len(modules)} \n"
+        f"┗━━━━━━━━━━━━━━━━━━━")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
             await alive.delete()
             msg = await bot.send_file(alive.chat_id, logo, caption=output)
-            await asyncio.sleep(100)
+            await asyncio.sleep(200)
             await msg.delete()
         except BaseException:
             await alive.edit(
                 output + "\n\n *`The provided logo is invalid."
                 "\nMake sure the link is directed to the logo picture`"
+            )
+            await asyncio.sleep(100)
+            await alive.delete()
+    else:
+        await alive.edit(output)
+        await asyncio.sleep(100)
+        await alive.delete()
+
+
+@register(outgoing=True, pattern=r"^\.(?:peterpen|peter)\s?(.)?")
+async def amireallyalive(alive):
+    user = await bot.get_me()
+    await get_readable_time((time.time() - StartTime))
+    output = (
+        f"**▬▬▬▬▬▬❙۩🐲🐲۩❙▬▬▬▬▬▬**\n"
+        f"  **🎸 PETERCORD-USERBOT 🎸** \n\n"
+        f"🎸 **PETERCORD**     \n   ➥ `{DEFAULTUSER}` \n"
+        f"🎸 **Username** \n   ➥ `@{user.username}` \n"
+        f"🎸 **Telethon** \n   ➥ `Versi {version.__version__}` \n"
+        f"🎸 **Python**   \n   ➥ `Versi {python_version()}` \n"
+        f"🎸 **Versi Bot**\n   ➥ `{BOT_VER}` \n"
+        f"🎸 **Modul**    \n   ➥ `{len(modules)}` \n\n"
+        f"🎸 **Repo Userbot:** [🎸Petercord-Userbot🎸](https://github.com/ilham77mansiz/-PETERCORD-)\n🐲 **Grup Userbot: **[🐲Tekan🐲](https://t.me/petercord)\n🐲 **Pemilik:** [🐲IlhamMansiez🐲](t.me/diemmmmmmmmmm)\n"
+        f"**▬▬▬▬▬▬❙۩🐲🐲۩❙▬▬▬▬▬▬**")
+    if ALIVE_LOGO:
+        try:
+            logo = ALIVE_LOGO
+            await alive.delete()
+            msg = await bot.send_file(alive.chat_id, logo, caption=output)
+            await asyncio.sleep(200)
+            await msg.delete()
+        except BaseException:
+            await alive.edit(
+                output + "\n\n *`The provided logo is invalid."
+                "\nMake sure the link is directed to the logo picture`"
+            )
+            await asyncio.sleep(100)
+            await alive.delete()
+    else:
+        await alive.edit(output)
+        await asyncio.sleep(100)
+        await alive.delete()
+
+
+@register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
+async def amireallyalive(alive):
+    user = await bot.get_me()
+    await get_readable_time((time.time() - StartTime))
+    output = (
+        f"**🦉 PETERCORD 🦅 USERBOT 🐿** \n"
+        f"┏━━━━━━━━━━━━━━━━━━━ \n"
+        f"┣|• `🎸Petercord:`{DEFAULTUSER} \n"
+        f"┣|• `🎸Username :`@{user.username} \n"
+        f"┣|• `🎸Telethon :`Ver {version.__version__} \n"
+        f"┣|• `🎸Python   :`Ver {python_version()} \n"
+        f"┣|• `🎸Branch   :`{UPSTREAM_REPO_BRANCH} \n"
+        f"┣|• `🎸Bot Ver  :`{BOT_VER} \n"
+        f"┣|• `🎸Modules  :`{len(modules)} Modules \n"
+        f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
+        f"[Repo](https://github.com/ilham77mansiz/-PETERCORD-) | [Grup Support](https://t.me/petercord) | [Owner](t.me/diemmmmmmmmmm)")
+    if ALIVE_LOGO:
+        try:
+            logo = ALIVE_LOGO
+            await alive.delete()
+            msg = await bot.send_file(alive.chat_id, logo, caption=output)
+            await asyncio.sleep(500)
+            await msg.delete()
+        except BaseException:
+            await alive.edit(
+                output + "\n\n *`Logo Yang Disediakan Tidak Valid."
+                "\nPastikan Tautan Yang Anda Gunakan Valid`"
             )
             await asyncio.sleep(100)
             await alive.delete()
