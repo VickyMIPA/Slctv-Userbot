@@ -165,7 +165,6 @@ async def _(event):
 
 CMD_HELP.update({
     "petercordphreaker":
-    "**HELP FOR PETERCORSPHREAKER**\
 \n╭━━━━━━━━━━━━━━━━━━━╮\
 \n  `.gen <bin>`\
 \n   Usage: untuk menghasilkan cc dengan bin.\
