@@ -7,6 +7,9 @@
 # you may not use this file except in compliance with the License.
 #
 
+from redis import StrictRedis
+from pymongo import MongoClient
+from logging import basicConfig, getLogger, INFO, DEBUG
 import os
 import re
 import sys
@@ -474,23 +477,6 @@ LOAD_PLUG = {} in compliance with the License.
 # Pengguna Petercord-Userbot
 """ Userbot initialization. """
 
-import os
-import time
-import re
-
-from sys import version_info
-from logging import basicConfig, getLogger, INFO, DEBUG
-from distutils.util import strtobool as sb
-from math import ceil
-
-from pylast import LastFMNetwork, md5
-from pySmartDL import SmartDL
-from pymongo import MongoClient
-from redis import StrictRedis
-from dotenv import load_dotenv
-from requests import get
-from telethon.sync import TelegramClient, custom, events
-from telethon.sessions import StringSession
 
 load_dotenv("config.env")
 
