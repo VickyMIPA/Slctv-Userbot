@@ -4,7 +4,6 @@
 # you may not use this file except in compliance with the License.
 #
 """ Userbot start point """
-import sys
 from importlib import import_module
 from sys import argv
 
