@@ -370,7 +370,7 @@ def paginate_help(page_number, loaded_modules, prefix):
                     "🗡", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    '❎', data="data="{}close({})".format(prefix, modulo_page)
+                    '❎', data="{}close({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
                     "🗡", data="{}_next({})".format(prefix, modulo_page)
