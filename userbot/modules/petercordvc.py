@@ -3,7 +3,7 @@ from userbot import CMD_HELP, bot
 
 
 @register(outgoing=True, pattern=r"^\.stopvc (?:(now)|(.*) - (.*))")
-async def _(e):
+async def remoteaccess(event):
     try:
         await e.client(stopvc(await get_call(e)))
         await eor(e, "`Voice Chat Stopped...`")
