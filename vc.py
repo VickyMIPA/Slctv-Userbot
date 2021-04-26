@@ -1,10 +1,6 @@
 
-from userbot.events import register
-from userbot import CMD_HELP, bot
 from ultis.filters import main_filter, self_or_contact_filter
 from ultis.vc import mp
-
-
 
 
 @Client.on_message(
