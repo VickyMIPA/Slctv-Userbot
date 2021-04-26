@@ -2,7 +2,7 @@
 # Petercord Userbot
 
 from telethon.events import ChatAction
-from userbot import ALIVE_NAME, CMD_HELP, bot
+from userbot import ALIVE_NAME, CMD_HELP, AFKREASON bot
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from userbot.events import register
 from telethon.tl.types import MessageEntityMentionName
@@ -142,7 +142,7 @@ async def gben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"**📢 Perintah Petercord:** `{ALIVE_NAME}`\n**🎎 Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**☠ Aksi:** `☠Global Banned☠`"
+        f"**📢 Perintah Petercord:** `{ALIVE_NAME}`\n**🎎 Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**☠ Aksi:** `☠Global Banned☠`\n☛ **Alasan:** `{string}`")"
     )
 
 
