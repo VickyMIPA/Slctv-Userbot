@@ -12,7 +12,7 @@ async def _(e):
 
 
 @register(outgoing=True, pattern=r"^\.playvc (?:(now)|(.*) - (.*))")
-async def _(e):
+async def remoteaccess(event):
     zz = await eor(e, "`VC bot started...`")
     er, out = await bash("npm start")
     LOGS.warning(er)
@@ -21,7 +21,7 @@ async def _(e):
 
 
 @register(outgoing=True, pattern=r"^\.vcinvite (?:(now)|(.*) - (.*))")
-async def _(e):
+async def remoteaccess(event):
     ok = await eor(e, "`Inviting Members to Voice Chat...`")
     users = []
     z = 0
@@ -39,7 +39,7 @@ async def _(e):
 
 
 @register(outgoing=True, pattern=r"^\.startvc (?:(now)|(.*) - (.*))")
-async def _(e):
+async def remoteaccess(event):
     try:
         await e.client(startvc(e.chat_id))
         await eor(e, "`Voice Chat Started...`")
@@ -48,7 +48,7 @@ async def _(e):
 
 
 @register(outgoing=True, pattern=r"^\.listvcaccess (?:(now)|(.*) - (.*))")
-async def _(e):
+async def remoteaccess(event):
     xx = await eor(e, "`Getting Voice Chat Bot Users List...`")
     mm = get_vcsudos()
     pp = f"**{len(mm)} Voice Chat Bot Approved Users**\n"
@@ -63,7 +63,7 @@ async def _(e):
 
 
 @register(outgoing=True, pattern=r"^\.rmvcacces (?:(now)|(.*) - (.*))")
-async def _(e):
+async def remoteaccess(event):
     xx = await eor(e, "`Disapproving to access Voice Chat features...`")
     input = e.pattern_match.group(1)
     if e.reply_to_msg_id:
@@ -95,10 +95,10 @@ async def _(e):
 
 
 @register(outgoing=True, pattern=r"^\.vcaccess (?:(now)|(.*) - (.*))")
-async def _(e):
+async def remoteaccess(event):
 
 
-async def _(e):
+async def remoteaccess(event):
     xx = await eor(e, "`Approving to access Voice Chat features...`")
     input = e.pattern_match.group(1)
     if e.reply_to_msg_id:
