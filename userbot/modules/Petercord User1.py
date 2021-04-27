@@ -301,17 +301,36 @@ async def typewriter(typew):
     await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
 
 
-@register(outgoing=True, pattern='^.kejepit(?: |$)(.*)')
+@register(outgoing=True, pattern='^.simbol(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("     ████████🙂███████\n"
-                     "          ███/||\\███\n"
-                     "      ▂▄▅████||█████▅▄▃▂…\n"
-                     "     ███████████████████\n"
-                     "   😁    TOLONGINLAH KASIAN 😏\n"
-                     "  /||\\   ↘              ↖  /||\\ \n"
-                     "   ||.....KEJEPIT DIA .WKWK  || \n")
-
+    await typew.edit("💠💠💠💠\n"
+                     "💠💠  💠\n"
+                     "💠💠💠💠\n"
+                     "💠💠    \n"
+                     "💠💠    \n"
+                     "🔹🔹🔹  \n"
+                     "💠💠💠💠\n"
+                     "💠💠    \n"
+                     "💠💠💠💠\n"
+                     "💠💠    \n"
+                     "💠💠💠💠\n"
+                     "🔹🔹🔹   \n"
+                     "💠💠💠💠 \n"
+                     "  💠💠   \n"
+                     "  💠💠   \n"
+                     "  💠💠   \n"
+                     "🔹🔹🔹   \n"
+                     "💠💠💠💠 \n"
+                     "💠💠      \n"
+                     "💠💠💠💠  \n"
+                     "💠💠       \n"
+                     "💠💠💠💠   \n"
+                     "🔹🔹🔹      \n"
+                     "💠💠💠💠    \n"
+                     "💠💠   💠   \n"
+                     "💠💠💠      \n"
+                     "💠💠   💠💠  \n"
 
 CMD_HELP.update({
     "vip":
@@ -323,6 +342,6 @@ CMD_HELP.update({
     \nUsage: jempol\
     \n\n`.awkwok`\
     \nUsage: ketawa lari.\
-    \n\n`.ular` ; `.babi` ; `.ajg`; `.kejepit`\
+    \n\n`.ular` ; `.babi` ; `.ajg`; `.simbol`\
     \nUsage: liat sendiri."
 })
