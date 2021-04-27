@@ -300,6 +300,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
 
+
 @register(outgoing=True, pattern='^.kapal(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
