@@ -301,14 +301,16 @@ async def typewriter(typew):
     await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
 
 
-@register(outgoing=True, pattern='^.kapal(?: |$)(.*)')
+@register(outgoing=True, pattern='^.kejepit(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("               🇮🇩\n"
-                     "              ⬛⬛\n"
-                     "◾◾     ⬛⬛⬛⬛⬛⬛⬛\n   ◾◾\n"
-                     " ⚫⚫◾◾◾◾◾◾◾◾◾◾◾◾⚫⚫\n"
-                     " ⚫⚫◾◾◾◾◾◾◾◾◾◾◾◾⚫⚫\n")
+    await typew.edit("     ████████🙂███████\n"
+                     "          ███/||\███\n"
+                     "      ▂▄▅████||█████▅▄▃▂…\n"
+                     "     ███████████████████\n"
+                     "   😁    TOLONGINLAH KASIAN 😏\n"
+                     "  /||\   ↘              ↖  /||\ \n"
+                     "   ||.....KEJEPIT DIA .WKWK  || \n")
 
 
 CMD_HELP.update({
