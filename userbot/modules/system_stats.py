@@ -263,13 +263,13 @@ async def amireallyalive(alive):
     output = (
         f"**▬▬▬▬▬▬❙۩🛡🛡۩❙▬▬▬▬▬▬**\n"
         f"  **🔮 PETERCORD-USERBOT 🔮** \n\n"
-        f"🎸 **PETERCORD**     \n   ➥ `{DEFAULTUSER}` \n"
-        f"🎸 **Username** \n   ➥ `@{user.username}` \n"
-        f"🎸 **Telethon** \n   ➥ `Versi {version.__version__}` \n"
-        f"🎸 **Python**   \n   ➥ `Versi {python_version()}` \n"
-        f"🎸 **Versi Bot**\n   ➥ `{BOT_VER}` \n"
-        f"🎸 **Modul**    \n   ➥ `{len(modules)}` \n\n"
-        f"🎸 **Repo Userbot:** [🛡Petercord-Userbot🛡](https://github.com/ilham77mansiz/-PETERCORD-)\n🛡 **Grup Userbot: **[🛡Tekan](https://t.me/petercord)\n🛡 **Pemilik:** [🛡IlhamMansiez](t.me/diemmmmmmmmmm)\n"
+        f"🛡 **PETERCORD**     \n   ➥ `{DEFAULTUSER}` \n"
+        f"🛡 **Username** \n   ➥ `@{user.username}` \n"
+        f"🛡 **Telethon** \n   ➥ `Versi {version.__version__}` \n"
+        f"🛡 **Python**   \n   ➥ `Versi {python_version()}` \n"
+        f"🛡 **Versi Bot**\n   ➥ `{BOT_VER}` \n"
+        f"🛡 **Modul**    \n   ➥ `{len(modules)}` \n\n"
+        f"🛡 **Repo Userbot:** [Petercord-Userbot](https://github.com/ilham77mansiz/-PETERCORD-)\n🛡 **Grup Userbot: **[Tekan](https://t.me/petercord)\n🛡 **Pemilik:** [IlhamMansiez](t.me/diemmmmmmmmmm)\n"
         f"**▬▬▬▬▬▬❙۩🛡🛡۩❙▬▬▬▬▬▬**")
     if ALIVE_LOGO:
         try:
