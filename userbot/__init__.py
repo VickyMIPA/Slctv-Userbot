@@ -404,7 +404,7 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
-                    text="{}\n\n**🇲🇨 Jumlah Modul Yang Tersedia:** `{}`\n               \n**🔰 Daftar Modul  🎸PETERCORD-USERBOT🎸:** \n".format(
+                    text="{}\n\n**🇲🇨 Jumlah Modul Yang Tersedia:** `{}`\n               \n**🇩🇪 Daftar Modul  🇩🇪PETERCORD-USERBOT:** \n".format(
                         "** 🇩🇪PETERCORD-USERBOT🇩🇪**",
                         len(dugmeler),
                     ),
