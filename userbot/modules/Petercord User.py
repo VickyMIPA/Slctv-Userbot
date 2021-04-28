@@ -787,7 +787,7 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern="^.gabut$")
+@register(outgoing=True, pattern="^.ngabuburit$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
     await e.edit("BOSEN GAK ADA KEGIATAN")
