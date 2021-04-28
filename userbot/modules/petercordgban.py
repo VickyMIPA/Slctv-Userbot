@@ -73,7 +73,7 @@ async def handler(tele):
                                 tele.chat_id, guser.id, view_messages=False
                             )
                             await tele.reply(
-                                f"**╭✠╼━━━━━━⚜━━━━━━━✠╮\n** `𝐆𝐛𝐚𝐧𝐧𝐞𝐝📴 `\n**➢ •𝐆𝐁𝐚𝐧𝐧𝐞𝐝 𝐁𝐲: ** `{ALIVE_NAME}`\n**➢🚹 •𝐔𝐬𝐞𝐫𝐧𝐚𝐦𝐞: **[{guser.id}](tg://user?id={guser.id})\n**➢ ⚜ •AKSI: ** `𝗚𝗹𝗼𝗯𝗮𝗹 𝗕𝗮𝗻𝗻𝗲𝗱`\n╰✠╼━━━━━━☣━━━━━━━✠╯"
+                                f"**╭✠╼━━━━━━⚜━━━━━━━✠╮\n**➢ •𝐆𝐁𝐚𝐧𝐧𝐞𝐝 𝐁𝐲: ** `{ALIVE_NAME}`\n**➢🚹 •𝐔𝐬𝐞𝐫𝐧𝐚𝐦𝐞: **[{guser.id}](tg://user?id={guser.id})\n**➢ ⚜ •AKSI: ** `𝗚𝗹𝗼𝗯𝗮𝗹 𝗕𝗮𝗻𝗻𝗲𝗱`\n╰✠╼━━━━━━☣━━━━━━━✠╯"
                             )
                         except BaseException:
                             return
@@ -111,7 +111,7 @@ async def gben(userbot):
     if user:
         if user.id == 1593802955:
             return await dark.edit(
-                f"`Kau gak bisa Ban aku karena aku pembuat bot ini♉`"
+                f"`Kau gak bisa Ban aku karena aku pembuat bot ini📛`"
             )
         try:
             from userbot.modules.sql_helper.gmute_sql import gmute
@@ -137,11 +137,11 @@ async def gben(userbot):
         await dark.edit(f"`Balas Ke Pesan nyalah mana bisa gban daong:)`")
     try:
         if gmute(user.id) is False:
-            return await dark.edit(f"**Pengguna meresahkan⛔🚷.**")
+            return await dark.edit(f"**Pengguna meresahkan⛔.**")
     except BaseException:
         pass
     return await dark.edit(
-        f"**╭✠╼━━━━━━❖━━━━━━━✠╮\n** `𝙂𝘽𝙖𝙣𝙣𝙚𝙙\n↪↩`\n**➢📴 •𝐆𝐁𝐚𝐧𝐧𝐞𝐝 𝐁𝐲: ** `{ALIVE_NAME}`\n**➢🚹 •Username: ** [{user.first_name}](tg: // user?id={user.id})\n**➢ 📴 •AKSI: ** `𝗚𝗹𝗼𝗯𝗮𝗹 𝗕𝗮𝗻𝗻𝗲𝗱`\n╰✠╼━━━━━━⚜━━━━━━━✠╯"
+        f"**╭✠╼━━━━━━❖━━━━━━━✠╮\n**➢☪ •𝐆𝐁𝐚𝐧𝐧𝐞𝐝 𝐁𝐲: ** `{ALIVE_NAME}`\n**➢☪ •Username: ** [{user.first_name}](tg: // user?id={user.id})\n**➢ ☪ •AKSI: ** `𝗚𝗹𝗼𝗯𝗮𝗹 𝗕𝗮𝗻𝗻𝗲𝗱`\n╰✠╼━━━━━━⚜━━━━━━━✠╯"
 
     )
 
@@ -206,7 +206,7 @@ async def gunben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"**╭✠╼━━━━━━⚜━━━━━━━✠╮\n** `UNGBAN\n⚜PETERCORD `\n**➢ •𝐔𝐧𝐠𝐁𝐚𝐧𝐧𝐞𝐝 𝐁𝐲: ** `{ALIVE_NAME}`\n**➢🚹 •Username: ** [{user.first_name}](tg: // user?id={user.id})\n**➢ •🛐 Diampuni segala salahnya: ** `𝙐𝙣𝙜𝘽𝙖𝙣𝙣𝙚𝙙`\n╰✠╼━━━━━━🛃━━━━━━━✠╯"
+        f"**╭✠╼━━━━━━⚜━━━━━━━✠╮\n** `UNGBAN\n⚜PETERCORD `\n**➢ •𝐔𝐧𝐠𝐁𝐚𝐧𝐧𝐞𝐝 𝐁𝐲: ** `{ALIVE_NAME}`\n**➢☪ •Username: ** [{user.first_name}](tg: // user?id={user.id})\n**➢ •🛐 Diampuni segala salahnya: ** `𝙐𝙣𝙜𝘽𝙖𝙣𝙣𝙚𝙙`\n╰✠╼━━━━━━☪━━━━━━━✠╯"
 
     )
 
