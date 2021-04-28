@@ -134,10 +134,10 @@ async def gben(userbot):
             except BaseException:
                 b += 1
     else:
-        await dark.edit(f"`Balas Ke Pesan Kontoll`")
+        await dark.edit(f"`Balas Ke Pesan nyalah mana bisa gban daong:)`")
     try:
         if gmute(user.id) is False:
-            return await dark.edit(f"**Syntax Ellol! Itu Jamet Udah Lu Gban Tolol.**")
+            return await dark.edit(f"**Pengguna meresahkan⛔🚷.**")
     except BaseException:
         pass
     return await dark.edit(
