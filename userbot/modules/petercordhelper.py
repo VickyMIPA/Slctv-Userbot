@@ -14,7 +14,7 @@ async def usit(e):
         f"**Hai Petercord {DEFAULTUSER} Kalo Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `.help` Atau Bisa Minta Bantuan Ke:\n"
         "\n[Telegram](t.me/bismillahselaluadaa)"
         "\n[Repo](https://github.com/ilham77mansiz/-PETERCORD-)"
-        "\n[Instagram](Instagram.com/imansiezz_)")
+        "\n[Instagram](Instagram.com/mansiez_ilham2)")
 
 
 @register(outgoing=True, pattern="^.varsraw$")
