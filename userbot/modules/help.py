@@ -55,6 +55,6 @@ async def help(petercord):
                              "🇹🇯`transform`🇹🇯`update`🇹🇯`download`🇹🇯`getid`🇹🇯`waifu`🇹🇯`wallpaper`🇹🇯`weather`🇹🇯\n\n"
                              "**💥 BAGIAN 15:**\n"
                              "🇸🇬`webupload`🇸🇬`welcome`🇸🇬`whois`🇸🇬`ping`🇸🇬`sinyal`🇸🇬`xiaomi`🇸🇬`zipfile`🇸🇬`penghapusankk`🇸🇬")
-        await petercord.reply("\n**CARA MEMAKAINYA,** **CONTOH:**\n**KETIK** `.help petercordoff` **UNTUK INFORMASI MODULES**\n**GROUP SUPPORT:** [MASUK](@petercord)")
+        await petercord.reply("\n**CARA MEMAKAINYA,** **CONTOH:**\n**KETIK** `.help petercordoff` **UNTUK INFORMASI MODULES**\n**GROUP SUPPORT:** [MASUK](https://t.me/petercord)")
         await asyncio.sleep(1000)
         await petercord.delete()
