@@ -72,7 +72,7 @@ async def handler(tele):
                                 f"**PETERCORD, Pengguna Gban Telah Bergabung** \n"
                                 f"**Pengguna**: [{guser.id}](tg://user?id={guser.id})\n"
                                 f"**Aksi**  : `Banned`"
-                                f"**Reason**:`{reason}`"
+                                f"**Reason**: {reason}"
                             )
                         except BaseException:
                             return
@@ -140,7 +140,7 @@ async def gban(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"**➠ Perintah:** `{ALIVE_NAME}`\n**➠ Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**➠ Aksi:** `Global Banned`\n**➠ Reason** '{reason}`"
+        f"**➠ Perintah:** `{ALIVE_NAME}`\n**➠ Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**➠ Aksi:** `Global Banned`\n**➠ Reason** {reason}"
     )
 
 
