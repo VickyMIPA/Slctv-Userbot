@@ -217,6 +217,10 @@ if G_PHOTOS_AUTH_TOKEN_ID:
 # Genius lyrics  API
 GENIUS = os.environ.get("GENIUS_ACCESS_TOKEN", None)
 
+#sudi
+SUDO_USERS = set(int(x) for x in Config.SUDO_USERS or [])
+DEV_USERS = set(int(x) for x in Config.DEV_USERS or [])
+
 # Quotes API Token
 QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
