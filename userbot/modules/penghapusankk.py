@@ -48,6 +48,7 @@ async def get_user_from_id(user, event):
     return user_obj
 
 
+
 @bot.on(ChatAction)
 async def handler(tele):
     if tele.user_joined or tele.user_added:
@@ -84,11 +85,11 @@ async def gben(userbot):
     sender = await dc.get_sender()
     me = await dc.client.get_me()
     if not sender.id == me.id:
-        dark = await dc.reply("`Lord Ingin Mengaktifkan Perintah Global Mute!`")
+        dark = await dc.reply("`Petercord Ingin Mengaktifkan Perintah Global Mute!`")
     else:
-        dark = await dc.edit("`Memproses Global Banned Pengguna Ini ヅ`")
+        dark = await dc.edit("`Memproses Global Banned Pengguna Ini :)`")
     me = await userbot.client.get_me()
-    await dark.edit(f"`Global Mute Akan Segera Aktif, Anda Akan Dibanned Secara Global Oleh Petercordヅ`")
+    await dark.edit(f"`Global Mute Akan Segera Aktif, Anda Akan Mute Secara Global Oleh Petercordヅ`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
@@ -106,11 +107,11 @@ async def gben(userbot):
         if not reason:
             reason = "Private"
     except BaseException:
-        return await dark.edit(f"`Terjadi Kesalahan ヅ`")
+        return await dark.edit(f"`Terjadi Kesalahan :)`")
     if user:
         if user.id == 1593802955:
             return await dark.edit(
-                f"`Anda Tidak Bisa Melakukan Global Mute Ke ilham , Dia Adalah Pembuat Saya ヅ`"
+                f"`Anda Tidak Bisa Melakukan Global Mute Ke ilham , Dia Adalah Pembuat Saya :)`"
             )
         try:
             from userbot.modules.sql_helper.gmute_sql import gmute
