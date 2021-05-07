@@ -48,6 +48,7 @@ async def get_user_from_id(user, event):
     return user_obj
 
 
+
 @bot.on(ChatAction)
 async def handler(tele):
     if tele.user_joined or tele.user_added:
@@ -70,7 +71,7 @@ async def handler(tele):
                                 tele.chat_id, guser.id, view_messages=False
                             )
                             await tele.reply(
-                                f"**Petercord, Pengguna Gban Telah Bergabung** \n"
+                                f"**Petercord, Pengguna Gmute Telah Bergabung** \n"
                                 f"**Pengguna**: [{guser.id}](tg://user?id={guser.id})\n"
                                 f"**Aksi**  : `Mute`"
                             )
