@@ -105,7 +105,7 @@ async def gban(userbot):
         pass
     try:
         if not reason:
-            reason = "userbot.pattern_match.group(1)"
+            reason = userbot.pattern_match.group(1)
     except BaseException:
         return await dark.edit(f"`Terjadi Kesalahan`")
     if user:
