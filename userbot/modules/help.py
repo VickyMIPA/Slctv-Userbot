@@ -54,7 +54,7 @@ async def help(petercord):
                              "**💥 BAGIAN 14:**\n"
                              "**╭┄┅┯┅┄┄┅┯┅┄╮**\n\n🇹🇯`transform`🇹🇯`update`🇹🇯`download`🇹🇯`getid`🇹🇯`waifu`🇹🇯`wallpaper`🇹🇯`weather`🇹🇯\n\n**╰┄┅┷┅┄┄┅┷┅┄╯**\n"
                              "**💥 BAGIAN 15:**\n"
-                             "**╭┄┅┯┅┄┄┅┯┅┄╮**\n\n🇸🇬`webupload`🇸🇬`welcome`🇸🇬`whois`🇸🇬`ping`🇸🇬`sinyal`🇸🇬`xiaomi`🇸🇬`zipfile`🇸🇬`penghapusankk`🇸🇬**╰┄┅┷┅┄┄┅┷┅┄╯**\n\n**By.Tentang Aku Dan Dia\n")
+                             "**╭┄┅┯┅┄┄┅┯┅┄╮**\n\n🇸🇬`webupload`🇸🇬`welcome`🇸🇬`whois`🇸🇬`ping`🇸🇬`sinyal`🇸🇬`xiaomi`🇸🇬`zipfile`🇸🇬`penghapusankk`🇸🇬**╰┄┅┷┅┄┄┅┷┅┄╯**\n\n**By.Tentang Aku Dan Dia**\n")
         await petercord.reply("\n**CARA MEMAKAINYA,** **CONTOH:**\n**KETIK** `.help petercordoff` **UNTUK INFORMASI MODULES**\n**GROUP SUPPORT:** [PETERCORD-USERBOT](@petercord)")
         await asyncio.sleep(1000)
         await petercord.delete()
