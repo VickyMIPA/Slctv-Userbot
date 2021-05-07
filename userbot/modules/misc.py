@@ -116,19 +116,11 @@ async def repeat(rep):
     await rep.edit(replyText)
 
 
-@register(outgoing=True, pattern="^.repowatshapp$")
-async def repo_is_here(wannasee):
-    """ For .repo command, just returns the repo URL. """
-    await wannasee.edit(
-        "✅ **Watshapp Userbot:** [[Watshapp-Userbot]](https://github.com/BOT-PROJECT-MANSIEZ/Watsahapa-AsenaMansiez)\n🚹 **Pemilik:** [🎸ILham Mansiezz🎸](t.me/diemmmmmmmmmm)"
-    )
-
-
 @register(outgoing=True, pattern="^.repo$")
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "🔰 **Repo Userbot:** [Petercord-Userbot](https://github.com/ilham77mansiz/-PETERCORD-)\n🚹 **Pemilik:** [🎸ILham Mansiezz🎸](t.me/diemmmmmmmmmm)"
+        "**╭┄┅┯┅┄┄┅┯┅┄╮**\n\n [𝗣 𝗘 𝗧 𝗘 𝗥 𝗖 𝗢 𝗥 𝗗](https://github.com/ilham77mansiz/-PETERCORD-)\n\n [𝗢 𝗪 𝗡 𝗘 𝗥 𝗦](t.me/diemmmmmmmmmm)\n\n [GRUP SUPPORT](https://t.me/petercord)\n\n**╰┄┅┷┅┄┄┅┷┅┄╯**\n"
     )
 
 
