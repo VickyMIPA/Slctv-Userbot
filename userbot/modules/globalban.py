@@ -140,7 +140,7 @@ async def gban(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"**➠ Perintah:** `{ALIVE_NAME}`\n**➠ Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**➠ Aksi:** `Global Banned`\n**Reason** '{reason}`"
+        f"**➠ Perintah:** `{ALIVE_NAME}`\n**➠ Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**➠ Aksi:** `Global Banned`\n**➠ Reason** '{reason}`"
     )
 
 
