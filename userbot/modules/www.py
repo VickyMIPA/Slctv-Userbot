@@ -97,21 +97,28 @@ async def pingme(pong):
                     f"`{uptime}` \n" % (duration))
 
 
+
 @register(outgoing=True, pattern="^.ping$")
 async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit(" Userbot ")
-    await pong.edit("❇️❇️❇️❇️ \n❇️❇️❇️❇️ \n❇️❇️❇️❇️❇️")
-    await pong.edit("❇️    ❇️ \n❇️    ❇️ \n     ❇️")
-    await pong.edit("❇️  ❇️❇️ \n❇️    ❇️ \n     ❇️")
-    await pong.edit("❇️    ❇️ \n❇️    ❇️ \n     ❇️")
-    await pong.edit("❇️❇️❇️❇️ \n❇️❇️❇️❇️ \n     ❇️")
+    await pong.edit("**➠**")
+    await pong.edit("**.➠**")
+    await pong.edit("**..➠**")
+    await pong.edit("**...➠**")
+    await pong.edit("**....➠**")
+    await pong.edit("**.....➠**")
+    await pong.edit("**......➠**")
+    await pong.edit("**💣**")
+    await pong.edit("**💥**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**PETERCORD!! 🕷🕸🕷**\n**⚜PETERCORD⚜** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration))
-
+    await pong.edit(f"┏━《 **𝗣 𝗘 𝗧 𝗘 𝗥 𝗖 𝗢 𝗥 𝗗** 》━\n**[TEKAN](https://t.me/petercord)**\n"
+                    f"┣➠  __Ping:__ "
+                    f"`%sms` \n"
+                    f"┗➠ __Uptime:__ "
+                    f"`{uptime}` \n" % (duration))
 
 @register(outgoing=True, pattern="^.speed$")
 async def speedtst(spd):
