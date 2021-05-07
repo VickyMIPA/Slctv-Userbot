@@ -212,4 +212,4 @@ CMD_HELP.update({
 **Modules:** __Global Banned__\n\n**Perintah:** `.gban`\
 \n**Penjelasan:** Melakukan Banned Secara Global Ke Semua Grup Dimana Anda Sebagai Admin.\
 \n\n**Perintah:** `.ungban`\
-\n**Penjelasan:** Membatalkan Global Banned"}
+\n**Penjelasan:** Membatalkan Global Banned"})
