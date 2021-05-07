@@ -171,7 +171,7 @@ async def gunban(userbot):
         pass
     try:
         if not reason:
-            reason = "Private"
+            reason = userbot.pattern_match.group(1)
     except BaseException:
         return await dark.edit("`Terjadi Kesalahan`")
     if user:
@@ -205,7 +205,7 @@ async def gunban(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"**➠ Perintah:** `{ALIVE_NAME}`\n**➠ Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**➠ Aksi:** `Membatalkan Global Banned`**Reason**\n`{reason}`"
+        f"**➠ Perintah:** `{ALIVE_NAME}`\n**➠ Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**➠ Aksi:** `Membatalkan Global Banned`**➠ Reason**\n{reason}"
     )
 
 
