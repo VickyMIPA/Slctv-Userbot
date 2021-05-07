@@ -1,3 +1,4 @@
+#port ilham mansiz
 from telethon.events import ChatAction
 from userbot import ALIVE_NAME, CMD_HELP, bot
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
@@ -44,7 +45,7 @@ async def get_user_from_id(user, event):
         await event.edit(str(err))
         return None
     return user_obj
-# Ported For Pocong-userbot by Ocong
+# Ported For Ilham mansiz
 
 
 @bot.on(ChatAction)
@@ -104,7 +105,7 @@ async def gban(userbot):
         pass
     try:
         if not reason:
-            reason = "Private"
+            reason = "userbot.pattern_match.group(1)"
     except BaseException:
         return await dark.edit(f"`Terjadi Kesalahan`")
     if user:
