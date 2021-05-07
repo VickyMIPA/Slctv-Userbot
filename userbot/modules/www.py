@@ -106,7 +106,7 @@ async def pingme(pong):
     await pong.edit("__Connecting.__")
     await pong.edit("__Connecting.__")
     await pong.edit("__Connecting.__")
-    await pong.edit(__Connecting.__")
+    await pong.edit("__Connecting.__")
     await pong.edit("__Connecting.__")
     await pong.edit("__Connecting.__\n ADA BOMS💣")
     await pong.edit("**💣**")
