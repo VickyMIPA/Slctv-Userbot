@@ -54,7 +54,7 @@ async def handler(tele):
         try:
             from userbot.modules.sql_helper.gban_sql import is_gbanned
 
-            get_gbanuser = await tele.get_user()
+            await tele.get_user()
             gban = is_gbanned(guser.id, reason)
         except BaseException:
             return
