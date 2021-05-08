@@ -3,6 +3,7 @@ from telethon.events import ChatAction
 from userbot import ALIVE_NAME, CMD_HELP, bot
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 
+
 from userbot.events import register
 from telethon.tl.types import MessageEntityMentionName
 
@@ -46,6 +47,7 @@ async def get_user_from_id(user, event):
         await event.edit(str(err))
         return None
     return user_obj
+
 # Ported For Ilham mansiz
 
 
@@ -119,7 +121,7 @@ async def gban(userbot):
         except BaseException:
             pass
         try:
-            await userbot.client(BlockRequest, (user))
+            await userbot.client(BlockRequest(user))
         except BaseException:
             pass
         testuserbot = [
