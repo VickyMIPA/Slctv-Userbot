@@ -55,7 +55,7 @@ async def handler(tele):
             pass
 
             await tele.get_user()
-            gban = gban(guser.id, reason)
+            gban = is_gbanned(guser.id, reason)
         except BaseException:
             return
         if gban:
