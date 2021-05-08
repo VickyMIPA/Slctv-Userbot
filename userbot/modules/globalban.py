@@ -7,29 +7,6 @@ from telethon.tl.types import ChatBannedRights
 from userbot.events import register
 from telethon.tl.types import MessageEntityMentionName
 
-BANNED_RIGHTS = ChatBannedRights(
-    until_date=None,
-    view_messages=True,
-    send_messages=True,
-    send_media=True,
-    send_stickers=True,
-    send_gifs=True,
-    send_games=True,
-    send_inline=True,
-    embed_links=True,
-)
-
-UNBAN_RIGHTS = ChatBannedRights(
-    until_date=None,
-    send_messages=None,
-    send_media=None,
-    send_stickers=None,
-    send_gifs=None,
-    send_games=None,
-    send_inline=None,
-    embed_links=None,
-)
-
 
 async def get_full_user(event):
     args = event.pattern_match.group(1).split(':', 1)
@@ -143,7 +120,7 @@ async def gban(userbot):
         except BaseException:
             pass
         try:
-            await userbot.client(BlockRequest, BANNED_RIGHTS(user))
+            await userbot.client(BlockRequest,(user))
         except BaseException:
             pass
         testuserbot = [
@@ -207,7 +184,7 @@ async def gunban(userbot):
         except BaseException:
             pass
         try:
-            await userbot.client(UnblockRequest UNBAN_RIGHTS(user))
+            await userbot.client(UnblockRequest(user))
         except BaseException:
             pass
         testuserbot = [
