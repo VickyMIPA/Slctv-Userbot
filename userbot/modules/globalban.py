@@ -30,6 +30,7 @@ UNBAN_RIGHTS = ChatBannedRights(
     embed_links=None,
 )
 
+
 async def get_full_user(event):
     args = event.pattern_match.group(1).split(':', 1)
     extra = None
