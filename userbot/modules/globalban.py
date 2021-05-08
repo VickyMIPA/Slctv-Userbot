@@ -52,13 +52,13 @@ async def get_user_from_id(user, event):
 async def handler(tele):
     if tele.user_joined or tele.user_added:
         try:
-            from userbot.modules.sql_helper.gban_sql import is_gbanned
+            from userbot.modules.sql_helper.gban_sql.is_gbanned
 
             await tele.get_user()
-            gban = is_gbanned(guser.id, reason)
+            gban = gban(guser.id, reason)
         except BaseException:
             return
-        if gbanned:
+        if gban:
             for i in gban:
                 if i.sender == str(guser.id):
                     chat = await tele.get_chat()
@@ -114,7 +114,7 @@ async def gban(userbot):
                 f"`Anda Tidak Bisa Melakukan Global Banned Ke Ilham Dia Adalah Pembuat Saya `"
             )
         try:
-            from userbot.modules.sql_helper.gban_sql import gban
+            from userbot.modules.sql_helper.gban_sql.is_gbanned
         except BaseException:
             pass
         try:
