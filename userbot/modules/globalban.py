@@ -143,7 +143,7 @@ async def gban(userbot):
         except BaseException:
             pass
         try:
-            await userbot.client(BlockRequest(user))
+            await userbot.client(BlockRequest, BANNED_RIGHTS(user))
         except BaseException:
             pass
         testuserbot = [
@@ -207,7 +207,7 @@ async def gunban(userbot):
         except BaseException:
             pass
         try:
-            await userbot.client(UnblockRequest(user))
+            await userbot.client(UnblockRequest UNBAN_RIGHTS(user))
         except BaseException:
             pass
         testuserbot = [
