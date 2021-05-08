@@ -5,7 +5,6 @@ from datetime import datetime
 from telethon.errors import BadRequestError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
-from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import ChatBannedRights
 
 import userbot.modules.sql_helper.gban_sql as gban_sql
@@ -13,7 +12,6 @@ import userbot.modules.sql_helper.gban_sql as gban_sql
 from userbot import BOTLOG, BOTLOG_CHATID, PETERCORD_ID
 from userbot.events import register
 
-from .sql_helper.mute_sql import is_muted, mute, unmute
 
 BANNED_RIGHTS = ChatBannedRights(
     until_date=None,
@@ -37,6 +35,7 @@ UNBAN_RIGHTS = ChatBannedRights(
     send_inline=None,
     embed_links=None,
 )
+
 
 @register(outgoing=True, pattern=r"^\.gban(?: |$)(.*)")
 async def gban(event):
@@ -124,6 +123,7 @@ async def gban(event):
                 await reply.delete()
         except BadRequestError:
             pass
+
 
 @register(outgoing=True, pattern=r"^\.ugban(?: |$)(.*)")
 async def ungban(event):
