@@ -74,7 +74,7 @@ async def handler(tele):
                                 f"**PETERCORD, Pengguna Gban Telah Bergabung** \n"
                                 f"**Pengguna**: [{guser.id}](tg://user?id={guser.id})\n"
                                 f"**Tindakan**  : `Banned`"
-                                f"**Alasan**: {reason}
+                                f"** Alasan**: {reason}
                             )
                         except BaseException:
                             return
