@@ -131,7 +131,7 @@ async def save_goodbye(event):
     elif event.reply_to_msg_id and not string:
         rep_msg = await event.get_reply_message()
         string = rep_msg.text
-    success = "`Berhasil Menyimpan Pesan Welcome {} ツ`"
+    success = "`Berhasil Menyimpan Pesan Goodbye {} ツ`"
     if add_goodbye_setting(event.chat_id, 0, string, msg_id) is True:
         await event.edit(success.format('Disini'))
     else:
@@ -141,7 +141,7 @@ async def save_goodbye(event):
 @register(outgoing=True, pattern="^.checkwelcome$")
 async def show_goodbye(event):
     try:
-        pass
+        from userbot.modules.sql_helper.goodbye_sql import get_current_goodbye_settings
     except AttributeError:
         return await event.edit("`Running on Non-SQL mode!`")
     cws = get_current_welcome_settings(event.chat_id)
