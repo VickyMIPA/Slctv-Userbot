@@ -102,7 +102,7 @@ async def welcome_to_chat(event):
             update_previous_goodbye(event.chat_id, current_message.id)
 
 
-@register(outgoing=True, pattern=r"^.setwelcome(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^.setgoodbye(?: |$)(.*)")
 async def save_goodbye(event):
     try:
         from userbot.modules.sql_helper.goodbye_sql import add_goodbye_setting
@@ -138,7 +138,7 @@ async def save_goodbye(event):
         await event.edit(success.format('Disini'))
 
 
-@register(outgoing=True, pattern="^.checkwelcome$")
+@register(outgoing=True, pattern="^.checkgoodbye$")
 async def show_goodbye(event):
     try:
         pass
@@ -159,7 +159,7 @@ async def show_goodbye(event):
         await event.reply(cws.reply)
 
 
-@register(outgoing=True, pattern="^.rmwelcome$")
+@register(outgoing=True, pattern="^.rmgoodbye$")
 async def del_goodbye(event):
     try:
         from userbot.modules.sql_helper.goodbye_sql import rm_goodbye_setting
@@ -173,7 +173,7 @@ async def del_goodbye(event):
 
 CMD_HELP.update({
     "goodbye":
-    ">`.setgoodbye` <pesan goodbye> atau balas ke pesan ketik `.setwelcome`"
+    ">`.setgoodbye` <pesan goodbye> atau balas ke pesan ketik `.setgoodbye`"
     "\nUsage: Menyimpan pesan goodbye digrup."
     "\n\nFormat Variabel yang bisa digunakan dipesan goodbye:"
     "\n`{mention}, {title}, {count}, {first}, {last}, {fullname}, "
