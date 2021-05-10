@@ -1,24 +1,27 @@
 # Port ilham mansiz
+from datetime import datetime
+
+from pytz import timezone
 from userbot.events import register
 from userbot import CMD_HELP, bot, LOGS, CLEAN_WELCOME, BOTLOG_CHATID
 from telethon.events import ChatAction
 
 
 @bot.on(ChatAction)
-async def goodbye_to_chat(event):
+async def welcome_to_chat(event):
     try:
         from userbot.modules.sql_helper.goodbye_sql import get_current_goodbye_settings
         from userbot.modules.sql_helper.goodbye_sql import update_previous_goodbye
-    except:
+    except AttributeError:
         return
     cws = get_current_goodbye_settings(event.chat_id)
     if cws:
-        """user_added=False,
-        user_joined=False,
-        user_left=True,
-        user_kicked=True"""
-        if (event.user_left
-                or event.user_kicked) and not (await event.get_user()).bot:
+        """user_added=True,
+        user_joined=True,
+        user_left=False,
+        user_kicked=False"""
+        if (event.user_joined
+                or event.user_added) and not (await event.get_user()).bot:
             if CLEAN_WELCOME:
                 try:
                     await event.client.delete_messages(event.chat_id,
@@ -29,7 +32,29 @@ async def goodbye_to_chat(event):
             chat = await event.get_chat()
             me = await event.client.get_me()
 
-            title = chat.title if chat.title else "this chat"
+            # Current time in UTC
+            now_utc = datetime.now(timezone("UTC"))
+
+            # Convert to Jakarta time zone
+            jakarta_timezone = now_utc.astimezone(timezone("Asia/Jakarta"))
+            if jakarta_timezone.hour < 4:
+                pass
+            elif 4 <= jakarta_timezone.hour < 6:
+                pass
+            elif 6 <= jakarta_timezone.hour < 11:
+                pass
+            elif 11 <= jakarta_timezone.hour < 13:
+                pass
+            elif 13 <= jakarta_timezone.hour < 15:
+                pass
+            elif 15 <= jakarta_timezone.hour < 17:
+                pass
+            elif 17 <= jakarta_timezone.hour < 19:
+                pass
+            else:
+                pass
+
+            title = chat.title if chat.title else "Grup Ini"
             participants = await event.client.get_participants(chat)
             count = len(participants)
             mention = "[{}](tg://user?id={})".format(a_user.first_name,
@@ -77,89 +102,85 @@ async def goodbye_to_chat(event):
             update_previous_goodbye(event.chat_id, current_message.id)
 
 
-@register(outgoing=True, pattern=r"^.setgoodbye(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^.setwelcome(?: |$)(.*)")
 async def save_goodbye(event):
     try:
         from userbot.modules.sql_helper.goodbye_sql import add_goodbye_setting
-    except:
-        await event.edit("`Berjalan Pada Mode Non-SQL!`")
-        return
+    except AttributeError:
+        return await event.edit("`Berjalan Pada Mode Non-SQL!`")
     msg = await event.get_reply_message()
     string = event.pattern_match.group(1)
     msg_id = None
     if msg and msg.media and not string:
         if BOTLOG_CHATID:
             await event.client.send_message(
-                BOTLOG_CHATID, f"📢GOODBYE PETERCORD📢\
-            \nGRUP ID: {event.chat_id}\
-            \nPetercord Memasang Pesan Perintah Welcome Digrup, Ini Adalah Catatan Pesan Welcome "
-             "Mohon Jangan Dihapus 🎸Petercord!🎸"
-            msg_o=await event.client.forward_messages(
+                BOTLOG_CHATID, f"📢GOODBYE PETERCORD📢 \nID GRUP: {event.chat_id}"
+                "\nPetercord Memasang Pesan Perintah GOODBYE Digrup, Ini Adalah Catatan Pesan Goodbye "
+                "Mohon Jangan Dihapus 🎸Petercord!🎸"
+            )
+            msg_o = await event.client.forward_messages(
                 entity=BOTLOG_CHATID,
                 messages=msg,
                 from_peer=event.chat_id,
                 silent=True)
-            msg_id=msg_o.id
+            msg_id = msg_o.id
         else:
-            await event.edit(
-                "`Untuk membuat media sebagai pesan GOODBYE, BOTLOG_CHATID Harus disetel.`"
+            return await event.edit(
+                "`Untuk membuat media sebagai pesan Goodbye, BOTLOG_CHATID Harus disetel.`"
             )
-            return
     elif event.reply_to_msg_id and not string:
-        rep_msg=await event.get_reply_message()
-        string=rep_msg.text
-    success="`Berhasil Menyimpan Pesan GOODBYE {} ツ`"
+        rep_msg = await event.get_reply_message()
+        string = rep_msg.text
+    success = "`Berhasil Menyimpan Pesan Welcome {} ツ`"
     if add_goodbye_setting(event.chat_id, 0, string, msg_id) is True:
         await event.edit(success.format('Disini'))
     else:
         await event.edit(success.format('Disini'))
 
 
-@ register(outgoing=True, pattern="^.checkgoodbye$")
+@register(outgoing=True, pattern="^.checkwelcome$")
 async def show_goodbye(event):
     try:
         from userbot.modules.sql_helper.goodbye_sql import get_current_goodbye_settings
-    except:
-        await event.edit("`Running on Non-SQL mode!`")
-        return
-    cws=get_current_goodbye_settings(event.chat_id)
+    except AttributeError:
+        return await event.edit("`Running on Non-SQL mode!`")
+    cws = get_current_welcome_settings(event.chat_id)
     if not cws:
-        await event.edit("`Disini tidak ada pesan goodbye Petercord.`")
-        return
+        return await event.edit("`Disini Tidak Ada Pesan GOODBYE Yang Anda Simpan Petercord ツ`")
     elif cws and cws.f_mesg_id:
-        msg_o=await event.client.get_messages(entity=BOTLOG_CHATID,
+        msg_o = await event.client.get_messages(entity=BOTLOG_CHATID,
                                                 ids=int(cws.f_mesg_id))
         await event.edit(
-            "`ANDA TELAH MEMBUAT GOODBYE DISINI`")
+            "`Anda Telah Membuat Pesan GOODBYE Disini ツ`")
         await event.reply(msg_o.message, file=msg_o.media)
     elif cws and cws.reply:
         await event.edit(
-            "`ANDA TELAH MEMBUAT GOODBYE DISINI`")
+            "`Anda Telah Membuat Pesan GOODBYE Disini ツ`")
         await event.reply(cws.reply)
 
 
-@ register(outgoing=True, pattern="^.rmgoodbye$")
+@register(outgoing=True, pattern="^.rmwelcome$")
 async def del_goodbye(event):
     try:
         from userbot.modules.sql_helper.goodbye_sql import rm_goodbye_setting
-    except:
-        await event.edit("`Running on Non-SQL mode!`")
-        return
+    except AttributeError:
+        return await event.edit("`Running on Non-SQL mode!`")
     if rm_goodbye_setting(event.chat_id) is True:
-        await event.edit("`Menghapus Goodbye Berhasil dilakukan.`")
+        await event.edit("`Menghapus Pesan goodbye Berhasil Dilakukan ツ`")
     else:
-        await event.edit("`Anda tidak menyimpan goodbye disini ?`")
+        await event.edit("`Anda Tidak Menyimpan Pesan goodbye Apapun Disini Petercord ツ`")
+
 
 CMD_HELP.update({
     "goodbye":
-    ">`.setgoodbye` <pesan welcome> atau balas ke pesan ketik `.setwelcome`"
-    "\nUsage: Menyimpan pesan welcome digrup."
-    "\n\nFormat Variabel yang bisa digunakan dipesan welcome:"
+    ">`.setgoodbye` <pesan goodbye> atau balas ke pesan ketik `.setwelcome`"
+    "\nUsage: Menyimpan pesan goodbye digrup."
+    "\n\nFormat Variabel yang bisa digunakan dipesan goodbye:"
     "\n`{mention}, {title}, {count}, {first}, {last}, {fullname}, "
     "{userid}, {username}, {my_first}, {my_fullname}, {my_last}, "
     "{my_mention}, {my_username}`"
-    "\n\n>`.checgoodbye`"
-    "\nUsage: Check pesan welcome yang anda simpan."
+    "\n\n>`.checkgoodbye`"
+    "\nUsage: Check pesan goodbye yang anda simpan."
     "\n\n>`.rmgoodbye`"
-    "\nUsage: Menghapus pesan welcome yang anda simpan."
+    "\nUsage: Menghapus pesan goodbye yang anda simpan."
 })
