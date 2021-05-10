@@ -141,7 +141,7 @@ async def save_goodbye(event):
 @register(outgoing=True, pattern="^.checkwelcome$")
 async def show_goodbye(event):
     try:
-        from userbot.modules.sql_helper.goodbye_sql import get_current_goodbye_settings
+        pass
     except AttributeError:
         return await event.edit("`Running on Non-SQL mode!`")
     cws = get_current_welcome_settings(event.chat_id)
