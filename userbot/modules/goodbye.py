@@ -144,7 +144,7 @@ async def show_goodbye(event):
         pass
     except AttributeError:
         return await event.edit("`Running on Non-SQL mode!`")
-    cws = get_current_welcome_settings(event.chat_id)
+    cws = get_current_goodbye_settings(event.chat_id)
     if not cws:
         return await event.edit("`Disini Tidak Ada Pesan GOODBYE Yang Anda Simpan Petercord ツ`")
     elif cws and cws.f_mesg_id:
