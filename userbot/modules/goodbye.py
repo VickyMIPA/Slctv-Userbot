@@ -142,7 +142,7 @@ async def save_goodbye(event):
 async def show_goodbye(event):
     try:
         from userbot.modules.sql_helper.goodbye_sql import get_current_goodbye_settings
-    except:
+    except BaseException:
         await event.edit("`SQL dışı modda çalışıyor!`")
         return
     cws = get_current_goodbye_settings(event.chat_id)
