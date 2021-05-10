@@ -1,7 +1,8 @@
-#Port ilham mansiz
+# Port ilham mansiz
 from userbot.events import register
 from userbot import CMD_HELP, bot, LOGS, CLEAN_WELCOME, BOTLOG_CHATID
 from telethon.events import ChatAction
+
 
 @bot.on(ChatAction)
 async def goodbye_to_chat(event):
@@ -93,40 +94,40 @@ async def save_goodbye(event):
             \nGRUP ID: {event.chat_id}\
             \nPetercord Memasang Pesan Perintah Welcome Digrup, Ini Adalah Catatan Pesan Welcome "
              "Mohon Jangan Dihapus 🎸Petercord!🎸"
-            msg_o = await event.client.forward_messages(
+            msg_o=await event.client.forward_messages(
                 entity=BOTLOG_CHATID,
                 messages=msg,
                 from_peer=event.chat_id,
                 silent=True)
-            msg_id = msg_o.id
+            msg_id=msg_o.id
         else:
             await event.edit(
                 "`Untuk membuat media sebagai pesan GOODBYE, BOTLOG_CHATID Harus disetel.`"
             )
             return
     elif event.reply_to_msg_id and not string:
-        rep_msg = await event.get_reply_message()
-        string = rep_msg.text
-    success = "`Berhasil Menyimpan Pesan GOODBYE {} ツ`"
+        rep_msg=await event.get_reply_message()
+        string=rep_msg.text
+    success="`Berhasil Menyimpan Pesan GOODBYE {} ツ`"
     if add_goodbye_setting(event.chat_id, 0, string, msg_id) is True:
         await event.edit(success.format('Disini'))
     else:
         await event.edit(success.format('Disini'))
 
 
-@register(outgoing=True, pattern="^.checkgoodbye$")
+@ register(outgoing=True, pattern="^.checkgoodbye$")
 async def show_goodbye(event):
     try:
         from userbot.modules.sql_helper.goodbye_sql import get_current_goodbye_settings
     except:
         await event.edit("`Running on Non-SQL mode!`")
         return
-    cws = get_current_goodbye_settings(event.chat_id)
+    cws=get_current_goodbye_settings(event.chat_id)
     if not cws:
         await event.edit("`Disini tidak ada pesan goodbye Petercord.`")
         return
     elif cws and cws.f_mesg_id:
-        msg_o = await event.client.get_messages(entity=BOTLOG_CHATID,
+        msg_o=await event.client.get_messages(entity=BOTLOG_CHATID,
                                                 ids=int(cws.f_mesg_id))
         await event.edit(
             "`ANDA TELAH MEMBUAT GOODBYE DISINI`")
@@ -137,7 +138,7 @@ async def show_goodbye(event):
         await event.reply(cws.reply)
 
 
-@register(outgoing=True, pattern="^.rmgoodbye$")
+@ register(outgoing=True, pattern="^.rmgoodbye$")
 async def del_goodbye(event):
     try:
         from userbot.modules.sql_helper.goodbye_sql import rm_goodbye_setting
