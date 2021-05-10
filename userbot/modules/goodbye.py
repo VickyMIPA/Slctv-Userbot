@@ -8,7 +8,7 @@ from telethon.events import ChatAction
 
 
 @bot.on(ChatAction)
-async def welcome_to_chat(event):
+async def goodbye_to_chat(event):
     try:
         from userbot.modules.sql_helper.goodbye_sql import get_current_goodbye_settings
         from userbot.modules.sql_helper.goodbye_sql import update_previous_goodbye
