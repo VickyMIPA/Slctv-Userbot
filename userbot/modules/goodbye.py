@@ -141,21 +141,23 @@ async def save_goodbye(event):
 @register(outgoing=True, pattern="^.checkgoodbye$")
 async def show_goodbye(event):
     try:
-        pass
-    except AttributeError:
-        return await event.edit("`Running on Non-SQL mode!`")
+        from userbot.modules.sql_helper.goodbye_sql import get_current_goodbye_settings
+    except:
+        await event.edit("`SQL dışı modda çalışıyor!`")
+        return
     cws = get_current_goodbye_settings(event.chat_id)
     if not cws:
-        return await event.edit("`Disini Tidak Ada Pesan GOODBYE Yang Anda Simpan Petercord ツ`")
+        await event.edit("`Burada kayıtlı karşılama mesajı yok.`")
+        return
     elif cws and cws.f_mesg_id:
         msg_o = await event.client.get_messages(entity=BOTLOG_CHATID,
                                                 ids=int(cws.f_mesg_id))
         await event.edit(
-            "`Anda Telah Membuat Pesan GOODBYE Disini ツ`")
+            "`Şu anda bu not ile çıkanları/ban yiyenlere yanıtlıyorum.`")
         await event.reply(msg_o.message, file=msg_o.media)
     elif cws and cws.reply:
         await event.edit(
-            "`Anda Telah Membuat Pesan GOODBYE Disini ツ`")
+            "`Şu anda bu not ile çıkanları/ban yiyenlere yanıtlıyorum.`")
         await event.reply(cws.reply)
 
 
