@@ -298,7 +298,7 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**🔮 PETERCORD⚛━━━━⚛USERBOT 🔮** \n"
+        f"**🔮 PETERCORD USERBOT 🔮** \n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
         f"┣|📌 `Petercord:`{DEFAULTUSER} \n"
         f"┣|📌 `Username :`@{user.username} \n"
