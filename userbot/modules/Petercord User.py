@@ -936,6 +936,21 @@ async def koc(e):
         await e.edit("SEBELUM SAMPAI RUMAH EH MALAH KECELAKAAN")
 # Create by myself @localheart
 
+@register(outgoing=True, pattern='^.voff(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit(".                       /¯ )")
+    await typew.edit(".                       /¯ )\n                      /¯  /")
+    await typew.edit(".                       /¯ )\n                      /¯  /\n                    /    /")
+    await typew.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸")
+    await typew.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ ")
+    await typew.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')")
+    await typew.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /")
+    await typew.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´")
+    await typew.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´\n            \\              (")
+    await typew.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´\n            \\              (\n              \\  ")
+
+
 CMD_HELP.update({
     "petercordkata-kata":
     "`.gabut` ; `.dino`\
@@ -966,6 +981,6 @@ CMD_HELP.update({
     \nUsage:teringat mantan.\
     \n\n`.raziamasker.`\
     \nUsage:Razia masker.\
-    \n\n`.ngabuburit`.\
+    \n\n`.ngabuburit` `.voff`.\
     \nUsage:Ngabuburit."
 })
