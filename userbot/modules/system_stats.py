@@ -236,8 +236,8 @@ async def amireallyalive(alive):
         f"┣|• `Modules  :`{len(modules)} Modules \n"
         f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
-        f"[Repo](https://github.com/ilham77mansiz/-PETERCORD-) | [GRUP SUPPORT](t.me/petercord) | [Owner](t.me/@diemmmmmmmmmm)")
-    f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
+        f"[Repo](https://github.com/ilham77mansiz/-PETERCORD-) | [GRUP SUPPORT](t.me/petercord) | [Owner](t.me/@diemmmmmmmmmm)\n"
+        f"┗━━━━━━━━━━━━━━━━━━━ ")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -309,8 +309,8 @@ async def amireallyalive(alive):
         f"┣|📌 `Modules  :`{len(modules)} Modules \n"
         f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
-        f"[Repo](https://github.com/ilham77mansiz/-PETERCORD-) | [Grup Support](https://t.me/petercord) | [Owner](t.me/diemmmmmmmmmm)")
-    f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
+        f"[Repo](https://github.com/ilham77mansiz/-PETERCORD-) | [Grup Support](https://t.me/petercord) | [Owner](t.me/diemmmmmmmmmm)\n"
+        f"┗━━━━━━━━━━━━━━━━━━━ ")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
