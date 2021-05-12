@@ -936,6 +936,7 @@ async def koc(e):
         await e.edit("SEBELUM SAMPAI RUMAH EH MALAH KECELAKAAN")
 # Create by myself @localheart
 
+
 @register(outgoing=True, pattern='^.voff(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
