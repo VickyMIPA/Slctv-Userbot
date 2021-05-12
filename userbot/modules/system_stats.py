@@ -218,35 +218,37 @@ async def pipcheck(pip):
         await pip.edit("Gunakan `.help pip` Untuk Melihat Contoh")
 
 
-@register(outgoing=True, pattern=r"^\.(?:petercord|petercordon)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:petercord|on)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
+    await alive.edit("`SAYA ALIVE!`")
+    await alive.edit("🔮")
     output = (
-        f" **┗┓PETERCORD USERBOT┏┛** \n"
-        f"\n__**{PETERCORD_TEKS_KUSTOM}**__\n"
-        f"**━━━━━━━━━━━━━━━━━━━━**\n"
-        f"**🐉 Petercord🐉** \n"
-        f" ➥ `{DEFAULTUSER}` \n"
-        f"**🐉 Username🐉** \n"
-        f" ➥ `@{user.username}` \n"
-        f"┏━━━━━━━━━━━━━━━━━━━\n"
-        f"┣[• `Telethon :`Ver {version.__version__} \n"
-        f"┣[• `Python   :`Ver {python_version()} \n"
-        f"┣[• `Bot Ver  :`{BOT_VER} \n"
-        f"┣[• `Modules  :`{len(modules)} \n"
-        f"┗━━━━━━━━━━━━━━━━━━━")
+        f"**🔮 PETERCORD USERBOT 🔮** \n\n"
+        f"┏━━━━━━━━━━━━━━━━━━━ \n"
+        f"┣|• `BOT      :`{DEFAULTUSER} \n"
+        f"┣|• `Username :`@{user.username} \n"
+        f"┣|• `Telethon :`Ver {version.__version__} \n"
+        f"┣|• `Python   :`Ver {python_version()} \n"
+        f"┣|• `Branch   :`{UPSTREAM_REPO_BRANCH} \n"
+        f"┣|• `Bot Ver  :`{BOT_VER} \n"
+        f"┣|• `Modules  :`{len(modules)} Modules \n"
+        f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
+        f"┏━━━━━━━━━━━━━━━━━━━ \n"
+        f"[Repo](https://github.com/ilham77mansiz/-PETERCORD-) | [GRUP SUPPORT](t.me/petercord) | [Owner](t.me/@diemmmmmmmmmm)")
+        f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
             await alive.delete()
             msg = await bot.send_file(alive.chat_id, logo, caption=output)
-            await asyncio.sleep(200)
+            await asyncio.sleep(500)
             await msg.delete()
         except BaseException:
             await alive.edit(
-                output + "\n\n *`The provided logo is invalid."
-                "\nMake sure the link is directed to the logo picture`"
+                output + "\n\n *`Logo Yang Disediakan Tidak Valid."
+                "\nPastikan Tautan Yang Anda Gunakan Valid`"
             )
             await asyncio.sleep(100)
             await alive.delete()
@@ -256,7 +258,7 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:peterpen|peter)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:peter|botpeter)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
@@ -298,15 +300,17 @@ async def amireallyalive(alive):
     output = (
         f"**🔮 PETERCORD⚛━━━━⚛USERBOT 🔮** \n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
-        f"┣|• `🎸Petercord:`{DEFAULTUSER} \n"
-        f"┣|• `🎸Username :`@{user.username} \n"
-        f"┣|• `🎸Telethon :`Ver {version.__version__} \n"
-        f"┣|• `🎸Python   :`Ver {python_version()} \n"
-        f"┣|• `🎸Branch   :`{UPSTREAM_REPO_BRANCH} \n"
-        f"┣|• `🎸Bot Ver  :`{BOT_VER} \n"
-        f"┣|• `🎸Modules  :`{len(modules)} Modules \n"
+        f"┣|📌 `Petercord:`{DEFAULTUSER} \n"
+        f"┣|📌 `Username :`@{user.username} \n"
+        f"┣|📌 `Telethon :`Ver {version.__version__} \n"
+        f"┣|📌 `Python   :`Ver {python_version()} \n"
+        f"┣|📌 `Branch   :`{UPSTREAM_REPO_BRANCH} \n"
+        f"┣|📌 `Bot Ver  :`{BOT_VER} \n"
+        f"┣|📌 `Modules  :`{len(modules)} Modules \n"
         f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
+        f"┏━━━━━━━━━━━━━━━━━━━ \n"
         f"[Repo](https://github.com/ilham77mansiz/-PETERCORD-) | [Grup Support](https://t.me/petercord) | [Owner](t.me/diemmmmmmmmmm)")
+        f"┗━━━━━━━━━━━━━━━━━━━ \n"
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
