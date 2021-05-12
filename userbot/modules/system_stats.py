@@ -237,7 +237,7 @@ async def amireallyalive(alive):
         f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
         f"[Repo](https://github.com/ilham77mansiz/-PETERCORD-) | [GRUP SUPPORT](t.me/petercord) | [Owner](t.me/@diemmmmmmmmmm)")
-    f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
+        f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -310,7 +310,7 @@ async def amireallyalive(alive):
         f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
         f"[Repo](https://github.com/ilham77mansiz/-PETERCORD-) | [Grup Support](https://t.me/petercord) | [Owner](t.me/diemmmmmmmmmm)")
-    f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
+        f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
