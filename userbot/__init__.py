@@ -365,13 +365,13 @@ def paginate_help(page_number, loaded_modules, prefix):
         ] + [
             (
                 custom.Button.inline(
-                    "ᴘʀᴇᴠɪᴇᴡ", data="{}_prev({})".format(prefix, modulo_page)
+                    "◀", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
                     '❌', b'close`
                 ),
                 custom.Button.inline(
-                    "ɴᴇxᴛ ᴍᴏᴅᴜʟᴇ", data="{}_next({})".format(prefix, modulo_page)
+                    "▶", data="{}_next({})".format(prefix, modulo_page)
                 ),
             )
         ]
