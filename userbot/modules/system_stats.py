@@ -223,17 +223,17 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     await alive.edit("`SAYA ALIVE!`")
-    await alive.edit("💫")
+    await alive.edit("🌍")
     output = (
         f"**✨ PETERCORD USERBOT ✨** \n\n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
-        f"┣|`BOT      :`{DEFAULTUSER} \n"
-        f"┣|`Username :`@{user.username} \n"
-        f"┣|`Telethon :`Ver {version.__version__} \n"
-        f"┣|`Python   :`Ver {python_version()} \n"
-        f"┣|`Branch   :`{UPSTREAM_REPO_BRANCH} \n"
-        f"┣|`Bot Ver  :`{BOT_VER} \n"
-        f"┣|`Modules  :`{len(modules)} Modules \n"
+        f"┣|🌟`BOT      :`{DEFAULTUSER} \n"
+        f"┣|🌟`Username :`@{user.username} \n"
+        f"┣|🌟`Telethon :`Ver {version.__version__} \n"
+        f"┣|🌟`Python   :`Ver {python_version()} \n"
+        f"┣|🌟`Branch   :`{UPSTREAM_REPO_BRANCH} \n"
+        f"┣|🌟`Bot Ver  :`{BOT_VER} \n"
+        f"┣|🌟`Modules  :`{len(modules)} Modules \n"
         f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
         f"[Repo](https://github.com/ilham77mansiz/-PETERCORD-) | [GRUP SUPPORT](t.me/petercord) | [Owner](t.me/@diemmmmmmmmmm)\n"
@@ -298,15 +298,15 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**💫 PETERCORD USERBOT 💫** \n"
+        f"**🪐 PETERCORD USERBOT 🪐** \n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
-        f"┣|`Petercord:`{DEFAULTUSER} \n"
-        f"┣|`Username :`@{user.username} \n"
-        f"┣|`Telethon :`Ver {version.__version__} \n"
-        f"┣|`Python   :`Ver {python_version()} \n"
-        f"┣|`Branch   :`{UPSTREAM_REPO_BRANCH} \n"
-        f"┣|`Bot Ver  :`{BOT_VER} \n"
-        f"┣|`Modules  :`{len(modules)} Modules \n"
+        f"┣|⚡`Petercord:`{DEFAULTUSER} \n"
+        f"┣|⚡`Username :`@{user.username} \n"
+        f"┣|⚡`Telethon :`Ver {version.__version__} \n"
+        f"┣|⚡`Python   :`Ver {python_version()} \n"
+        f"┣|⚡`Branch   :`{UPSTREAM_REPO_BRANCH} \n"
+        f"┣|⚡`Bot Ver  :`{BOT_VER} \n"
+        f"┣|⚡`Modules  :`{len(modules)} Modules \n"
         f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
         f"[Repo](https://github.com/ilham77mansiz/-PETERCORD-) | [Grup Support](https://t.me/petercord) | [Owner](t.me/diemmmmmmmmmm)\n"
