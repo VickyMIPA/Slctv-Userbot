@@ -368,7 +368,7 @@ def paginate_help(page_number, loaded_modules, prefix):
                     "ᴘʀᴇᴠɪᴇᴡ", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    'Cʟᴏꜱᴇ', b'close`
+                    '❌', b'close`
                 ),
                 custom.Button.inline(
                     "ɴᴇxᴛ ᴍᴏᴅᴜʟᴇ", data="{}_next({})".format(prefix, modulo_page)
