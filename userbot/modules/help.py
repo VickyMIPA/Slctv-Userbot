@@ -12,7 +12,7 @@ from userbot.events import register
 modules = CMD_HELP
 
 
-@register(outgoing=True, pattern="^.help(?: |$)(.*)")
+@register(outgoing=True, pattern="^.perintahmodul(?: |$)(.*)")
 async def help(petercord):
     """ For .help command,"""
     args = petercord.pattern_match.group(1).lower()
