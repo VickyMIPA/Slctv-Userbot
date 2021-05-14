@@ -164,7 +164,7 @@ async def _(event):
 
 
 CMD_HELP.update({
-    "petercordphreaker":
+    "phreaker":
     "**HELP FOR XPHREAKER**\
 \n╭━━━━━━━━━━━━━━━━━━━╮\
 \n  `.gen <bin>`\
