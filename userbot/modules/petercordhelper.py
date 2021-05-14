@@ -25,7 +25,7 @@ async def var(m):
 
 
 CMD_HELP.update({
-    "petercordmintabantuan":
+    "bantuan":
     "`.mintabantuan`\
 \nUsage: Bantuan Untuk Petercord-Userbot.\
 \n`.varsraw`\
