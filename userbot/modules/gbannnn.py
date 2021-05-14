@@ -1,5 +1,6 @@
 
 
+
 from telethon.events import ChatAction
 from userbot import ALIVE_NAME, CMD_HELP, bot
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
@@ -172,9 +173,9 @@ async def gben(userbot):
                 f"`Anda Tidak Bisa Melakukan Global Banned Ke Ilham mansiz, Dia Adalah Pembuat Saya ヅ`"
             )
         try:
-        await userbot.client(EditBannedRequest(bon.chat_id, user.id, BANNED_RIGHTS))
+        await userbot.client(EditBannedRequest(userbot.chat_id, user.id, BANNED_RIGHTS))
         except BadRequestError:
-            return await bon.edit(NO_PERM)
+            return await userbot.edit(NO_PERM)
         try:
             from userbot.modules.sql_helper.gmute_sql import gmute
         except BaseException:
@@ -244,7 +245,7 @@ async def gunben(userbot):
         except BaseException:
             pass
         try:
-        await userbot.client(EditBannedRequest(unbon.chat_id, user.id, UNBAN_RIGHTS))
+        await userbot.client(EditBannedRequest(userbot.chat_id, user.id, UNBAN_RIGHTS))
         await userbot.edit("```Unban Berhasil Dilakukan!```")
         try:
             await userbot.client(UnblockRequest(user))
