@@ -26,7 +26,7 @@ async def help(petercord):
     else:
         await petercord.edit("DAFTAR PERINTAH PETERCORD")
         await petercord.edit("**✨ BAGIAN 1:**\n"
-                             "**╭┄┅┯┅┄┄┅┯┅┄╮**\n\n`gamepetercord` `petercordkata-kata` `petercorddmisc` `petercordoff` `vip` `animasi` `android` `anime` `anti_spambot` `aria` `ascii` \n\n**╰┄┅┷┅┄┄┅┷┅┄╯**\n"
+                             "**╭┄┅┯┅┄┄┅┯┅┄╮**\n\n`gamepetercord` `petercordkata` `petercorddmisc` `petercordoff` `vip` `animasi` `android` `anime` `anti_spambot` `aria` `ascii` \n\n**╰┄┅┷┅┄┄┅┷┅┄╯**\n"
                              "**✨ BAGIAN 2:**\n"
                              "**╭┄┅┯┅┄┄┅┯┅┄╮**\n\n`blacklist` `carbon` `chat` `mutechat` `covid` `membuat` `deepfry` `emojigames`\n\n**╰┄┅┷┅┄┄┅┷┅┄╯**\n"
                              "**✨ BAGIAN 3:**\n"
@@ -34,9 +34,9 @@ async def help(petercord):
                              "**✨ BAGIAN 4:**\n"
                              "**╭┄┅┯┅┄┄┅┯┅┄╮**\n\n`glitch` `gps` `hash` `base64` `hentai` `heroku` `id` `imgmeme` `kekuatan`\n\n**╰┄┅┷┅┄┄┅┷┅┄╯**\n"
                              "**✨ BAGIAN 5:**\n"
-                             "**╭┄┅┯┅┄┄┅┯┅┄╮**\n\n`lastfm` `locks` `petercordmintabantuan` `aeshtetic` `petercorddeteksi` `chatperintah` `petercordphreaker` `hazmat`\n\n**╰┄┅┷┅┄┄┅┷┅┄╯**\n"
+                             "**╭┄┅┯┅┄┄┅┯┅┄╮**\n\n`lastfm` `locks` `bantuan` `aeshtetic` `petercorddeteksi` `chatperintah` `phreaker` `hazmat`\n\n**╰┄┅┷┅┄┄┅┷┅┄╯**\n"
                              "**✨ BAGIAN 6:**\n"
-                             "**╭┄┅┯┅┄┄┅┯┅┄╮**\n\n `botfather` `amongus` `mengubahfontteks` `misc` `app` `link instagram` `grab` `clone`\n\n**╰┄┅┷┅┄┄┅┷┅┄╯**\n"
+                             "**╭┄┅┯┅┄┄┅┯┅┄╮**\n\n `botfather` `amongus` `fontteks` `misc` `app` `link instagram` `grab` `clone`\n\n**╰┄┅┷┅┄┄┅┷┅┄╯**\n"
                              "**✨ BAGIAN 7:**\n"
                              "**╭┄┅┯┅┄┄┅┯┅┄╮**\n\n`randomprofil` `petercordmusic` `tiny` `tempmail` `tiktok` `wordcloud`\n\n**╰┄┅┷┅┄┄┅┷┅┄╯**\n"
                              "**✨ BAGIAN 8:**\n"
