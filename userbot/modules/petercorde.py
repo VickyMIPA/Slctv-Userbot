@@ -29,7 +29,7 @@ async def _(event):
 
 
 CMD_HELP.update({
-    "mengubahfontteks":
+    "fontteks":
     "`.ae <teks>`\
     \nUsage: mengubah font teks"
 })
