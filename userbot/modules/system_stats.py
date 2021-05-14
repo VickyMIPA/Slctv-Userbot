@@ -236,7 +236,7 @@ async def amireallyalive(alive):
         f"┣|🌟 `Modules  :`{len(modules)} Modules \n"
         f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
-        f"[Repo](https://github.com/ilham77mansiz/-PETERCORD-) | [GRUP SUPPORT](t.me/petercord) | [Owner](t.me/@diemmmmmmmmmm)\n"
+        f"[Repo](https://github.com/ilham77mansiz/-PETERCORD-) | [GRUP SUPPORT](https://t.me/TEAMSquadUserbotSupport) | [Owner](t.me/@diemmmmmmmmmm)\n"
         f"┗━━━━━━━━━━━━━━━━━━━ ")
     if ALIVE_LOGO:
         try:
@@ -271,7 +271,7 @@ async def amireallyalive(alive):
         f"🛡 **Python**   \n   ➥ `Versi {python_version()}` \n"
         f"🛡 **Versi Bot**\n   ➥ `{BOT_VER}` \n"
         f"🛡 **Modul**    \n   ➥ `{len(modules)}` \n\n"
-        f"🛡 **Repo Userbot:** [Petercord-Userbot](https://github.com/ilham77mansiz/-PETERCORD-)\n🛡 **Grup Userbot: **[Tekan](https://t.me/petercord)\n🛡 **Pemilik:** [IlhamMansiez](t.me/diemmmmmmmmmm)\n"
+        f"🛡 **Repo Userbot:** [Petercord-Userbot](https://github.com/ilham77mansiz/-PETERCORD-)\n🛡 **Grup Userbot: **[Tekan](https://t.me/TEAMSquadUserbotSupport)\n🛡 **Pemilik:** [IlhamMansiez](t.me/diemmmmmmmmmm)\n"
         f"**▬▬▬▬▬▬❙۩🛡🛡۩❙▬▬▬▬▬▬**")
     if ALIVE_LOGO:
         try:
@@ -309,7 +309,7 @@ async def amireallyalive(alive):
         f"┣|⚡ `Modules  :`{len(modules)} Modules \n"
         f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
-        f"[Repo](https://github.com/ilham77mansiz/-PETERCORD-) | [Grup Support](https://t.me/petercord) | [Owner](t.me/diemmmmmmmmmm)\n"
+        f"[Repo](https://github.com/ilham77mansiz/-PETERCORD-) | [Grup Support](https://t.me/TEAMSquadUserbotSupport) | [Owner](t.me/diemmmmmmmmmm)\n"
         f"┗━━━━━━━━━━━━━━━━━━━ ")
     if ALIVE_LOGO:
         try:
