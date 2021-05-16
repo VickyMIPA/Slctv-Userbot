@@ -493,18 +493,18 @@ with bot:
                 cmdhel = str(CMD_HELP[modul_name])
                 if len(cmdhel) > 150:
                     help_string = (
-                        str(CMD_HELP[args]).replace('`', '')[:150] + "..."
+                        str(CMD_HELP[modul_name]).replace('`','')[:150] + "prefix"
                         + "\n\nBaca Teks Berikutnya Ketik .help "
                         + modul_name
-                        + " "
+                        + "prefix"
                     )
                 else:
-                    help_string = str(CMD_HELP[args]).replace('`', '')
+                    help_string = str(CMD_HELP[modul_name]).replace('`', '')
 
                 reply_pop_up_alert = (
                     help_string
                     if help_string is not None
-                    else "{} No document has been written for module.".format(
+                    else "{string} No document has been written for module.".format(
                         modul_name
                     )
                 )
