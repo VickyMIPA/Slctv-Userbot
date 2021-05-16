@@ -354,13 +354,13 @@ def paginate_help(page_number, loaded_modules, prefix):
         custom.Button.inline("{} {} 🎖".format("🎖", x), data="ub_modul_{}".format(x))
         for x in helpable_modules
     ]
-    pairs = list(zip(modules[::number_of_cols], modules[1::number_of_cols]))
-    if len(modules) % number_of_cols == 1:
+    pairs = list(zip(modules[::2 number_of_cols], modules[1::2 number_of_cols]))
+    if len(modules) % 2 number_of_cols == 1:
         pairs.append((modules[-1],))
     max_num_pages = ceil(len(pairs) / number_of_rows)
     modulo_page = page_number % max_num_pages
     if len(pairs) > number_of_rows:
-        pairs = pairs[
+        pairs = pairs[i:i + number_of_rows] for i in range(0, len(pairs),
             modulo_page * number_of_rows: number_of_rows * (modulo_page + 1)
         ] + [
             (
