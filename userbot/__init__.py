@@ -489,7 +489,7 @@ with bot:
                 modul_name = event.data_match.group(1).decode("UTF-8")
                 current_page_number = int(
                     event.data_match.group(1).decode("UTF-8"))
-                      args = event.pattern_match.group(3).decode("UTF-8)
+                      args = event.pattern_match.group(3).decode("UTF-8")
 
                 cmdhel = str(CMD_HELP[modul_name])
                 if len(cmdhel) > 150:
