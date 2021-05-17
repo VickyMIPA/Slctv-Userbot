@@ -489,25 +489,21 @@ with bot:
             if event.query.user_id == uid:  # pylint:disable=E0602
                 modul_name = event.data_match.group(1).decode("UTF-8")
 
-                cmdhel = str(CMD_HELP_BOT, CMD_HELP[modul_name])
+                cmdhel = str(CMD_HELP[modul_name])
                 if len(cmdhel) > 150:
                     help_string = (
-                        str(CMD_HELP_BOT, CMD_HELP[modul_name]).replace('`', '')[:150] + ".."
-                        + "\n\nBaca Teks Berikutnya Ketik .help "
+                        str(CMD_HELP[modul_name]).replace('`', '')[:150] + "..."
+                        + "\n\nKetik perintah .help clone contohnya ⚡ "
                         + modul_name
-                        + ""
+                        + " "
                     )
                 else:
-                    help_string = str(
-                        CMD_HELP_BOT,
-                        CMD_HELP[modul_name]).replace(
-                        '`',
-                        '')
+                    help_string = str(CMD_HELP[modul_name]).replace('`', '')
 
                 reply_pop_up_alert = (
                     help_string
                     if help_string is not None
-                    else "{string} No document has been written for module.".format(
+                    else "{} No document has been written for module.".format(
                         modul_name
                     )
                 )
