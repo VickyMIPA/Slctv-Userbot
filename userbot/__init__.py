@@ -356,7 +356,7 @@ def paginate_help(page_number, loaded_modules, prefix):
         for x in helpable_modules
     ]
     pairs = list(zip(modules[::number_of_cols], modules[1::number_of_cols]))
-    if len(modules) %  number_of_cols == 1:
+    if len(modules) % number_of_cols == 1:
         pairs.append((modules[-1],))
     max_num_pages = ceil(len(pairs) / number_of_rows)
     modulo_page = page_number % max_num_pages
@@ -488,17 +488,21 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:  # pylint:disable=E0602
                 modul_name = event.data_match.group(1).decode("UTF-8")
-                
+
                 cmdhel = str(CMD_HELP_BOT, CMD_HELP[modul_name])
                 if len(cmdhel) > 150:
                     help_string = (
-                        str(CMD_HELP_BOT, CMD_HELP[modul_name]).replace('`','')[:150] + ".."
+                        str(CMD_HELP_BOT, CMD_HELP[modul_name]).replace('`', '')[:150] + ".."
                         + "\n\nBaca Teks Berikutnya Ketik .help "
                         + modul_name
                         + ""
                     )
                 else:
-                    help_string = str(CMD_HELP_BOT, CMD_HELP[modul_name]).replace('`','')
+                    help_string = str(
+                        CMD_HELP_BOT,
+                        CMD_HELP[modul_name]).replace(
+                        '`',
+                        '')
 
                 reply_pop_up_alert = (
                     help_string
