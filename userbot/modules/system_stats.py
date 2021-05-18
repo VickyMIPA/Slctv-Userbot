@@ -309,19 +309,19 @@ async def amireallyalive(alive):
         f"┣|⚡ `Modules  :`{len(modules)} Modules \n"
         f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n")
-     await alive.edit(
-      text="""**Anda Bisa Membuat PETERCORD⚖USERBOT Anda Sendiri Dengan Cara:** [Tekan Disini🏹](https://t.me/TEAMSquadUserbotSupport)""",
-                    buttons=[
-                        [
-                            custom.Button.url(
-                                "Repo Petercord-Userbot🏹",
-                                "https://github.com/ilham77mansiz/-PETERCORD-"),
-                            custom.Button.url(
-                                "Pemilik Repo🏹",
-                                "t.me/diemmmmmmmmmm")],
-                    ],
-                    link_preview=False,
-                )
+    await alive.edit(
+        text="""**Anda Bisa Membuat PETERCORD⚖USERBOT Anda Sendiri Dengan Cara:** [Tekan Disini🏹](https://t.me/TEAMSquadUserbotSupport)""",
+        buttons=[
+            [
+                custom.Button.url(
+                    "Repo Petercord-Userbot🏹",
+                    "https://github.com/ilham77mansiz/-PETERCORD-"),
+                custom.Button.url(
+                    "Pemilik Repo🏹",
+                    "t.me/diemmmmmmmmmm")],
+        ],
+        link_preview=False,
+    )
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
