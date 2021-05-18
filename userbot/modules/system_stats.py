@@ -307,18 +307,7 @@ async def amireallyalive(alive):
         f"┣|⚡ `Branch   :`{UPSTREAM_REPO_BRANCH} \n"
         f"┣|⚡ `Bot Ver  :`{BOT_VER} \n"
         f"┣|⚡ `Modules  :`{len(modules)} Modules \n"
-        f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
-        buttons=[
-            [
-                custom.Button.url(
-                    "Repo Petercord-Userbot🏹",
-                    "https://github.com/ilham77mansiz/-PETERCORD-"),
-                custom.Button.url(
-                    "Pemilik Repo🏹",
-                    "t.me/diemmmmmmmmmm")],
-        ],
-        link_preview=False,
-    )
+        f"┗━━━━━━━━━━━━━━━━━━━ \n\n")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
