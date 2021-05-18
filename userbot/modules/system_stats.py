@@ -308,9 +308,6 @@ async def amireallyalive(alive):
         f"┣|⚡ `Bot Ver  :`{BOT_VER} \n"
         f"┣|⚡ `Modules  :`{len(modules)} Modules \n"
         f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
-        f"┏━━━━━━━━━━━━━━━━━━━ \n")
-    await alive.edit(
-        text="""**Anda Bisa Membuat PETERCORD⚖USERBOT Anda Sendiri Dengan Cara:** [Tekan Disini🏹](https://t.me/TEAMSquadUserbotSupport)""",
         buttons=[
             [
                 custom.Button.url(
