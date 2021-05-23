@@ -15,14 +15,21 @@ import os
 import io
 import sys
 from userbot import ALIVE_NAME, BOTLOG, BOTLOG_CHATID, CMD_HELP, bot
-from userbot.events import register
 from userbot.utils import time_formatter
 import urllib
 import requests
 from bs4 import BeautifulSoup
 import re
 from PIL import Image
+import logging
 
+
+from userbot import BOT_USERNAME
+from userbot.events import register
+
+logging.basicConfig(
+    format="[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s",
+    level=logging.WARNING)
 
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
@@ -116,7 +123,26 @@ async def repeat(rep):
     await rep.edit(replyText)
 
 
-@register(outgoing=True, pattern="^.repo$")
+@register(outgoing=True, pattern=r"^\.repo")
+async def yardim(event):
+    try:
+        tgbotusername = BOT_USERNAME
+        if tgbotusername is not None:
+            results = await event.client.inline_query(tgbotusername, "@petercord")
+            await results[0].click(
+                event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
+            )
+            await event.delete()
+        else:
+            await event.edit(
+                "`Bot tidak berfungsi hara setel bot token hiks.`"
+            )
+    except Exception:
+        return await event.edit(
+            "`Anda tidak dapat mengirim hasil sebaris dalam obrolan ini (disebabkan oleh SendInlineBotResultRequest on harus dimatiin)`"
+        )
+
+@register(outgoing=True, pattern="^.repos$")
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
