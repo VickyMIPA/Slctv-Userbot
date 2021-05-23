@@ -422,15 +422,18 @@ with bot:
                     link_preview=True)
             else:
                 result = builder.article(
-                    "**PETERCORD⚖USERBOT**",
-                    text="""**Anda Bisa Membuat PETERCORD⚖USERBOT Anda Sendiri Dengan Cara:** [Tekan Disini🏹](t.me/petercord)""",
+                    "**🎖PETERCORD USERBOT🎖**",
+                    text="""**Anda Bisa Membuat 🎖PETERCORD USERBOT🎖 Anda Sendiri Dengan Cara:** [Tekan Disini🏹](https://t.me/TEAMSquadUserbotSupport)""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "Repo Petercord-Userbot🏹",
+                                "🎖REPO PETERCORD🎖",
                                 "https://github.com/ilham77mansiz/-PETERCORD-"),
                             custom.Button.url(
-                                "Pemilik Repo🏹",
+                                "INSTAGRAM",
+                                "https://www.instagram.com/imansiez77/"),
+                            custom.Button.url(
+                                "OWNERS",
                                 "t.me/diemmmmmmmmmm")],
                     ],
                     link_preview=False,
