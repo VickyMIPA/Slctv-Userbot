@@ -423,7 +423,7 @@ with bot:
             else:
                 result = builder.article(
                     "**🎖PETERCORD USERBOT🎖**",
-                    text="""**Anda Bisa Membuat 🎖PETERCORD USERBOT🎖 Anda Sendiri Dengan Cara:** [Tekan Disini🏹](https://t.me/TEAMSquadUserbotSupport)""",
+                    text="""**Anda Bisa Membuat 🎖PETERCORD USERBOT🎖 Anda Sendiri Dengan Cara:** [GABUNG DISINI](https://t.me/TEAMSquadUserbotSupport)""",
                     buttons=[
                         [
                             custom.Button.url(
