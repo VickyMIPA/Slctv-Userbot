@@ -1,7 +1,7 @@
 {
-  "name": "Petercord User",
-  "description": "[Petercord User] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
-  "logo": "https://telegra.ph/file/3bfbaa5461dcba6a8bdb1.jpg",
+  "name": "Slctv Userbot",
+  "description": "[Slctv User] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "logo": "https://telegra.ph/file/814d3ab32c03122445eb7.png",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/ilham77mansiz/-PETERCORD-",
-  "telegram": "https://t.me/diemmmmmmmmmm",
-  "success_url": "https://t.me/diemmmmmmmmmm",
+  "repository": "https://github.com/VickyMIPA/Slctv-Usebot",
+  "telegram": "https://t.me/xenxust",
+  "success_url": "https://t.me/xenxust",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -151,7 +151,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Default Bio Mu.",
-      "value": "Petercord User",
+      "value": "💡Slctv UserBot💡",
       "required": false
     },
     "ALIVE_NAME": {
@@ -159,7 +159,7 @@
       "required": true
     },
     "PETERCORD_TEKS_KUSTOM": {
-      "description": "Kustom Pesan Alive Mu Untuk Perintah .petercord (Isi Terserah)",
+      "description": "Kustom Pesan Alive Mu Untuk Perintah .slctv (Isi Terserah)",
       "required": false
     },
     "S_PACK_NAME": {
@@ -198,7 +198,7 @@
     },
     "WEATHER_DEFCITY": {
       "description": "Set the default city for the userbot's weather module.",
-      "value": "Medan",
+      "value": "Jakarta",
       "required": false
     },
     "LOGSPAMMER": {
