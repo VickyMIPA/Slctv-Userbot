@@ -225,7 +225,7 @@ async def amireallyalive(alive):
     await alive.edit("`SAYA ALIVE!`")
     await alive.edit("🌍")
     output = (
-        f"**✨ PETERCORD USERBOT ✨** \n\n"
+        f"**✨ SLCTV USERBOT ✨** \n\n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
         f"┣|🌟 `BOT      :`{DEFAULTUSER} \n"
         f"┣|🌟 `Username :`@{user.username} \n"
@@ -236,7 +236,7 @@ async def amireallyalive(alive):
         f"┣|🌟 `Modules  :`{len(modules)} Modules \n"
         f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
-        f"[Repo](https://github.com/ilham77mansiz/-PETERCORD-) | [GRUP SUPPORT](https://t.me/TEAMSquadUserbotSupport) | [Owner](t.me/@diemmmmmmmmmm)\n"
+        f"[Repo](https://github.com/VickyMIPA/Slctv-Userbot) | [GRUP](https://t.me/aliansinomercy) | [Owner](t.me/@xenxust)\n"
         f"┗━━━━━━━━━━━━━━━━━━━ ")
     if ALIVE_LOGO:
         try:
@@ -263,16 +263,16 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**▬▬▬▬▬▬❙۩🛡🛡۩❙▬▬▬▬▬▬**\n"
-        f"  **🔮 PETERCORD-USERBOT 🔮** \n\n"
-        f"🛡 **PETERCORD**     \n   ➥ `{DEFAULTUSER}` \n"
-        f"🛡 **Username** \n   ➥ `@{user.username}` \n"
-        f"🛡 **Telethon** \n   ➥ `Versi {version.__version__}` \n"
-        f"🛡 **Python**   \n   ➥ `Versi {python_version()}` \n"
-        f"🛡 **Versi Bot**\n   ➥ `{BOT_VER}` \n"
-        f"🛡 **Modul**    \n   ➥ `{len(modules)}` \n\n"
-        f"🛡 **Repo Userbot:** [Petercord-Userbot](https://github.com/ilham77mansiz/-PETERCORD-)\n🛡 **Grup Userbot: **[Tekan](https://t.me/TEAMSquadUserbotSupport)\n🛡 **Pemilik:** [IlhamMansiez](t.me/diemmmmmmmmmm)\n"
-        f"**▬▬▬▬▬▬❙۩🛡🛡۩❙▬▬▬▬▬▬**")
+        f"**▬▬▬▬▬▬❙۩📍۩❙▬▬▬▬▬▬**\n"
+        f"  **🔮 SLCTV-USERBOT 🔮** \n\n"
+        f"📚 **SLCTV**     \n   ➥ `{DEFAULTUSER}` \n"
+        f"📚 **Username** \n   ➥ `@{user.username}` \n"
+        f"📚 **Telethon** \n   ➥ `Versi {version.__version__}` \n"
+        f"📚 **Python**   \n   ➥ `Versi {python_version()}` \n"
+        f"📚 **Versi Bot**\n   ➥ `{BOT_VER}` \n"
+        f"📚 **Modul**    \n   ➥ `{len(modules)}` \n\n"
+        f"📚 **Repo Userbot:** [Slctv-Userbot](https://github.com/VickyMIPA/Slctv-Userbot)\n📚 **Grup Support: **[Tekan](https://t.me/aliansinomercy)\n📚 **Pemilik:** [Kaghasi](t.me/xenxust)\n"
+        f"**▬▬▬▬▬▬❙۩📍۩❙▬▬▬▬▬▬**")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -298,9 +298,9 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**🪐 PETERCORD USERBOT 🪐** \n"
+        f"**📍 SLCTV USERBOT 📍** \n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
-        f"┣|⚡ `Petercord:`{DEFAULTUSER} \n"
+        f"┣|⚡ `Slctv:`{DEFAULTUSER} \n"
         f"┣|⚡ `Username :`@{user.username} \n"
         f"┣|⚡ `Telethon :`Ver {version.__version__} \n"
         f"┣|⚡ `Python   :`Ver {python_version()} \n"
