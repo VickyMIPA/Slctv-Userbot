@@ -29,14 +29,14 @@ Caranya Pergi Ke Grup Support Petercord User Lalu Ketik #String [TEKAN DISINI](h
 
   > Terakhir Hidupkan Dyno Lalu Check Logs (settings -> view logs) Jika Berhasil Enjoy :)
 ```
-Atau Bisa Gabung Ke Grup Petercord User KILIK GAMBARNYA👇🏻
-<p align="center"><a href="https://t.me/TEAMSquadUserbotSupport"> <img src="https://telegra.ph/file/3fbfd34825d659686cb28.jpg" alt="Press to Takeoff" width="490px"></a>
+Atau Bisa Gabung Ke Grup Nomercy KILIK GAMBARNYA👇🏻
+<p align="center"><a href="https://t.me/aliansinomercy"> <img src="https://telegra.ph/file/814d3ab32c03122445eb7.png" alt="Press to Takeoff" width="490px"></a>
 </p>
 <br>
-## <p align="center">DEPLOY Petercord Userbot Klik GAMBARNYA!👇🏻</p>
+## <p align="center">DEPLOY Slctv Userbot Klik GAMBARNYA!👇🏻</p>
 
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/ilham77mansiz/-PETERCORD-"> <img src="https://telegra.ph/file/d425df798c678ae75a9db.jpg" alt="Press to Takeoff" width="490px"></a>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/VickyMIPA/Slctv-Userbot"> <img src="https://telegra.ph/file/4d9e37aabe08e45eba833.png" alt="Press to Takeoff" width="490px"></a>
 </p>
 <br>
 
