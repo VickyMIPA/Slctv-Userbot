@@ -159,7 +159,7 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**☛**Petercord-Userbot Versi:** \n "
+            "**☛**Slctv-Userbot Versi:** \n "
             f"{verout}"
             "\n**☛**Revisi:**\n "
             f"{revout}"
@@ -223,10 +223,10 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f" **┗┓PETERCORD USERBOT┏┛** \n"
-        f"\n__**{PETERCORD_TEKS_KUSTOM}**__\n"
+        f" **┗┓SLCTV USERBOT┏┛** \n"
+        f"\n__**{Slctv_TEKS_KUSTOM}**__\n"
         f"**━━━━━━━━━━━━━━━━━━━━**\n"
-        f"**🐉 Petercord🐉** \n"
+        f"**🐉 Slctv🐉** \n"
         f" ➥ `{DEFAULTUSER}` \n"
         f"**🐉 Username🐉** \n"
         f" ➥ `@{user.username}` \n"
@@ -262,14 +262,14 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"**▬▬▬▬▬▬❙۩🐲🐲۩❙▬▬▬▬▬▬**\n"
-        f"  **🎸 PETERCORD-USERBOT 🎸** \n\n"
-        f"🎸 **PETERCORD**     \n   ➥ `{DEFAULTUSER}` \n"
+        f"  **🎸 SLCTV-USERBOT 🎸** \n\n"
+        f"🎸 **SLCTV**     \n   ➥ `{DEFAULTUSER}` \n"
         f"🎸 **Username** \n   ➥ `@{user.username}` \n"
         f"🎸 **Telethon** \n   ➥ `Versi {version.__version__}` \n"
         f"🎸 **Python**   \n   ➥ `Versi {python_version()}` \n"
         f"🎸 **Versi Bot**\n   ➥ `{BOT_VER}` \n"
         f"🎸 **Modul**    \n   ➥ `{len(modules)}` \n\n"
-        f"🎸 **Repo Userbot:** [🎸Petercord-Userbot🎸](https://github.com/ilham77mansiz/-PETERCORD-)\n🐲 **Grup Userbot: **[🐲Tekan🐲](https://t.me/petercord)\n🐲 **Pemilik:** [🐲IlhamMansiez🐲](t.me/diemmmmmmmmmm)\n"
+        f"🎸 **Repo Userbot:** [🎸Slctv-Userbot🎸](https://github.com/VickyMIPA/Slctv-Userbot)\n🐲 **Grup : **[🐲Tekan🐲](https://t.me/aliansinomercy)\n🐲 **Pemilik:** [🐲Kaghasi🐲](t.me/xenxust)\n"
         f"**▬▬▬▬▬▬❙۩🐲🐲۩❙▬▬▬▬▬▬**")
     if ALIVE_LOGO:
         try:
@@ -296,9 +296,9 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**🦉 PETERCORD 🦅 USERBOT 🐿** \n"
+        f"**🦉 SLCTV 🦅 USERBOT 🐿** \n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
-        f"┣|• `🎸Petercord:`{DEFAULTUSER} \n"
+        f"┣|• `🎸Slctv:`{DEFAULTUSER} \n"
         f"┣|• `🎸Username :`@{user.username} \n"
         f"┣|• `🎸Telethon :`Ver {version.__version__} \n"
         f"┣|• `🎸Python   :`Ver {python_version()} \n"
