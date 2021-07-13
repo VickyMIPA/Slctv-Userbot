@@ -108,12 +108,12 @@ async def pingme(pong):
     await pong.edit("☯")
     await pong.edit("Shaoloin....")
     await pong.edit("..DuaRR...")
-    await pong.edit("☯..\n ADA BOMS💣")
-    await pong.edit("**💣**")
-    await pong.edit("**💥**")
+    await pong.edit("☯..\n CROTTTTTT💦")
+    await pong.edit("**💦**")
+    await pong.edit("**💦**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"┏━《 **𝗣 𝗘 𝗧 𝗘 𝗥 𝗖 𝗢 𝗥 𝗗** 》━\n"
+    await pong.edit(f"┏━《 **𝗦𝗟𝗖𝗧𝗩** 》━\n"
                     f"┣➠  __Ping:__ "
                     f"`%sms` \n"
                     f"┗➠ __Uptime:__ "
@@ -133,18 +133,18 @@ async def speedtst(spd):
     result = test.results.dict()
 
     await spd.edit("**Hasil Tes:\n**"
-                   "🕸 **Dimulai Pada:** "
+                   "💡 **Dimulai Pada:** "
                    f"`{result['timestamp']}` \n"
                    f" **━━━━━━━━━━━━━━━━━**\n"
-                   "🕸 **Download:** "
+                   "💡 **Download:** "
                    f"`{speed_convert(result['download'])}` \n"
-                   "🕸 **Upload:** "
+                   "💡 **Upload:** "
                    f"`{speed_convert(result['upload'])}` \n"
-                   "🕸 **Ping:** "
+                   "💡 **Ping:** "
                    f"`{result['ping']}` \n"
-                   "🕸 **ISP:** "
+                   "💡 **ISP:** "
                    f"`{result['client']['isp']}` \n"
-                   "🕸 **BOT:** `Petercord Userbot`")
+                   "💡 **BOT:** `Slctv Userbot`")
 
 
 def speed_convert(size):
@@ -164,10 +164,10 @@ def speed_convert(size):
 async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
     start = datetime.now()
-    await pong.edit("LABA-LABA SPIDERMAN🕷!.....🕸")
+    await pong.edit("MENGECROTT!!!💦!.....💡")
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await pong.edit("- 🕸P E T E R C O R D 🕸 -\n`%sms`" % (duration))
+    await pong.edit("- 📍𝗦𝗟𝗖𝗧𝗩 -\n`%sms`" % (duration))
 
 CMD_HELP.update(
     {"ping": "`.ping` ; `.lping` ; `.xping` ; `.sping`\
