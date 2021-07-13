@@ -1,11 +1,11 @@
-# PETERCORD USERBOT
-![Petercord Userbot Logo](https://telegra.ph/file/a363d444e3788848584b5.jpg)
+# Slctv USERBOT
+![Slctv Userbot Logo](https://telegra.ph/file/814d3ab32c03122445eb7.png)
 
 <h3 align="center">Userbot Yang Digunakan Untuk Bersenang-Senang Di Telegram</h3>
 <p align="center">&nbsp;</p>
 
 ### Repo Petercord User
-Repo Yang Dibuat [ILham Mansiezz](https://t.me/bismillahselaluadaa) Dari Berbagai Repo Userbot Github 
+Repo Yang Dibuat [Vicky](https://t.me/VickyMIPA) Dari Berbagai Repo Userbot Github 
 
 
 ### CARA MENDAPATKAN STRING SESSON /STRING DISINI
