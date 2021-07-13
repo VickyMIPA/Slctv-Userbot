@@ -26,12 +26,12 @@ from userbot.events import register
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
-    f"__**ROOM CHAT || {DEFAULTUSER}**__\n"
+    f"__**📍ROOM CHAT || {DEFAULTUSER}**__\n"
     "━━━━━━━━━━━━━━━━━━━━\n"
-    f"__HALLO SELAMAT DATANG, SAYA ADALAH BOT YANG MENJAGA ROOM CHAT INI MOHON JANGAN MELAKUKAN SPAM KARNA SAYA OTOMATIS AKAN MEMBLOKIR ANDA, TUNGGU SAMPAI {DEFAULTUSER} MENERIMA PESAN ANDA__\n"
+    f"__HALLO SELAMAT DATANG👋, SAYA ADALAH BOT YANG MENJAGA ROOM CHAT INI MOHON JANGAN MELAKUKAN SPAM KARNA SAYA OTOMATIS AKAN MEMBLOKIR ANDA, TUNGGU SAMPAI {DEFAULTUSER} MENERIMA PESAN ANDA__\n"
     "┏━━━━━━━━━━━━━━━━━━━\n"
-    "┣[• `PESAN OTOMATIS`\n"
-    "┣[• `BY PETERCORD USERBOT`\n"
+    "┣[•📚`PESAN OTOMATIS`\n"
+    "┣[•📚`BY SLCTV USERBOT`\n"
     "┗━━━━━━━━━━━━━━━━━━━")
 # =================================================================
 
@@ -91,7 +91,7 @@ async def permitpm(event):
             if COUNT_PM[event.chat_id] > 4:
                 await event.respond(
                     "`Anda Telah Di Blokir Karna Melakukan Spam Pesan`\n"
-                    "`Ke Room Chat Petercord ツ`"
+                    "`Ke Room Chat Slctv ツ`"
                 )
 
                 try:
@@ -101,7 +101,7 @@ async def permitpm(event):
                     if BOTLOG:
                         await event.client.send_message(
                             BOTLOG_CHATID,
-                            "Petercord, Terjadi Masalah Saat Menghitung Private Message, Mohon Restart Bot!",
+                            "Slctv, Terjadi Masalah Saat Menghitung Private Message, Mohon Restart Bot!",
                         )
                     return LOGS.info("CountPM wen't rarted boi")
 
