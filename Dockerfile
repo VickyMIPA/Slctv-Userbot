@@ -3,7 +3,7 @@
 #Tentang AKU DAN DIA
 FROM  ilhammansiz17/ilham-mansiez-petercord:Petercord-Userbot
 
-RUN git clone -b Petercord-Userbot https://github.com/ilham77mansiz/-PETERCORD- /root/userbot
+RUN git clone -b Petercord-Userbot https://github.com/VickyMIPA/Slctv-Userbot /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
