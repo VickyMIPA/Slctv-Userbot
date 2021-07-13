@@ -11,12 +11,12 @@ from userbot.events import register
 from asyncio.exceptions import TimeoutError
 
 
-@register(outgoing=True, pattern=r"^\.sa(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.lokit(?: |$)(.*)")
 async def lastname(steal):
     if steal.fwd_from:
         return
     if not steal.reply_to_msg_id:
-        await steal.edit("```Mohon Balas Ke Pesan Pengguna Petercord.```")
+        await steal.edit("```Mohon Balas Ke Pesan Penggunanya Ngentot.```")
         return
     message = await steal.get_reply_message()
     chat = "@SangMataInfo_bot"
@@ -25,7 +25,7 @@ async def lastname(steal):
     if message.sender.bot:
         await steal.edit("```Balas Ke Pesan Pengguna Yang Sebenarnya.```")
         return
-    await steal.edit("```Petercord Memerintahku Mengambil Informasi Riwayat Pergantian Nama Orang Ini ツ```")
+    await steal.edit("```MAMPUS DIKIT LAGI KETAUAN KAN LO KONTOL,MAKANYA JANGAN SOK MISTERIUS NGENTOT!!!!! ツ```")
     try:
         async with bot.conversation(chat) as conv:
             try:
@@ -47,7 +47,7 @@ async def lastname(steal):
             if response.text.startswith("No records") or r.text.startswith(
                 "No records"
             ):
-                await steal.edit("```Saya Tidak Menemukan Informasi Pergantian Nama, Petercord Orang Ini Belum Pernah Mengganti Namanya ツ```")
+                await steal.edit("```Saya Tidak Menemukan Informasi Pergantian Nama, Ye Si kontol Belum Pernah Ganti nama,- ```")
                 await steal.client.delete_messages(
                     conv.chat_id, [msg.id, r.id, response.id]
                 )
@@ -64,6 +64,6 @@ async def lastname(steal):
 
 CMD_HELP.update({
     "sangmata":
-        "`.sa`\
+        "`.lokit`\
           \nUsage: Mendapatkan Riwayat Nama Pengguna."
 })
