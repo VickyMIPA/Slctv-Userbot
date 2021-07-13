@@ -21,7 +21,7 @@ async def get_full_user(event):
         if user.isnumeric():
             user = int(user)
         if not user:
-            await event.edit("`Petercord, Ini Tidak Mungkin Tanpa ID Pengguna`")
+            await event.edit("`Slctv, Ini Tidak Mungkin Tanpa ID Pengguna`")
             return
         if event.message.entities is not None:
             probable_user_mention_entity = event.message.entities[0]
@@ -70,7 +70,7 @@ async def handler(tele):
                                 tele.chat_id, guser.id, view_messages=False
                             )
                             await tele.reply(
-                                f"**Petercord, Pengguna Gmute Telah Bergabung** \n"
+                                f"**Slctv, Pengguna Gmute Telah Bergabung** \n"
                                 f"**Pengguna**: [{guser.id}](tg://user?id={guser.id})\n"
                                 f"**Aksi**  : `Mute`"
                             )
@@ -84,7 +84,7 @@ async def gben(userbot):
     sender = await dc.get_sender()
     me = await dc.client.get_me()
     if not sender.id == me.id:
-        dark = await dc.reply("`Petercord Ingin Mengaktifkan Perintah Global Mute!`")
+        dark = await dc.reply("`Slctv Ingin Mengaktifkan Perintah Global Mute!`")
     else:
         dark = await dc.edit("`Memproses Global Banned Pengguna Ini :)`")
     me = await userbot.client.get_me()
@@ -110,7 +110,7 @@ async def gben(userbot):
     if user:
         if user.id == 1593802955:
             return await dark.edit(
-                f"`Anda Tidak Bisa Melakukan Global Mute Ke ilham , Dia Adalah Pembuat Saya :)`"
+                f"`Anda Tidak Bisa Melakukan Global Mute Ke Vicky , Dia Adalah Pembuat Saya :)`"
             )
         try:
             from userbot.modules.sql_helper.gmute_sql import gmute
@@ -140,7 +140,7 @@ async def gben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"**♛ Perintah :** `{ALIVE_NAME}`\n**✣ Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**✣ Aksi:** `Global Mute`"
+        f"**➥ Perintah :** `{ALIVE_NAME}`\n**➥ Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**➥ Aksi:** `Global Mute`"
     )
 
 
@@ -154,7 +154,7 @@ async def gunben(userbot):
     else:
         dark = await dc.edit("`Membatalkan Perintah Global Mute ヅ`")
     me = await userbot.client.get_me()
-    await dark.edit(f"`Memulai Membatalkan Perintah Global Mute, Pengguna Ini Akan Dapat Bergabung Ke Grup Anda Petercord ヅ`")
+    await dark.edit(f"`Memulai Membatalkan Perintah Global Mute, Pengguna Ini Akan Dapat Bergabung Ke Grup Anda Slctv ヅ`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
@@ -204,7 +204,7 @@ async def gunben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"**♛ Perintah :** `{ALIVE_NAME}`\n**✣ Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**✣ Aksi:** `Membatalkan Global Mute`"
+        f"**➥ Perintah :** `{ALIVE_NAME}`\n**➥ Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**➥ Aksi:** `Membatalkan Global Mute`"
     )
 
 
