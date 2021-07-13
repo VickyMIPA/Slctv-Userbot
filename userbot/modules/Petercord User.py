@@ -953,7 +953,7 @@ async def typewriter(typew):
 
 
 CMD_HELP.update({
-    "petercordkata":
+    "slctv":
     "`.gabut` ; `.dino`\
     \nUsage: ntahlah gabut doang.\
     \n\n`.gombal`\
