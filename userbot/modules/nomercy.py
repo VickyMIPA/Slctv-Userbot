@@ -4,6 +4,7 @@ from userbot.events import register
 from telethon import events
 import asyncio
 
+
 @register(outgoing=True, pattern='^.nomercy(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -45,9 +46,11 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit("**CUMA VICKY YANG BENER!😁**")
 
+
 CMD_HELP.update({
     "nomercy":
-    "`.nomercy`\
-    \n\n`.nomercy` 
-})
+    \n\n`.nomercy.'\ 
+    \nUsage:Ngabuburit."
+}
+)
 
