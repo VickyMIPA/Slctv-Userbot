@@ -618,7 +618,7 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^razia(?: |$)(.*)')
+@register(outgoing=True, pattern='^.razia(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -640,7 +640,7 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^/wkwk(?: |$)(.*)')
+@register(outgoing=True, pattern='^.wkwk(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -662,7 +662,7 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^melamar(?: |$)(.*)')
+@register(outgoing=True, pattern='^.melamar(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -684,7 +684,7 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^buaya(?: |$)(.*)')
+@register(outgoing=True, pattern='^.buaya(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -706,7 +706,7 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^!yang(?: |$)(.*)')
+@register(outgoing=True, pattern='^.yang(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -814,11 +814,14 @@ async def typewriter(typew):
     await typew.edit("**Jeje,Mengintil☑️**")
     await typew.edit("**Jeje,Mengintil✅**")
     sleep(2)
-    await typew.edit("**Sins,Sijelek☑️**")
-    await typew.edit("**Sins,Sijelek✅**")
+    await typew.edit("**Sins,Baik☑️**")
+    await typew.edit("**Sins,Baik✅**")
     sleep(2)
-    await typew.edit("**Lexi,Sidongo☑️**")
-    await typew.edit("**Lexi,Sidongo✅**")
+    await typew.edit("**Karen,Cantik☑️**")
+    await typew.edit("**Karen,Cantik✅**")
+    sleep(2)
+    await typew.edit("**Lexi,Autis☑️**")
+    await typew.edit("**Lexi,Autis✅**")
     sleep(2)
     await typew.edit("**Ulum,Sikontol☑️**")
     await typew.edit("**Ulum,Sikontol✅**")
@@ -1003,7 +1006,7 @@ CMD_HELP.update({
     \nUsage: buat bercanda\
     \n\n`.cinta`\
     \nUsage: mengirim cintamu ke seseorang.\
-    \n\n`yang`\
+    \n\n`.yang`\
     \nUsage: apa kabarmu sayang.\
     \n\n`.sayang`\
     \nUsage: untuk jadi buaya.\
@@ -1011,11 +1014,11 @@ CMD_HELP.update({
     \nUsage: Auk dah iseng doang.\
     \n\n`buaya`\
     \nUsage:contoh inisial buaya.\
-    \n\n`melamar`\
+    \n\n`.melamar`\
     \nUsage:kata kata dilan.\
-    \n\n`wkwk`\
+    \n\n`.wkwk`\
     \nUsage:Tertawa emot.\
-    \n\n`razia`\
+    \n\n`.razia`\
     \nUsage:ada razia😂.\
     \n\n`.sad`\
     \nUsage:sedihnya oalah.\
