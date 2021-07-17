@@ -48,9 +48,9 @@ async def typewriter(typew):
 
 
 CMD_HELP.update({
-    "nomercy":
-    \n\n`.nomercy.'\ 
-    \nUsage:Ngabuburit."
+    "pikix":
+    "`.nomercy.`\
+    \nUsage: ntahlah gabut doang.\
 }
 )
 
